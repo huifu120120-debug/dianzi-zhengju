@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>testresultsforbinaryimagejtagchip-offdecodingandanalysistool-ftk_v7.2</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
+.wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
+header.doc-head{background:linear-gradient(135deg,#1e5eb8,#2f7fd4);color:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 4px 16px rgba(30,94,184,.18)}
+header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4}
+.doc-meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;opacity:.95;margin-top:6px}
+.doc-meta span b{font-weight:600;opacity:.85}
+.doc-actions{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
+.doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
+.doc-actions a:hover{background:#eef4ff}
+.doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
+.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
+.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
+.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
+.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.content p{margin:0 0 12px;text-indent:2em}
+.content .no-indent{text-indent:0}
+.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
+.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
+.content h3{font-size:15.5px}
+.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
+.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
+.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="doc-head">
+<h1>testresultsforbinaryimagejtagchip-offdecodingandanalysistool-ftk_v7.2</h1>
+<div class="doc-meta"><span><b>文号：</b>—</span><span><b>层级：</b>部门规章 / 规范性文件</span><span><b>备注：</b>日期待核</span></div>
+<div class="doc-actions"><a href="testresultsforbinaryimagejtagchip-offdecodingandanalysistool-ftk_v7.2.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a></div>
+</header>
+<div class="banner pdf">📄 正文来源：本地 PDF 文本层提取（保持原文；排版可能与原件略有差异，以原 PDF 为准）</div>
+<div class="content">
+<p>Access Data FTK v7.2.0.4127 Test Results for Binary Image (JTAG, Chip-Off) Decoding and Analysis Tool March 2020</p>
+<p>This report was prepared for the Department of Homeland Security (DHS) Science and Technology Directorate (S&amp;T) by the Office of Law Enforcement Standards of the National Institute of Standards and Technology. For additional information about ongoing DHS S&amp;T cybersecurity projects, please visit https://www.dhs.gov/science-and- technology/cybersecurity.</p>
+<p>Test Results for Binary Image (JTAG, Chip-Off) Decoding and Analysis Tool: Access Data FTK v7.2.0.4127 March 2020</p>
+<p>Contents Introduction ..................................................................................................................................... ............................................................................................................... .................................................................................................................... ................................................................................................ ............................................................................................................... ................................................................................................ ........................................................................................ 1 How to Read This Report 1 1 Results Summary 2 2 Mobile Device Binary Images 3 3 Testing Environment 3 3.1 Execution Environment .. 3 3.2 Internal Memory Data Objects 4 4 Test Results ............................................................................................................................. .............................................................................................. ................................................................................................ 6 4.1 Chip-Off Data Extractions 7 4.2 JTAG Data Extractions . 10</p>
+<p>ii</p>
+<p>Introduction The Computer Forensics Tool Testing (CFTT) program is a joint project of the Department of Homeland Security (DHS) Science and Technology Directorate (S&amp;T), the National Institute of Justice, and the National Institute of Standards and Technology (NIST) Special Program Office and Information Technology Laboratory. CFTT is supported by other organizations, including the Federal Bureau of Investigation, the U.S. Department of Defense Cyber Crime Center, U.S. Internal Revenue Service Criminal Investigation Division Electronic Crimes Program, and the DHS Bureau of Immigration and Customs Enforcement, U.S. Customs and Border Protection and U.S. Secret Service. The objective of the CFTT program is to provide measurable assurance to practitioners, researchers, and other applicable users that the tools used in computer forensics investigations provide accurate results. Accomplishing this requires the development of specifications and test methods for computer forensics tools and subsequent testing of specific tools against those specifications.</p>
+<p>Test results provide the information necessary for developers to improve tools, users to make informed choices, and the legal community and others to understand the tools’ capabilities. The CFTT approach to testing computer forensics tools is based on well- recognized methodologies for conformance and quality testing. Interested parties in the computer forensics community can review and comment on the specifications and test methods posted on the CFTT Web site (https://www.cftt.nist.gov/). This document reports the results from testing Access Data FTK v7.2.0 decoding and analysis of mobile devices JTAG and chip-off binaries.</p>
+<p>Test results from other tools can be found on the DHS S&amp;T-sponsored digital forensics web page, https://www.dhs.gov/science-and-technology/nist-cftt-reports. Thanks and appreciation to Rex Kiser and team from the Fort Worth Police Department – Digital Forensics Lab and Steve Watson and team from VTO Labs for their assistance on performing Chip-Off data extractions. How to Read This Report This report is divided into four sections. Section 1 identifies and provides a summary of any significant anomalies observed in the test runs. This section is sufficient for most readers to assess the suitability of the tool for the intended use. Section 2 identifies the mobile devices used for testing. Section 3 lists testing environment, the internal memory data objects used to populate the mobile devices. Section 4 provides an overview of the test case results reported by the tool.</p>
+<p>March 2020 Page 2 of 12 FTK v7.2</p>
+<p>Test Results for Binary Image (JTAG, Chip-Off) Decoding and Analysis Tool</p>
+<p>Tool Tested: FTK Software Version: V7.2.0.4127 Supplier: Access Data Address: 588 West 400 South Suite 350 Lindon, UT 84042 Phone: (801) 377-5410 Website: accessdata.com 1 Results Summary Below is a comprehensive summary of how FTK v7.2.0.4127 performed when parsing and extracting supported data objects and elements from the JTAG and Chip-Off images of mobile devices. Except for the following anomalies, the tool was able to decode and report all supported data objects completely and accurately for all Chip-Off and JTAG binary images tested.</p>
+<p>Stand-alone Files:  Stand-alone files (i.e., audio, graphics, video, documents) were not reported. (Device: HTC One Mini_Chip-off)  Stand-alone files (i.e., audio, graphics, video) were not reported. (Device: HTC Desire S_Chip-off) Social media Data:  Facebook social media data was partially reported i.e., account related information. (Devices: Samsung S2_Chip-off, HTC One XL_Chip-off, HTC Desire S_Chip-off, HTC Desire S_JTAG, HTC One XL_JTAG).  Twitter social media data was partially reported i.e., account related information. (Devices: LG K7_Chip-off, ZTE 970_Chip-off, HTC Desire S_Chip-off)  LinkedIn social media data was partially reported i.e., account related information. (Device: LG K7_Chip-off)  SnapChat social media data was partially reported i.e., account related information. (Devices: LG K7_Chip-off, ZTE 970_Chip-off, Samsung S4_Chip- off, Samsung S4_JTAG)  WhatsApp social media data was partially reported i.e., account related information. (Device: ZTE 970_Chip-off)</p>
+<p>March 2020 Page 3 of 12 FTK v7.2</p>
+<p>Internet Related Data:  Bookmarks and history related data were not reported. (Device: LG K7_Chip-off)  Email data was not reported. (Device: LG K7_Chip-off)</p>
+<p>GPS Related Data:  GPS related data (i.e., longitude, latitude coordinates, routes, addresses, etc.) was not reported. (Device: HTC One Mini_Chip-off, HTC One Mini_JTAG) Notes:  The Chip-off and JTAG binary file analysis was performed by searching through individual files and databases contained within a partition. To view these files an association was created within FTK with a viewer capable of presenting a specific type of data artifact. Mobile data artifacts extracted from the Chip-off and JTAG binaries were not normalized i.e., categorized based upon data type (contacts, calendar, notes, call logs, SMS, MMS, etc.).  The Chip-off binary image for the HTC Desire 626 was not successfully read by FTK. For more test result details see section 4. 2 Mobile Device Binary Images The following table lists the mobile device binaries used for testing FTK v7.2. Make Model OS Version Data Extraction HTC Desire S Android 2.3 Gingerbread Chip-Off, JTAG HTC One Mini Android 4.2 Jelly Bean Chip-Off, JTAG HTC One XL Android 4.0 Ice Cream Sandwich Chip-Off, JTAG Samsung S4 Android 4.2 Jelly Bean Chip-Off, JTAG HTC Desire 626 Android 5.1 Lollipop Chip-Off LG K7 Android 5.1 Lollipop Chip-Off ZTE Z970 Android 4.4 KitKat Chip-Off Samsung S2 Android 2.3 Gingerbread Chip-Off Table 1: Mobile Device Binary Images</p>
+<p>3 Testing Environment The tests were run in the NIST CFTT lab. This section describes the selected test execution environment, and the data objects populated onto the internal memory of mobile devices.</p>
+<p>3.1 Execution Environment FTK v7.2 was installed on Windows 10 Pro version 10.0.14393.</p>
+<p>March 2020 Page 4 of 12 FTK v7.2</p>
+<p>3.2 Internal Memory Data Objects FTK v7.2 was tested for its ability to parse and extract supported data objects and elements from the JTAG and Chip-Off images of the test mobile devices. Table 2 below, defines the data objects and elements used for populating the mobile devices provided the mobile device supports the data element.</p>
+<p>March 2020 Page 5 of 12 FTK v7.2</p>
+<p>Data Objects Data Elements</p>
+<p>Address Book Entries Regular Length Maximum Length Special Character Blank Name Regular Length, email Regular Length, graphic Regular Length, Address Deleted Entry Non-Latin Entry Contact Groups</p>
+<p>Personal Information Manager (PIM) Data: Datebook/Calendar; Memos Regular Length Maximum Length Deleted Entry Special Character Blank Entry</p>
+<p>Call Logs Incoming Outgoing Missed Incoming – Deleted Outgoing – Deleted Missed - Deleted</p>
+<p>Text Messages Incoming Short Message Service (SMS) – Read Incoming SMS – Unread Outgoing SMS Incoming Enhanced Message Service (EMS) – Incoming EMS – Unread Outgoing EMS Incoming SMS – Deleted Outgoing SMS – Deleted Incoming EMS – Deleted Outgoing EMS – Deleted Non-Latin SMS/EMS</p>
+<p>Multimedia Messaging Service (MMS) Messages Incoming Audio Incoming Graphic Incoming Video Outgoing Audio Outgoing Graphic Outgoing Video</p>
+<p>Table 2: Internal Memory Data Objects</p>
+<p>March 2020 Page 6 of 12 FTK v7.2</p>
+<p>Data Objects Data Elements Application Data Device Specific App Data</p>
+<p>Stand-alone data files Audio Graphic Video Audio – Deleted Graphic - Deleted Video - Deleted</p>
+<p>Internet Data Visited Sites Bookmarks E-mail Location Data GPS Coordinates Geo-tagged Data</p>
+<p>Social Media Data Facebook Twitter LinkedIn Instagram Pinterest SnapChat WhatsApp Table 3: Internal Memory Data Objects (Continued)</p>
+<p>4 Test Results This section provides the test case results reported by the tool. Sections 4.1 – 4.2 identify the make and model of the mobile device used for creating the binary image and data extraction technique employed i.e., Chip-Off, JTAG. The Test Cases column in sections 4.1 and 4.2 are comprised of two sub-columns that define a particular test category and individual sub-categories that are verified when decoding and analyzing the associated binary image. The results are as follows: As Expected: The mobile forensic application returned expected test results – the tool parsed and extracted supported data objects from the JTAG, Chip-Off binary successfully. Partial: The mobile forensic application returned some of data from the JTAG, Chip-Off binary. Not As Expected: The mobile forensic application failed to return expected test results – the tool did not acquire or report supported data from the JTAG, Chip-Off binary successfully.</p>
+<p>NA: Not Applicable – The mobile forensic application is unable to perform the test or the tool does not provide support for the acquisition for a particular data element.</p>
+<p>March 2020 Page 7 of 12 FTK v7.2</p>
+<p>4.1 Chip-Off Data Extractions The internal memory contents for Chip-Off binary images were decoded and analyzed with FTK v7.2.</p>
+<p>All test cases pertaining to the acquisition of supported Android devices were successful with the exception of the following:  Stand-alone files (i.e., audio, graphics, video, documents) were not reported for the HTC One Mini.  Stand-alone files (i.e., audio, graphics, video) were not reported for the HTC Desire S.  Facebook social media data was partially reported i.e., account related information for the Samsung S2, HTC One XL and HTC Desire S.  Twitter social media data was partially reported i.e., account related information for the LG K7, ZTE 970 and HTC Desire S.  LinkedIn social media data was partially reported i.e., account related information for the LG K7.  Snapchat social media data was partially reported i.e., account related information for the LG K7, ZTE 970 and Samsung S4.  WhatsApp social media data was partially reported i.e., account related information for the ZTE 970.  Browser data (i.e., bookmarks, history) was not reported for the LG K7.  Email data was not reported for the LG K7.  GPS related data (e.g., waypoints, longitude, latitude, routes) were not reported for the HTC One Mini. Notes: -Devices defined in the table below with an ‘*’ e.g., HTC One XL*, both Chip-Off and JTAG data extractions were performed.</p>
+<p>-When performing the Chip-off data extraction, it appeared the HTC One Mini had suffered water damage, which may lead to differences in the data reported for the JTAG compared to Chip-off. - The Chip-off binary image for the HTC Desire 626 was not successfully read by FTK.  Deleted Contacts, Calendar, Memo/Note entries were recovered for the Samsung S2 and Samsung S4.  Deleted Contacs and Calendar entries were recovered for the LG K7, ZTE 970, HTC One XL and HTC Desire S.  Deleted Contacts and Memo/Note entries were recovered for the HTC One Mini.  Deleted Call logs were recovered for the LG K7, ZTE 970, Samsung S2, HTC One XL, Samsung S4, HTC One Mini and HTC Desire S.  Deleted SMS entries were recovered for the LG K7, ZTE 970, Samsung S2, HTC One XL, Samsung S4, HTC One Mini and HTC Desire S.</p>
+<p>March 2020 Page 8 of 12 FTK v7.2</p>
+<p> Deleted bookmark entries were recovered for the ZTE 970, Samsung S2, HTC One XL, Samsung S4, HTC One Mini and HTC Desire S.</p>
+<p>See Table 3 below for more details. FTK v7.2</p>
+<p>Mobile Device Binary Images: Chip-Off Test Cases – Chip-Off Binary Decoding and Analsysis</p>
+<p>LG K7</p>
+<p>ZTE 970</p>
+<p>Samsung S2 HTC One XL* Samsung S4* HTC One Mini* HTC Desire S*</p>
+<p>Equipment/ User Data International Mobile Equipment Identity (IMEI)</p>
+<p>As Expected</p>
+<p>As Expected</p>
+<p>As Expected</p>
+<p>As Expected</p>
+<p>As Expected</p>
+<p>As Expected</p>
+<p>As Expected Mobile Equipment Identity (MEID)/Elec tronic Serial Number (ESN)</p>
+<p>NA</p>
+<p>NA</p>
+<p>NA</p>
+<p>NA</p>
+<p>NA</p>
+<p>NA</p>
+<p>NA Mobile Subscriber International Directory Number (MSISDN)</p>
+<p>As Expected</p>
+<p>As Expected</p>
+<p>As Expected</p>
+<p>As Expected</p>
+<p>As Expected</p>
+<p>As Expected</p>
+<p>As Expected</p>
+<p>PIM Data Contacts As Expected As Expected As Expected As Expected As Expected As Expected As Expected Calendar As Expected As Expected As Expected As Expectec As Expected As Expected As Expected Memos/ Notes As Expected As Expected As Expected As Expected As Expected As Expected As Expected</p>
+<p>Call Logs Incoming As Expected As Expected As Expected As Expected As Expected As Expected As Expected Outgoing As Expected As Expected As Expected As Expected As Expected As Expected As Expected Missed As Expected As Expected As Expected As Expected As Expected As Expected As Expected</p>
+<p>SMS Messages Incoming As Expected As Expected As Expected As Expected As Expected As Expected As Expected Outgoing As Expected As Expected As Expected As Expected As Expected As Expected As Expected</p>
+<p>March 2020 Page 9 of 12 FTK v7.2</p>
+<p>Table 3: Chip-Off Data Extractions</p>
+<p>FTK v7.2</p>
+<p>MMS Messages Graphic As Expected As Expected As Expected As Expected As Expected As Expected As Expected Audio As Expected As Expected As Expected As Expected As Expected As Expected As Expected Video As Expected As Expected As Expected As Expected As Expected As Expected As Expected</p>
+<p>Stand-alone Files Graphic As Expected As Expected As Expected As Expected As Expected Not As Expected Not As Expected Audio As Expected As Expected As Expected As Expected As Expected Not As Expected Not As Expected Video As Expected As Expected As Expected As Expected As Expected Not As Expected Not As Expected Application Data Documents (txt, pdf files) As Expected As Expected As Expected As Expected As Expected Not As Expected As Expected</p>
+<p>Social Media Data Facebook As Expected As Expected Partial Partial As Expected As Expected Partial Twitter Partial Partial As Expected As Expected As Expected As Expected Partial LinkedIn Partial NA NA NA NA NA NA Instagram As Expected As Expected As Expected NA As Expected NA NA Pinterest As Expected As Expected NA NA As Expected NA NA SnapChat Partial Partial NA NA Partial NA NA WhatsApp As Expected Partial NA NA NA NA NA</p>
+<p>Internet Data Bookmarks Not As Expected As Expected As Expected As Expected As Expected As Expected As Expected History Not As Expected As Expected As Expected As Expected As Expected As Expected As Expected Email Not As Expected As Expected As Expected As Expected As Expected As Expected As Expected GPS Data Coordinates/ Geo-tagged As Expected As Expected As Expected As Expected As Expected Not As Expected As Expected Non-Latin Character Reported in native format As Expected As Expected As Expected As Expected As Expected As Expected As Expected</p>
+<p>Hashing Case File/ Individual Files As Expected As Expected As Expected As Expected As Expected As Expected As Expected Case File Data Protection Modify Case Data As Expected As Expected As Expected As Expected As Expected As Expected As Expected</p>
+<p>Table 3: Chip-Off Data Extractions (Continued)</p>
+<p>March 2020 Page 10 of 12 FTK v7.2</p>
+<p>4.2 JTAG Data Extractions The internal memory contents for JTAG binary images were decoded and analyzed with FTK v7.2.</p>
+<p>All test cases pertaining to the acquisition of supported Android devices were successful with the exception of the following.  Facebook social media data was partially reported (i.e., account information) for the HTC Desire S and HTC One XL.  Snapchat social media data was partially reported (i.e., account information) for the Samsung S4.  GPS related data (e.g., waypoints, longitude, latitude, routes) were not reported for the HTC One Mini. Notes: -Devices defined in the table below with an ‘*’ e.g., HTC One Mini*, both Chip-Off and JTAG data extractions were performed.  Deleted Contacts and Calendar entries were recovered for the HTC Desire S, HTC One XL, Samsung S4.  Deleted Memo/Note entries were recovered for the HTC One Mini and Samsung S4.  Deleted Call logs were recovered for the HTC Desire S and Samsung S4.  Deleted SMS entries were recovered for the HTC Desire S, HTC One Mini, HTC One XL and Samsung S4.  Deleted bookmark entries were recovered for the HTC Desire S, HTC One Mini, HTC One XL and Samsung S4. See Table 4 below for more details.</p>
+<p>March 2020 Page 11 of 12 FTK v7.2</p>
+<p>FTK v7.2</p>
+<p>Mobile Device Binary Images: JTAG Test Cases – JTAG Binary Decoding and Analsysis HTC Desire S* HTC One Mini* HTC One XL* Samsung S4*</p>
+<p>Equipment/ User Data IMEI As Expected As Expected As Expected As Expected MEID/ESN NA NA NA NA MSISDN As Expected As Expected As Expected As Expected</p>
+<p>PIM Data Contacts As Expected As Expected As Expected As Expected Calendar As Expected As Expected As Expectec As Expected Memos/ Notes As Expected As Expected As Expected As Expected</p>
+<p>Call Logs Incoming As Expected As Expected As Expected As Expected Outgoing As Expected As Expected As Expected As Expected Missed As Expected As Expected As Expected As Expected</p>
+<p>SMS Messages Incoming As Expected As Expected As Expected As Expected Outgoing As Expected As Expected As Expected As Expected</p>
+<p>MMS Messages Graphic As Expected As Expected As Expected As Expected Audio As Expected As Expected As Expected As Expected Video As Expected As Expected As Expected As Expected</p>
+<p>Stand-alone Files Graphic As Expected As Expected As Expected As Expected Audio As Expected As Expected As Expected As Expected Video As Expected As Expected As Expected As Expected</p>
+<p>Table 4: JTAG Data Extractions</p>
+<p>March 2020 Page 12 of 12 FTK v7.2</p>
+<p>FTK v7.2 Application Data Documents (txt, pdf files) As Expected As Expected As Expected As Expected</p>
+<p>Social Media Data Facebook Partial As Expected Partial As Expected Twitter As Expected As Expected As Expected As Expected LinkedIn NA NA NA NA Instagram NA NA NA As Expected Pinterest NA NA NA As Expected SnapChat NA NA NA Partial WhatsApp NA NA NA NA</p>
+<p>Internet Data Bookmarks As Expected As Expected As Expected As Expected History As Expected As Expected As Expected As Expected Email As Expected As Expected As Expected As Expected GPS Data Coordinates /Geo-tagged As Expected Not As Expected As Expected As Expected Non-Latin Character Reported in native format As Expected As Expected As Expected As Expected</p>
+<p>Hashing Case File/ Individual Files As Expected As Expected As Expected As Expected Case File Data Protection Modify Case Data As Expected As Expected As Expected As Expected</p>
+<p>Table 4: JTAG Data Extractions (Continued)</p>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+</div>
+</body>
+</html>

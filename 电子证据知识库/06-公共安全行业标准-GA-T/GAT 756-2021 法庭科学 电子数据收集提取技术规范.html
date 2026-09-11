@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GAT 756-2021 法庭科学 电子数据收集提取技术规范</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
+.wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
+header.doc-head{background:linear-gradient(135deg,#1e5eb8,#2f7fd4);color:#fff;border-radius:12px;padding:22px 26px;box-shadow:0 4px 16px rgba(30,94,184,.18)}
+header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4}
+.doc-meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;opacity:.95;margin-top:6px}
+.doc-meta span b{font-weight:600;opacity:.85}
+.doc-actions{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
+.doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
+.doc-actions a:hover{background:#eef4ff}
+.doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
+.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
+.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
+.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
+.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.content p{margin:0 0 12px;text-indent:2em}
+.content .no-indent{text-indent:0}
+.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
+.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
+.content h3{font-size:15.5px}
+.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
+.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
+.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="doc-head">
+<h1>GAT 756-2021 法庭科学 电子数据收集提取技术规范</h1>
+<div class="doc-meta"><span><b>文号：</b>GAT 756-2021</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2021-10-14</span></div>
+<div class="doc-actions"><a href="GAT 756-2021 法庭科学 电子数据收集提取技术规范.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://std.samr.gov.cn/hb/search/stdHBDetailed?id=D7B6523923CD95E2E05397BE0A0AF9B4" target="_blank" rel="noopener">🔗 官方来源</a></div>
+</header>
+<div class="banner pdf">📄 正文来源：本地 PDF 文本层提取（保持原文；排版可能与原件略有差异，以原 PDF 为准）</div>
+<div class="content">
+<p>ICS 35.220.20 CCS A 90 中华人民共和国公共安全行业标准 GA GA/T 756－×××× 代替 GA/T 756-2008 法庭科学 电子数据收集提取技术规范 Forensic sciences—Technical specifications for collection and acquisition of digital evidence</p>
+<p>中华人民共和国公安部 发 布 ×××× - ××- ×× 发布 ×××× - ××- ×× 实施</p>
+<p>GA/T 756—×××× I 前    言 本文件按照GB/T 1.1—2020《标准化工作导则 第1部分：标准化文件的结构和起草规则》的规 定起草。 本文件代替GA/T 756－2008《数字化设备证据数据发现提取固定方法》，与GA/T 756－2008相 比，除编辑性修改外，主要技术变化如下： ——更改了范围（见第1章，2008年版的第1章）； ——更改了规范性引用文件（见第2章，2008年版的第2章）； ——删除了“数字化设备”、“本地数字化设备”、“远程数字化设备”、“证据数据”、“证 据数据发现提取”、“固定证据数据”、“逐比特一致”、“含义一致”、“可再现数据”、 “不可再现数据”、“证据数据原始性”、“证据数据完整性”、“哈希值”、“原始电 子数据存储介质”、“检验用例”（ 见2008年版的3.1、3.1.1、3.1.2，3.2~3.13）； ——增加了“计算机信息系统”、“本地计算机信息系统”、“电子数据收集提取”、 “冻 结”（见3.1~3.4）； ——增加了记录检材情况内容（见4.1.1、4.1.2）； ——更改了“设计检验用例”，标题名称改为“收集提取方法”，并更改了部分内容（见4.2、 4.2.1~4.2.11，2008年版的4.2、4.2 a）~ c））； ——更改了“发现提取固定证据数据” ，标题名称改为“收集提取电子数据的步骤”，并更 改了部分内容（见4.3、4.3.1~4.3.9，2008年版的4.3、4.3 a）~ k））； ——更改了“检验记录”，标题名称改为“记录”，并更改了部分内容（见5、5.1~5.6，2008 年版的4.4、4.4.1~4.4.4）； ——增加了“收集提取结果表述”（见第6章）。 请注意本文件的某些内容可能涉及专利。本文件的发布机构不承担识别专利的责任。 本文件由全国刑事技术标准化技术委员会电子物证检验分技术委员会（SAC/TC179/SC7）提出 并归口。 本文件起草单位：公安部网络安全保卫局、大连市公安局、天津市公安刑事侦查局、司法鉴定 科学研究院、厦门市美亚柏科信息股份有限公司。 本文件主要起草人：许剑卓、刘晓宇、何星、翟晓飞、侯钧雷、刘浩阳、范玮、田钊、万江山、 吴倩、王艺筱、姚伟、姜有亮、朱国锋、郭弘、张辉极。 本文件所代替文件的历次版本发布情况为： ——GA/T 756－2008。</p>
+<p>GA/T 756—×××× 1 法庭科学 电子数据收集提取技术规范 1 范围 本文件规定了法庭科学领域中电子数据收集提取的术语和定义、通用要求、收集提取步骤、收 集提取记录、结果表述。 本文件适用于法庭科学领域中电子数据的收集提取。 2 规范性引用文件 下列文件中的内容通过文中的规范性引用而构成本文件必不可少的条款。其中，注日期的引用 文件，仅该日期对应的版本适用于本文件；不注日期的引用文件，其最新版本（包括所有的修改单） 适用于本文件。 GB/T 31167 信息安全技术 云计算服务安全指南 GA/T 754   电子数据存储介质复制工具要求及检测方法 GA/T 755   电子数据存储介质写保护设备要求及检测方法 GA/T 1069  法庭科学 电子物证手机检验技术规范 GA/T 1174  电子证据数据现场获取通用方法 GA/T 1476  法庭科学远程主机数据获取技术规范 GA/T 1478  法庭科学网站数据获取技术规范 GA/T 1568  法庭科学 电子物证检验术语 3 术语和定义 GB/T 31167和GA/T 1568界定的以及下列术语和定义适用于本文件。 3.1 计算机信息系统  computer information system 具备自动处理数据功能的系统，包括计算机、网络设备、通信设备、自动化控制设备及其包含 的软件系统等。 3.2 本地计算机信息系统  local computer information system 收集提取人员能物理接触、操作的计算机信息系统。 3.3 电子数据收集提取  collection and acquisition of digital evidence 对计算机信息系统中存储、处理、传输的电子数据进行搜索、分析、截获，并对收集提取的电 子数据进行完整性校验的过程。 3.4</p>
+<p>GA/T 756—×××× 2 冻结  freeze 将计算机信息系统中的数据在特定时间以特定状态进行固定，保证其不再改变的措施。 3.5 屏幕录像软件  screen capture software 用于截获计算机屏幕上显示的内容，并生成视频文件的软件。 4 电子数据收集提取通用要求 4.1 记录检材情况 4.1.1 对于本地计算机信息系统、原始存储介质等检材，应记录： a）如检材为封存状态，应对拆封过程进行录像； b）对检材进行唯一性编号； c）对检材逐一拍照，并记录其特征。 4.1.2 对于通过远程方式访问的计算机信息系统（适用时）,应查询并记录计算机信息系统的IP地 址、域名、登录用户名、密码等相关内容。 4.2 收集提取方法 4.2.1 对于开机状态下的计算机信息系统，应优先收集提取易失性数据，包括但不限于内存数据、 解密状态的数据和正在运行的程序数据，提取易失性数据后，在确保关机不会造成潜在证据丢失的 情况下，应将设备关机，按照步骤4.2.2再次收集提取。 4.2.2 对于具备复制条件的本地计算机信息系统、原始存储介质，应使用符合GA/T 754要求的复制 工具复制本地计算机信息系统、原始存储介质，并校验本地计算机信息系统、原始存储介质与复制 生成的克隆存储介质或镜像文件的一致性，将复制生成的克隆存储介质或镜像文件作为收集提取对 象。 4.2.3 对于具备写保护条件的本地计算机信息系统、原始存储介质，应使用符合GA/T 755要求的写 保护设备，将本地计算机信息系统、原始存储介质通过写保护设备接入到收集提取设备上。 4.2.4  对于不启动计算机信息系统能收集提取的电子数据，宜优先选择在不启动计算机信息系统 的条件下收集提取电子数据。 4.2.5 对于不具备写保护条件的手机等智能终端，宜按照GA/T 1069规定进行收集提取电子数据。 4.2.6 对于计算机内存数据、网络传输数据等易失性数据，宜按照GA/T 1174规定进行收集提取电 子数据。 4.2.7 对于以下情形可采取打印、拍照或者录像等方式固定相关电子数据： a）无法扣押计算机信息系统并且无法收集提取电子数据的； b）无法扣押原始存储介质并且无法收集提取电子数据的； c）存在电子数据自毁功能或装置，需要及时固定相关证据的； d）需现场展示、查看相关电子数据的。 注：根据采取打印、拍照或者录像等方式固定相关证据后，能够扣押计算机信息系统、原始存储介质的，扣押 计算机信息系统、原始存储介质；不能扣押计算机信息系统、原始存储介质但能够收集提取电子数据的， 收集提取电子数据。 4.2.8 对于远程访问的方式收集提取远程主机数据，宜按照GA/T 1476规定进行收集提取电子数据。 4.2.9 对于网站数据的收集提取，宜按照GA/T 1478规定进行收集提取电子数据。 4.2.10 对于云计算平台的数据，根据不同的云计算环境，选择对应的方式进行数据收集提取。 4.2.11 对于以下情形可以对电子数据进行冻结：</p>
+<p>GA/T 756—×××× 3 a）数据量大，无法或者不便收集提取的； b）收集提取时间长，可能造成电子数据被篡改或者灭失的； c）通过网络应用可以更为直观地展示电子数据的； d）其他需要冻结的情形。 4.3 收集提取电子数据的步骤 4.3.1 根据不同的收集提取方法，准备所需软、硬件环境条件、数字照相机、数字摄像机。如收集 提取设备为计算机的，应安装屏幕录像软件，并使用杀毒软件查杀病毒程序。 4.3.2 对于以下情形，应启动数字摄像机或屏幕录像软件，记录计算机信息系统屏幕上显示的内容： a）不具备复制、不具备写保护条件的本地计算机信息系统、原始存储介质； b）收集提取过程中需启动计算机信息系统的操作系统且不具备复制、不具备写保护条件的； c）采用远程访问方式收集提取电子数据时，对可能无法重复收集提取或者可能会出现变化的 电子数据。 4.3.3 根据4.2规定的方法步骤进行电子数据的收集提取。 4.3.4 对于能复制导出成为数据文件的电子数据，将数据文件复制导出，并计算其完整性校验值。 4.3.5 对于在计算机信息系统屏幕上显示的，无法截获转换成数据文件的信息，使用数字照相机或 数字摄像机拍摄屏幕显示内容，将拍摄获得的图像文件或视频文件导出，并计算其完整性校验值。 4.3.6 对于具备封存条件的本地计算机信息系统、原始存储介质，应在数据收集提取结束后，重新 封存。 4.3.7 对于需要启动数字摄像机或屏幕录像软件的，应录像记录导出文件的文件名和完整性校验 值。 4.3.8 对于启动屏幕录像软件的，应在停止屏幕录像软件后，导出生成的录像文件并计算其完整性 校验值。 4.3.9 对于使用数字摄像机录像的，应在停止录像后，将录像文件的存储介质封存并编号，或将录 像结果导出成录像视频文件并计算其完整性校验值。 5 记录 5.1 对于本地计算机信息系统、存储介质等检材，宜记录以下内容： a）检材类别； b）检材型号； c）检材出厂时唯一性编号； d）检材的照片。 5.2 对于通过远程方式访问的计算机信息系统，宜记录以下内容（适用时）： a）计算机信息系统IP地址； b）域名； c）登录用户名、密码。 5.3 对于电子数据的收集提取过程，宜记录以下内容： a）收集提取目的； b）设备和软件； c）电子数据发现收集提取操作步骤； d）环境条件；</p>
+<p>GA/T 756—×××× 4 e）导出的电子数据文件的存储位置、文件名、文件格式、文件完整性校验值； f）收集提取时间； g）人员。 5.4 对于电子数据的冻结，宜记录以下内容： a）冻结目的； b）冻结账号； c）冻结时间； d）人员。 5.5 对于导出的录像文件，宜记录以下内容： a）文件名； b）开始时间； c）结束时间； d）完整性校验值； e）人员。 5.6 对于录像文件的存储介质，宜记录以下内容（适用时）： a）存储介质编号； b）录像开始时间； c）录像结束时间； d）人员。 6 收集提取结果表述 收集提取结果表述应符合以下规定： a）结果分为提出、未提出、不具备收集提取条件3种； b）收集提取结果根据收集提取要求对收集提取对象、收集提取范围、收集提取所得进行客观、 概括、有针对性的描述； c）结果表述包含检材编号、收集提取情况、提出数据文件或保存提出数据介质的完整性校验 值、保存提出数据介质编号等必要信息。</p>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+</div>
+</body>
+</html>
