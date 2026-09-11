@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>GAT 1172-2014 电子邮件检验技术方法</title>
+<title>电子邮件检验技术方法</title>
 <style>
 :root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
 *{box-sizing:border-box}
@@ -36,12 +36,89 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 <body>
 <div class="wrap">
 <header class="doc-head">
-<h1>GAT 1172-2014 电子邮件检验技术方法</h1>
-<div class="doc-meta"><span><b>文号：</b>GAT 1172-2014</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2014-07-09</span></div>
-<div class="doc-actions"><a href="GAT 1172-2014 电子邮件检验技术方法.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://www.mps.gov.cn/n6557558/c4911584/content.html" target="_blank" rel="noopener">🔗 官方来源</a></div>
+<h1>电子邮件检验技术方法</h1>
+<div class="doc-meta"><span><b>文号：</b>GA/T 1172—2014</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2014-07-09</span></div>
+<div class="doc-actions"><a href="GAT 1172-2014 电子邮件检验技术方法.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://shtamp2018.ru/sites/default/files/2020-10/GAT%201172-2014.pdf" target="_blank" rel="noopener">🔗 来源</a></div>
 </header>
-<div class="banner scanned">⚠️ 该 PDF 为扫描件/无文本层，网上未检索到公开全文。请点击下方「下载原PDF」查看扫描原件。</div>
-<div class="content"><p class="no-indent" style="color:#a93226">该文档为扫描件或无文本层，暂无法提供可检索正文。请点击上方「下载原 PDF」查看原件。</p></div>
+<div class="banner web">📄 正文来源：网络公开PDF全文（https://shtamp2018.ru/）</div>
+<div class="content">
+<h2>前言</h2>
+<p>本标准按照GB/T 1.1-2009给出的规则起草。</p>
+<p>本标准由公安部第三研究所提出。</p>
+<p>本标准由公安部信息系统安全标准化技术委员会归口。</p>
+<p>本标准起草单位:公安部第三研究所、黑龙江省公安厅刑事技术总队。</p>
+<p>本标准主要起草人:张颖、王洪庆、郭弘、金波、黄道丽、徐克鑫。</p>
+<h2>1 范围</h2>
+<p>本标准规定了对电子邮件进行检验的技术方法。</p>
+<p>本标准适用于在电子数据检验鉴定工作中,对电子邮件的真实性进行检验。</p>
+<h2>2 规范性引用文件</h2>
+<p>下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件,仅注日期的版本适用于本文件。凡是不注日期的引用文件, 其最新版本(包括所有的修改单)适用于本文件。</p>
+<p class="no-indent">GA/T 756-2008 数字化设备证据数据发现提取固定方法</p>
+<p class="no-indent">RFC 821 Simple Mail Transfer Protocol</p>
+<p class="no-indent">RFC 1939 Post Office Protocol-Version 3</p>
+<p class="no-indent">RFC 3501 Internet Massage Access Protocl-Version 4rev1</p>
+<p class="no-indent">RFC 4409 Message Submission for Mail</p>
+<h2>3 术语和定义</h2>
+<p>GA/T 756-2008、RFC 821、RFC 1939、RFC 3501 和 RFC 4409界定的以及下列术语和定义适用于本文件。</p>
+<h3>3.1 电子邮件 electronic mail(E-mail)</h3>
+<p>通过数据通讯网络进行传输的信件。</p>
+<h3>3.2 邮件应用程序接口 messaging application programming interface(MAPI)</h3>
+<p>微软公司提供的用于创建邮件撰写和工作组应用程序的开放和全面的邮件撰写接口。</p>
+<h3>3.3 电子邮件客户端 electronic mail client(E-mail Client)</h3>
+<p>使用 POP3、SMTP 等协议收发电子邮件的软件。</p>
+<h3>3.4 邮件信息号 message-ID</h3>
+<p>邮件系统创建邮件时的唯一标志,是发件方邮件服务器赋给这封邮件的编号,由唯一编号、@符号和域名组成。</p>
+<h3>3.5 邮件头 electronic mail header(E-mail header)</h3>
+<p>电子邮件消息中正文前面的部分,由字段名及值组成,能够描述出邮件在网络中的传输情况,同时表明消息的接收者、发送者、发送时间和时区、邮件主题、邮件信息号、邮件传送代理等信息。</p>
+<h2>4 检验步骤</h2>
+<h3>4.1 检材编号</h3>
+<p>当送检检材为数字化设备时,对其进行唯一性编号。</p>
+<h3>4.2 检材拍照</h3>
+<p>当送检检材为数字化设备时,对其进行拍照。</p>
+<h3>4.3 检材的获取和保全备份</h3>
+<h3>4.3.1 检材为数字化设备</h3>
+<p>检材为数字化设备时,对具备保全条件的检材进行保全备份,参见GA/T 756-2008。</p>
+<h3>4.3.2 检材为独立于数字化设备的文件</h3>
+<p>分析检材,根据检材的内容选择以下的一项或多项进行检验:</p>
+<p class="no-indent">a) 检材为电子邮件时,将电子邮件导出到检验环境中;</p>
+<p class="no-indent">b) 检材为电子邮箱地址时,在检验环境中连接到互联网(或局域网络)后,通过电子邮件客户端或者网页登录电子信箱, 查找与检验要求有关的电子邮件,并下载有关电子邮件到检验环境中, 参见 GA/T 756-2008。如果通过电子邮件客户端收取电子邮件,应确认电子邮件客户端被设置为在服务器上保留邮件的副本;</p>
+<p class="no-indent">c) 检材为第三方邮件服务器日志时,将服务器日志导出到检验环境中。</p>
+<h3>4.4 分析电子邮件的真伪</h3>
+<h3>4.4.1 直接判定邮件真实性</h3>
+<p>检验电子邮件的发送是否使用数字签名,对于使用数字签名的电子邮件可以直接判断其真实性。</p>
+<h3>4.4.2 电子邮件服务器的邮件相关信息分析</h3>
+<p>根据从邮件服务器日志、服务器备份数据等处查找到的邮件相关信息,判断电子邮件是否经过删除、修改。</p>
+<h3>4.4.3 接收电子邮件的协议分析</h3>
+<p>对接受电子邮件的协议进行分析,判断电子邮件的真实性。</p>
+<p class="no-indent">a) 检验电子邮件是否使用 IMAP 接收协议,该协议使得客户端能够与服务器端实现同步,因此使用了该协议的电子邮件需结合检材中使用的客户端软件版本、邮件头信息以及其他相关信息来判断其真实性;</p>
+<p class="no-indent">b) 检验电子邮件是否使用 POP3 接收协议,使用了该协议的电子邮件应通过分析电子邮件的邮件头信息以及其他相关信息来判断其真实性;</p>
+<p class="no-indent">c) 检验电子邮件是否使用 MAPI 接收协议,使用了该协议的电子邮件应通过分析电子邮件的邮件头信息以及其他相关信息来判断其真实性。</p>
+<h3>4.4.4 电子邮件头分析</h3>
+<p>查看电子邮件的邮件头, 通过分析邮件头中电子邮件的发送时间、接收时间、邮件传送代理(MTA)、邮件用户代理(MUA)、服务器IP 地址以及邮件信息号(Message-ID)等信息来判断邮件的真伪。</p>
+<h3>4.4.5 电子邮件之间的关系分析</h3>
+<p>对接受电子邮件之间的关系进行整理分析,判断电子邮件的真实性。</p>
+<p class="no-indent">a) 由于电子邮件不是孤立的,需要鉴定的电子邮件往往和其他电子邮件的内容有所关联,因此需要结合这些相关联的电子邮件,依照发送与接收的时间顺序,对需鉴定的电子邮件进行梳理, 并结合邮件头信息检验电子邮件的真实性;</p>
+<p class="no-indent">b) 对于发送方将电子邮件转发给第三方的情况,可根据第三方所接收到的电子邮件来判断其真实性。</p>
+<h3>4.5 检验记录</h3>
+<h3>4.5.1</h3>
+<p>对于检材为数字化设备的,应记录检材的:</p>
+<p class="no-indent">a) 类别;</p>
+<p class="no-indent">b) 型号;</p>
+<p class="no-indent">c) 出厂时唯一性编号(如果适用);</p>
+<p class="no-indent">d) 照片。</p>
+<h3>4.5.2</h3>
+<p>对于检材为独立于数字化设备的文件时,应记录文件的:</p>
+<p class="no-indent">a) 名称;</p>
+<p class="no-indent">b) 哈希值。</p>
+<h3>4.5.3</h3>
+<p>应对检验分析的过程进行记录。</p>
+<h2>5 检验结论和意见</h2>
+<p>邮件的真实性检验结论是以下四种结论之一:</p>
+<p class="no-indent">a) 发现修改/伪造;</p>
+<p class="no-indent">b) 没有发现修改/伪造;</p>
+<p class="no-indent">c) 没有修改/伪造;</p>
+<p class="no-indent">d) 不能判定。</p>
+</div>
 <div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
 </div>
 </body>

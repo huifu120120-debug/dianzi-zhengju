@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>GAT 977-2012 取证与鉴定文书电子签名</title>
+<title>取证与鉴定文书电子签名</title>
 <style>
 :root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
 *{box-sizing:border-box}
@@ -36,12 +36,73 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 <body>
 <div class="wrap">
 <header class="doc-head">
-<h1>GAT 977-2012 取证与鉴定文书电子签名</h1>
-<div class="doc-meta"><span><b>文号：</b>GAT 977-2012</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2012-01-31</span></div>
-<div class="doc-actions"><a href="GAT 977-2012 取证与鉴定文书电子签名.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://www.mps.gov.cn/n6557558/c3619294/content.html" target="_blank" rel="noopener">🔗 官方来源</a></div>
+<h1>取证与鉴定文书电子签名</h1>
+<div class="doc-meta"><span><b>文号：</b>GA/T 977—2012</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2012-02-01</span></div>
+<div class="doc-actions"><a href="GAT 977-2012 取证与鉴定文书电子签名.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://img.antpedia.com/standard/files/pdfs_ora/CN-GA/d8c/GA_T%20977-2012_0000.pdf" target="_blank" rel="noopener">🔗 来源</a></div>
 </header>
-<div class="banner scanned">⚠️ 该 PDF 为扫描件/无文本层，网上未检索到公开全文。请点击下方「下载原PDF」查看扫描原件。</div>
-<div class="content"><p class="no-indent" style="color:#a93226">该文档为扫描件或无文本层，暂无法提供可检索正文。请点击上方「下载原 PDF」查看原件。</p></div>
+<div class="banner pdf">📄 正文来源：分析测试百科网PDF全文，以下为节选内容，全文请下载原PDF</div>
+<div class="content">
+<h2>前言</h2>
+<p>本标准按照 GB/T 1.1—2009 给出的规则起草。</p>
+<p>本标准由公安部网络安全保卫局提出。</p>
+<p>本标准由公安部信息系统安全标准化技术委员会归口。</p>
+<p>本标准起草单位:公安部网络安全保卫局,公安部第三研究所。</p>
+<p>本标准主要起草人：许剑卓、卢涛、王婷、李勋、金波、徐隽。</p>
+<h2>4 技术要求（节选）</h2>
+<h3>4.3 数字证书格式</h3>
+<p>取证与鉴定电子文书电子签名的认证证书应符合 ITU-T X.509 的规定。</p>
+<h3>4.4 电子签名过程</h3>
+<p>签名方在生成取证与鉴定电子文书后，应对电子文书的签名按图1表示的过程执行：</p>
+<p class="no-indent">a）将电子文书全文作为输入参数，用散列算法做电子文书摘要；</p>
+<p class="no-indent">b）对电子文书摘要使用数字证书持有者的签名私钥做非对称加密，生成电子签名内容；</p>
+<p class="no-indent">c）将取证与鉴定电子文书原文、生成的电子签名以及签名证书进行封装，形成签名结果。</p>
+<h3>4.5 电子签名验证过程</h3>
+<p>取证与鉴定电子文书电子签名的结果，即待验证数据，包括电子签名内容、电子文书原文和签名方公钥。</p>
+<p>取证与鉴定电子文书签名验证按照图2表示的过程执行：</p>
+<p class="no-indent">a）验证方首先将电子文书原文用散列算法得到电子文书摘要；</p>
+<p class="no-indent">b）对电子签名结果中的电子签名内容，用签名方数字证书解密签名内容，得到根据签名内容导出的电子文书摘要；</p>
+<p class="no-indent">c）将两个摘要进行验证比较，相同则电子文书原文有效，否则无效。</p>
+<h3>4.6 电子签名格式</h3>
+<p>取证与鉴定文书电子签名存取格式应按照 RFC 3075 和 RFC 3280 的要求进行存放，文字编码全部采用 UTF-8 格式。格式如下：</p>
+<pre>[L01] &lt;Signature Id="xmlns=""&gt;
+[L02] &lt;SignedInfo&gt;
+[L03] &lt;CanonicalizationMethod Algorithm="" /&gt;
+[L04] &lt;SignatureMethod Algorithm="" /&gt;
+[L05] &lt;Reference URI="" /&gt;
+[L06] &lt;Transforms&gt;
+[L07] &lt;Transform Algorithm="" /&gt;
+[L08] &lt;/Transforms&gt;
+[L09] &lt;DigestMethod Algorithm="" /&gt;
+[L10] &lt;DigestValue&gt;&lt;/DigestValue&gt;
+[L11] &lt;/Reference&gt;
+[L12] &lt;/SignedInfo&gt;
+[L13] &lt;SignatureValue /&gt;
+[L14] &lt;CertInfo /&gt;
+[L15] &lt;/Signature&gt;</pre>
+<p>其中，各个 xml 标签定义如下：</p>
+<p>Signature 标签标明一个完整的 xml 签名，标识为电子文书编号，xml 的命名空间应唯一。</p>
+<p>SignedInfo 标签标明待签名的信息。</p>
+<p>CanonicalizationMethod 标签中的 Algorithm 属性指定 SignatureInfo 内容在签名前的规范化算法。</p>
+<p>SignatureMethod 标签中的 Algorithm 属性指定签名过程中使用的散列算法和签名算法。</p>
+<p>Reference 标签包括摘要算法和摘要值等。</p>
+<p>Transforms 标签包括签名前的转换算法。</p>
+<p>DigestMethod 标签标明摘要算法。</p>
+<p>DigestValue 标签标明摘要值。</p>
+<p>SignatureValue 标签标明签名结果。</p>
+<p>CertInfo 标签标明签名中使用的证书信息。</p>
+<h3>4.7 电子签名管理系统</h3>
+<h3>4.7.1 总则</h3>
+<p>取证与鉴定文书电子签名管理系统应具有系统管理和签名显示的功能。</p>
+<h3>4.7.2 系统管理</h3>
+<p>系统建立、修改、维保或传送取证与鉴定电子文书应使用能够保证记录真实性、完整性和适当的机密性的程序和控制，以保证签名者不能轻易地否认已经签署的记录是不真实的。这样的程序和控制应包括如下过程：</p>
+<p class="no-indent">a）系统应验证以保证准确、可靠、稳定地预期性能，有能力识别无效的和被改变的记录；</p>
+<p class="no-indent">b）确保产生的人们易读的和适合检查、回顾和拷贝的电子文档准确、完整。</p>
+<h3>4.7.3 签名的显示</h3>
+<p>签署的取证与鉴定电子文书应包含能清晰显示如下所有与签名相关的信息：</p>
+<p class="no-indent">a) 用印刷体书写出签名者的名字；</p>
+<p class="no-indent">b) 签名生效的日期和时间；</p>
+<p class="no-indent">c) 和签名相关的涵意(例如"同意")。</p>
+</div>
 <div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
 </div>
 </body>
