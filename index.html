@@ -118,14 +118,14 @@ footer code{background:#f0f3f8;padding:1px 6px;border-radius:5px}
 </div>
 
 <div class='toolbar'>
-<div class='q-wrap'><input type='text' id='q' placeholder='全文检索：可搜索名称/编号/备注，也可搜索条文正文内容（如 "电子数据" "鉴定人" "取证" "区块链"…）'><button class='q-clear' id='qClear' onclick='clearQ()' title='清空检索'>✕</button></div>
+<div class='q-wrap'><input type='text' id='q' placeholder='多关键字联合搜索：输入一个或多个关键词，空格分隔（如 "电子数据 提取"、"手机 取证 鉴定"），需同时命中；可搜名称/编号/备注及条文正文'><button class='q-clear' id='qClear' onclick='clearQ()' title='清空检索'>✕</button></div>
 <select id='fLevel'><option value=''>全部层级</option></select>
 <select id='fDomain'><option value=''>全部专业领域</option></select>
 <span id='chips'></span>
 </div>
 
 <div class='legend'>
-<b>查询与更新说明：</b>① 搜索框<u>全文检索</u>——名称/编号/备注 + <b>条文正文全文</b>（已收录原文全文，命中条目在名称下显示高亮片段；扫描件等无文本层文件仅可按名称检索）；层级、领域、状态、归档可组合筛选；② <b>点击条目名称或「正文」链接即可直接打开可检索 HTML 正文</b>（HTML 页内含「下载原PDF」按钮；用浏览器返回键退回总览），并附官方「来源」链接；③ 条目标签：<span class='tag arc'>档</span>=知识库已有原文，其余为待获取；④ <b>更新机制</b>：修改数据源 <code>kb_data.json</code>（字段 code/name/level/domain/status/date/source/note/file/html），
+<b>查询与更新说明：</b>① 搜索框支持<b>多关键字联合搜索</b>——输入一个或多个关键词（空格分隔，需<b>同时命中</b>），可搜名称/编号/备注 + <b>条文正文全文</b>（已收录 397 份可检索正文，命中条目在名称下显示高亮片段；扫描件等无文本层文件仅可按名称检索）；层级、领域、状态、归档可组合筛选；② <b>点击条目名称或「正文」链接即可直接打开可检索 HTML 正文</b>（HTML 页内含「下载原PDF」按钮；用浏览器返回键退回总览），并附官方「来源」链接；③ 条目标签：<span class='tag arc'>档</span>=知识库已有原文，其余为待获取；④ <b>更新机制</b>：修改数据源 <code>kb_data.json</code>（字段 code/name/level/domain/status/date/source/note/file/html），
 再运行 <code>python _gen_system.py</code> 即可重新生成本页；⑤ 原文文件按效力层级归整于 <code>电子证据知识库/</code> 目录。
 </div>
 
@@ -213,24 +213,36 @@ function pill(st) {
 
 function escRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 
-function ftHit(it, q) {
-  // 全文命中检测：返回命中信息或 null
-  const txt = (typeof FT_DATA !== 'undefined') && FT_DATA[it.f];
-  if(!txt || !q) return null;
-  let cnt = 0, pos = -1;
-  while((pos = txt.indexOf(q, pos + 1)) >= 0) cnt++;
-  if(!cnt) return null;
-  const i0 = txt.indexOf(q);
-  const s = Math.max(0, i0 - 90), e = Math.min(txt.length, i0 + q.length + 120);
-  let frag = (s > 0 ? '…' : '') + txt.slice(s, e) + (e < txt.length ? '…' : '');
-  const re = new RegExp('(' + escRe(q) + ')', 'g');
-  frag = frag.replace(re, '<mark>$1</mark>');
-  return {cnt: cnt, frag: frag};
+function splitWords(q) { return q.trim().toLowerCase().split(/\s+/).filter(Boolean); }
+
+function hilite(s, words) {
+  let h = esc(s);
+  if(words.length) h = h.replace(new RegExp('(' + words.map(escRe).join('|') + ')', 'gi'), '<mark>$1</mark>');
+  return h;
 }
 
-function match(it) {
-  const q = state.q.toLowerCase();
-  if(q) { const hay = (it.c+' '+it.n+' '+it.nt+' '+it.st).toLowerCase(); if(!hay.includes(q)) return false; }
+function ftHit(it, words) {
+  // 多关键字全文命中检测：所有关键字都须出现在正文中；返回命中信息或 null
+  const txt = (typeof FT_DATA !== 'undefined') && FT_DATA[it.f];
+  if(!txt || !words.length) return null;
+  const low = txt.toLowerCase();
+  let total = 0; const pos = [];
+  for(const w of words) {
+    let p = low.indexOf(w);
+    if(p < 0) return null;
+    while(p >= 0) { pos.push(p); p = low.indexOf(w, p + 1); total++; }
+  }
+  const i0 = Math.min.apply(null, pos);
+  const i1 = Math.max.apply(null, pos.map(p => p + 30));
+  const s = Math.max(0, i0 - 90), e = Math.min(txt.length, i1 + 90);
+  let frag = (s > 0 ? '…' : '') + txt.slice(s, e) + (e < txt.length ? '…' : '');
+  const re = new RegExp('(' + words.map(escRe).join('|') + ')', 'gi');
+  frag = frag.replace(re, '<mark>$1</mark>');
+  return {cnt: total, frag: frag};
+}
+
+function match(it, words) {
+  if(words.length) { const hay = (it.c+' '+it.n+' '+it.nt+' '+it.st).toLowerCase(); if(!words.every(w => hay.includes(w))) return false; }
   if(state.lv && it.lv !== state.lv) return false;
   if(state.dm && it.dm !== state.dm) return false;
   if(state.st) {
@@ -246,9 +258,10 @@ function match(it) {
 
 function render() {
   const q = state.q.trim();
+  const words = splitWords(q);
   const ftHits = new Map();
-  if(q) { DATA.forEach(it => { const h = ftHit(it, q); if(h) ftHits.set(it, h); }); }
-  const filtered = DATA.filter(it => match(it) || ftHits.has(it));
+  if(words.length) { DATA.forEach(it => { const h = ftHit(it, words); if(h) ftHits.set(it, h); }); }
+  const filtered = DATA.filter(it => match(it, words) || ftHits.has(it));
   const root = document.getElementById('result');
   const groups = {};
   filtered.forEach(it => { (groups[it.lv] = groups[it.lv]||[]).push(it); });
@@ -270,21 +283,21 @@ function render() {
       let nameHtml, links = [];
       if(hasHtml) {
         // 有可检索 HTML 正文：点击名称打开 HTML 正文页（含下载原PDF按钮）
-        nameHtml = "<a href='" + esc(it.h) + "' target='_blank' title='打开可检索 HTML 正文'>" + esc(it.n) + "</a>";
+        nameHtml = "<a href='" + esc(it.h) + "' target='_blank' title='打开可检索 HTML 正文'>" + hilite(it.n, words) + "</a>";
         links.push("<a href='" + esc(it.h) + "' target='_blank' title='打开 HTML 正文'>正文</a>");
         if(it.f) links.push("<a href='" + esc(it.f) + "' target='_blank' title='下载 / 查看原 PDF'>原PDF</a>");
       } else if(isPdf) {
-        nameHtml = "<a href='" + esc(it.f) + "' target='_blank' title='直接打开 PDF 查看'>" + esc(it.n) + "</a>";
+        nameHtml = "<a href='" + esc(it.f) + "' target='_blank' title='直接打开 PDF 查看'>" + hilite(it.n, words) + "</a>";
         links.push("<a href='" + esc(it.f) + "' target='_blank' title='直接打开 PDF'>原文</a>");
       } else {
-        nameHtml = "<a href='#' data-pv='" + gidx + "' title='点击查看内容'>" + esc(it.n) + "</a>";
+        nameHtml = "<a href='#' data-pv='" + gidx + "' title='点击查看内容'>" + hilite(it.n, words) + "</a>";
         if(it.f) links.push("<a href='#' data-pv='" + gidx + "' title='点击查看内容'>原文</a>");
       }
       if(it.src) links.push("<a href='" + esc(it.src) + "' target='_blank' rel='noopener'>来源</a>");
-      const note = (links.length? links.join(" · ") : "") + (it.nt? (links.length? " · " : "") + esc(it.nt) : '');
+      const note = (links.length? links.join(" · ") : "") + (it.nt? (links.length? " · " : "") + hilite(it.nt, words) : '');
       const fh = ftHits.get(it);
       const ftRow = fh ? "<div class='ft' title='点击条目查看正文'>全文命中 " + fh.cnt + " 处：" + fh.frag + "</div>" : "";
-      html += "<tr><td class='code'>" + esc(it.c) + "</td><td>" + nameHtml + ftRow + "</td><td>" + esc(it.dm) + "</td><td>" + pill(it.st) + "</td><td>" + esc(it.dt) + "</td><td>" + tags + "</td><td class='note'>" + note + "</td></tr>";
+      html += "<tr><td class='code'>" + hilite(it.c, words) + "</td><td>" + nameHtml + ftRow + "</td><td>" + esc(it.dm) + "</td><td>" + pill(it.st) + "</td><td>" + esc(it.dt) + "</td><td>" + tags + "</td><td class='note'>" + note + "</td></tr>";
     });
     html += "</tbody></table></div></div>";
   });
