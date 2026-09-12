@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GAT 918-2010 图像真实性鉴别技术规范 图像CFA插值检测</title>
 <style>
-:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--warn:#b8860b;--ocr:#a93226}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
 .wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
@@ -17,19 +17,17 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 .doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
 .doc-actions a:hover{background:#eef4ff}
 .doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
-.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
-.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
-.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
-.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
-.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.content p{margin:0 0 12px;text-indent:2em}
-.content .no-indent{text-indent:0}
-.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
-.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
-.content h3{font-size:15.5px}
-.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
-.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
-.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.ocr-banner{margin:14px 0;padding:12px 18px;border-radius:8px;font-size:13.5px;line-height:1.7;background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.ocr-banner b{font-weight:700}
+.page-block{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:18px 0;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.page-header{background:#f0f3f7;padding:8px 16px;font-size:13px;color:var(--ink2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.page-header .pageno{font-weight:700;color:var(--brand)}
+.page-img{text-align:center;padding:12px;background:#fafbfc}
+.page-img img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page-ocr{padding:16px 20px;border-top:1px dashed var(--line);background:#fffdf8}
+.page-ocr .ocr-label{font-size:12px;color:var(--ocr);font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+.page-ocr .ocr-text{font-size:14px;line-height:1.9;color:#333;white-space:pre-wrap;word-break:break-word}
+.page-ocr .ocr-empty{color:#999;font-style:italic;font-size:13px}
 .footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
 </style>
 </head>
@@ -40,14 +38,130 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 <div class="doc-meta"><span><b>文号：</b>GAT 918-2010</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2010-12-02</span></div>
 <div class="doc-actions"><a href="GAT 918-2010 图像真实性鉴别技术规范 图像CFA插值检测.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://std.samr.gov.cn/search/std?q=GA/T%20918-2010" target="_blank" rel="noopener">🔗 官方来源</a></div>
 </header>
-<div class="banner pdf">📄 正文来源：本地 PDF 文本层提取（保持原文；排版可能与原件略有差异，以原 PDF 为准）</div>
-<div class="content">
-<p>标准分享网 www.bzfxw.com 免费下载</p>
-<p>www.bzfxw.com</p>
-<p>www.bzfxw.com 标准分享网 www.bzfxw.com 免费下载</p>
-<p>www.bzfxw.com</p>
+<div class="ocr-banner">
+<b>⚠️ OCR 识别版</b>：本文档由原 PDF 逐页扫描识别生成，每页上方为原图，下方为 OCR 识别文字。<br>
+OCR 可能存在少量识别误差（尤其是表格、公式、生僻字），<b>请以原图 / 原 PDF 为准</b>。全文检索已收录 OCR 文字。
 </div>
-<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 1 页 / 共 5 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GAT 918-2010 图像真实性鉴别技术规范 图像CFA插值检测_pages/page_001.jpg" alt="第1页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">ICS13.310
+A 92
+GA
+中华人民共和国公共安全行业标准
+GA/T918—2010
+图像真实性鉴别技术规范
+图像CFA插值检测
+Technical specification of digital image authenticity identification-
+Image CFA interpolation detection
+2010-12-02发布
+2010-12-02实施
+中华人民共和国公安部
+发布</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 2 页 / 共 5 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GAT 918-2010 图像真实性鉴别技术规范 图像CFA插值检测_pages/page_002.jpg" alt="第2页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T918—2010
+前言
+本标准按照GB/T1.1一2009给出的规则起草。
+请注意本文件的某些内容可能涉及专利。本文件的发布机构不承担识别这些专利的责任。
+本标准由全国刑事技术标准化技术委员会照相检验分技术委员会（SAC/TC179/SC5）提出并
+归口。
+本标准起草单位：公安部物证鉴定中心、中国科学院自动化研究所。
+本标准主要起草人：许小京、黎智辉、李志刚、彭思龙。
+标准分享网wwwbzfxwcom免费下载</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 3 页 / 共 5 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GAT 918-2010 图像真实性鉴别技术规范 图像CFA插值检测_pages/page_003.jpg" alt="第3页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T918—2010
+图像真实性鉴别技术规范
+图像CFA插值检测
+1范围
+本标准规定了图像真实性鉴别技术中检测图像CFA插值特性的基本要求。
+本标准适用于我国司法机关在刑事、民事、司法活动和国家行政机关在行政执法以及处理事故事件
+等活动中的图像CFA插值检测工作。
+2规范性引用文件
+下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文
+件。凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。
+GA/T592--2006刑事数字影像技术规则
+3术语和定义
+下列术语和定义适用于本文件。
+3.1
+CFA插值colorfilter arrayinterpolation
+获取彩色图像时，在一些相机的感光器件（CCD或CMOS等）中，每一个像素点的颜色不全是获得
+的原始色，而是有一些颜色通过插值的方式得到。这是因为不是每一个像素点上都有三个滤色镜。这
+种插值方式在同一感光器件中具有周期性；不同的感光器件可能有不同的插值方式。称这种方式为
+CFA插值。
+4仪器设备
+4. 1
+图像检验和分析系统
+4.1.1能打开至少BMP、TIFF、JPEG三种通用格式的数字图像，能够打开未压缩AVI格式的视频文
+件并将视频转换为连续静止图像。
+4. 1.2
+能够对分辨率为128dpiX128dpi以上的标准测试图像集检测出CFA插值特性。
+4.1.3
+能够将CFA插值特性以数值或图谱的形式表现并保存。
+4. 1.4
+提供CFA插值特性区别标准。
+4.1.5
+能够将检测操作过程和对应参数记录下来并重现操作过程。
+4.2
+数字化设备
+扫描仪，最大分辨率应达到1200dpi以上。
+4.3存储设备
+选择光盘存储、磁盘阵列、磁带机等存储设备中的至少两种。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 4 页 / 共 5 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GAT 918-2010 图像真实性鉴别技术规范 图像CFA插值检测_pages/page_004.jpg" alt="第4页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T918—2010
+5操作步骤
+5.1用图像检验与分析系统采集并保存图像到计算机。如果对视频文件进行检验，应将视频转换为连
+续静止图像。
+5.2在系统中打开图像。
+5.3对图像进行CFA插值检测。
+选择图像中的不同感兴趣区域，检测相应的CFA插值特性。
+5.4保存检测结果，留待进一步分析或直接输出。
+5.5保存检测操作过程和参数。
+5.6对于照片需要先进行数字化后再检验。对照片采用不低于600dpi的分辨率扫描，并保存为无损
+压缩格式或非压缩格式。
+注：此时数字化的过程可能存在再一次CFA插值的过程，但是数字化过程对图像的各部分来说CFA插值特性是
+一致的。
+6结果分析
+对不同感兴趣区域的CFA插值特性进行分析，比较是否存在差异。
+7图像的保存
+图像资料的保存应符合GA/T592一2006的规定。
+标准分享网wwwbzfxwcom免费下载</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 5 页 / 共 5 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GAT 918-2010 图像真实性鉴别技术规范 图像CFA插值检测_pages/page_005.jpg" alt="第5页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T 918—2010
+中华人民共和国公共安全
+行业标准
+图像真实性鉴别技术规范
+图像CFA插值检测
+GA/T918—2010
+中国标准出版社出版发行
+北京复兴门外三里河北街16号
+邮政编码：100045
+网址www.spc,net.cn
+电话：6852394668517548
+中国标准出版社秦皇岛印刷厂印刷
+各地新华书店经销
+开本880×12301/16印张0.5字数4千字
+2011年3月第一版2011年3月第一次印刷
+书号：155066·2-21693定价14.00元
+如有印装差错由本社发行中心调换
+版权专有侵权必究
+GA/T918-2010
+举报电话：（010)68533533
+打印日期：2011年4月8日F008</div></div>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · OCR 双层版 · 共 5 页 · 识别文字 1860 字 · 原文以 PDF 为准</div>
 </div>
 </body>
 </html>

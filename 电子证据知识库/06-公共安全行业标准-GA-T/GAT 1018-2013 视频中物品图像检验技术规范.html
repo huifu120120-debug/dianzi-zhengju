@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>视频中物品图像检验技术规范</title>
+<title>GAT 1018-2013 视频中物品图像检验技术规范</title>
 <style>
-:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--warn:#b8860b;--ocr:#a93226}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
 .wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
@@ -17,69 +17,215 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 .doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
 .doc-actions a:hover{background:#eef4ff}
 .doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
-.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
-.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
-.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
-.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
-.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.content p{margin:0 0 12px;text-indent:2em}
-.content .no-indent{text-indent:0}
-.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
-.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
-.content h3{font-size:15.5px}
-.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
-.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
-.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.ocr-banner{margin:14px 0;padding:12px 18px;border-radius:8px;font-size:13.5px;line-height:1.7;background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.ocr-banner b{font-weight:700}
+.page-block{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:18px 0;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.page-header{background:#f0f3f7;padding:8px 16px;font-size:13px;color:var(--ink2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.page-header .pageno{font-weight:700;color:var(--brand)}
+.page-img{text-align:center;padding:12px;background:#fafbfc}
+.page-img img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page-ocr{padding:16px 20px;border-top:1px dashed var(--line);background:#fffdf8}
+.page-ocr .ocr-label{font-size:12px;color:var(--ocr);font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+.page-ocr .ocr-text{font-size:14px;line-height:1.9;color:#333;white-space:pre-wrap;word-break:break-word}
+.page-ocr .ocr-empty{color:#999;font-style:italic;font-size:13px}
 .footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="doc-head">
-<h1>视频中物品图像检验技术规范</h1>
-<div class="doc-meta"><span><b>文号：</b>GA/T 1018—2013</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2013-05-13</span></div>
-<div class="doc-actions"><a href="GAT 1018-2013 视频中物品图像检验技术规范.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://img.antpedia.com/standard/files/pdfs_ora/CN-GA/9cb/GA_T%201018-2013_3750.pdf" target="_blank" rel="noopener">🔗 来源</a></div>
+<h1>GAT 1018-2013 视频中物品图像检验技术规范</h1>
+<div class="doc-meta"><span><b>文号：</b>GAT 1018-2013</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2013-05-13</span><span><b>备注：</b>仅获取节选（来源：other，https://img.antpedia.com/standard/files/pdfs_ora/CN-GA/9cb/GA_T%201018-2013_3750.pdf）</span></div>
+<div class="doc-actions"><a href="GAT 1018-2013 视频中物品图像检验技术规范.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://www.mps.gov.cn/n6557558/c4744871/content.html" target="_blank" rel="noopener">🔗 官方来源</a></div>
 </header>
-<div class="banner pdf">📄 正文来源：分析测试百科网PDF全文，以下为节选内容，全文请下载原PDF</div>
-<div class="content">
-<h2>前言</h2>
-<p>本标准按照 GB/T 1.1—2009 给出的规则起草。</p>
-<p>本标准由公安部刑事侦查局提出。</p>
-<p>本标准由全国刑事技术标准化技术委员会照相检验分技术委员会(SAC/TC 179/SC 5)归口。</p>
-<p>本标准起草单位：浙江省公安厅物证鉴定中心、宁波市公安局、公安部物证鉴定中心。</p>
-<p>本标准主要起草人：谢贤能、贾向红、许小京、叶方卿、李俊、叶成立、陈利平、胡斌、金美顺。</p>
-<h2>4 设备器材（节选）</h2>
-<h3>4.4 录像机</h3>
-<p>使用录制检验磁带的录像机或播放速度与磁带压缩比相同的慢放录像机。</p>
-<h2>5 步骤和方法</h2>
-<h3>5.1 准备</h3>
-<p>5.1.1 准备好视频播放，处理所需的器材、软件等。</p>
-<p>5.1.2 查看提供的《现场视频分布图》，了解与检验视频画面有关的场景、视频拍摄点位分布等情况，必要时，应到现场实地查看。</p>
-<h3>5.2 视频采集</h3>
-<p>5.2.1 应使用与被检验视频相适应的软硬件进行播放，不得使用导致视频图像播放质量下降的软硬件。</p>
-<p>5.2.2 根据被检验的数字视频、磁带的时间范围，进行视频采集。</p>
-<p>5.2.3 所采集的视频应转换成与图像处理检验设备相适应的数字视频格式。</p>
-<h3>5.3 检验</h3>
-<p>5.3.1 确定检验视频。使用正常、快速、慢速、逐帧等播放方式观看所检验的视频片段，确定重点帧或重点视频片段。</p>
-<p>5.3.2 样本制作。将嫌疑物品按检材视频相似的拍摄条件制作比对样本。拍摄条件包括拍摄时的天气、光照、焦距、角度、取点位置等。</p>
-<p>5.3.3 质量较差的图像，可通过图像处理系统进行处理，但不能改变图像本质内容。</p>
-<p>5.3.4 对检材和样本的物品特征分别进行检验，确定检材和样本中的种类和个体特征：</p>
-<p class="no-indent">a）寻找检材和样本的物品种类特征；</p>
-<p class="no-indent">b) 寻找检材和样本的物品个体特征；</p>
-<p class="no-indent">c）物品尺寸测量应遵循 GA/T 1024—2013 的要求。</p>
-<p>5.3.5 可采用以下几种方法进行比较检验：</p>
-<p class="no-indent">a）特征标示法：将检材与样本的物品特征逐一比对，标示出两者的符合点和差异点；</p>
-<p class="no-indent">b) 测量比较法：选取检材和样本物品上若干共同的测量点，用适当的测量工具进行测量，比较各测量点之间的数值及比例关系，或比较各连接线交叉组合成的几何形态及交叉角度；</p>
-<p class="no-indent">c) 拼接比较法：通过检验软件将检材和样本物品图像调整为同一大小，在等大的检材和样本物品图像上选取两个相同的测量点，将其连成线，再沿连接线将对应的检材和样本物品进行拼接，观察其吻合程度；</p>
-<p class="no-indent">d）重叠比较法：通过检验软件将检材和样本物品图像调整为同一大小，利用软件的相关工具进行重叠比较，观察其吻合程度。</p>
-<p>5.3.6 时空特征提取。分别提取检材与样本的时空特征。</p>
-<p>5.3.7 时空关系分析。按下列步骤分析不同检材时空特征的关系是否符合逻辑、常理和客观规律：</p>
-<p class="no-indent">a） 计算均速；</p>
-<p class="no-indent">b) 现场实验；</p>
-<p class="no-indent">c) 综合分析。</p>
-<p>5.3.8 对检验中发现的检材与样本物品特征的符合点和差异点作出客观评断、合理解释，并根据物品特征符合点或差异点总和的价值作出相应的鉴定意见。</p>
+<div class="ocr-banner">
+<b>⚠️ OCR 识别版</b>：本文档由原 PDF 逐页扫描识别生成，每页上方为原图，下方为 OCR 识别文字。<br>
+OCR 可能存在少量识别误差（尤其是表格、公式、生僻字），<b>请以原图 / 原 PDF 为准</b>。全文检索已收录 OCR 文字。
 </div>
-<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 1 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1018-2013 视频中物品图像检验技术规范_pages/page_001.jpg" alt="第1页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">ICS13.310
+A 92
+GA
+中华人民共和国公共安全行业标准
+GA/T10182013
+视频中物品图像检验技术规范
+Technical specifications for item image inspection in video
+2013-05-13发布
+2013-05-13实施
+标准出
+中华人民共和国公安部
+发布
+数码防伪</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 2 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1018-2013 视频中物品图像检验技术规范_pages/page_002.jpg" alt="第2页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T10182013
+前言
+本标准按照GB/T1.1一2009给出的规则起草。
+本标准由公安部刑事侦查局提出。
+本标准由全国刑事技术标准化技术委员会照相检验分技术委员会（SAC/TC179/SC5）归口。
+本标准起草单位：浙江省公安厅物证鉴定中心、宁波市公安局、公安部物证鉴定中心。
+本标准主要起草人：谢贤能、贾向红、许小京、叶方卿、李俊、叶成立、陈利平、胡斌、金美顺。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 3 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1018-2013 视频中物品图像检验技术规范_pages/page_003.jpg" alt="第3页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1018—2013
+视频中物品图像检验技术规范
+1范围
+本标准规定了视频中物品图像检验的步骤和方法。
+本标准适用于法庭科学领域声像资料检验鉴定中的视频中物品图像检验。
+2规范性引用文件
+下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文
+件。凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。
+GA/T1024—2013视频画面中目标尺寸测量方法
+3术语和定义
+下列术语和定义适用于本文件。
+3. 1
+视频中物品图像itemimageinvideo
+视频画面中出现的物品的图像，分为静态单顿图像和动态多顿图像集合。
+3.2
+物品种类特征characteristicof itemtype
+包括能够反映物品种类的大小、形状、颜色、质地、纹理分布、图文等及其排列组合和比例关系的
+特征。
+3.3
+物品个体特征individualcharacteristic of item
+包括能够反映物品个体的特殊记号、残缺、破损、污染痕迹等形态特征及其组合。
+3.4
+时空特征characteristic of space and time
+视频图像中对象所处的时间和空间。
+4仪器设备
+4.1计算机
+应选用图形处理工作站或性能相应的台式计算机、笔记本电脑。
+4.2图像处理软件
+能采集、查看视频图像，对视频图像进行增强、复原、去噪等处理。
+4.3视频采集卡
+使用高比特（8bit以上）的视频采集卡。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 4 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1018-2013 视频中物品图像检验技术规范_pages/page_004.jpg" alt="第4页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1018—2013
+4.4录像机
+使用录制检验磁带的录像机或播放速度与磁带压缩比相同的慢放录像机。
+5步骤和方法
+5.1准备
+5.1.1准备好视频播放，处理所需的器材、软件等。
+5.1.2查看提供的《现场视频分布图》，了解与检验视频画面有关的场景、视频拍摄点位分布等情况，必
+要时，应到现场实地查看。
+5.2
+视频采集
+5.2.1
+应使用与被检验视频相适应的软硬件进行播放，不得使用导致视频图像播放质量下降的软
+硬件。
+5.2.2
+根据被检验的数字视频、磁带的时间范围，进行视频采集。
+5.2.3
+所采集的视频应转换成与图像处理检验设备相适应的数字视频格式。
+5.3
+检验
+5.3.1石
+确定检验视频。使用正常，快速、慢速、逐顿等播放方式观看所检验的视频片段，确定重点顿或
+重点视频片段。
+5.3.2样本制作。将嫌疑物品按检材视频相似的拍摄条件制作比对样本。拍摄条件包括拍摄时的天
+气、光照、焦距、角度、取点位置等。
+5.3.3
+质量较差的图像，可通过图像处理系统进行处理，但不能改变图像本质内容。
+5.3.4
+对检材和样本的物品特征分别进行检验，确定检材和样本中的种类和个体特征：
+a)
+寻找检材和样本的物品种类特征；
+b)
+寻找检材和样本的物品个体特征；
+物品尺寸测量应遵循GA/T1024一2013的要求。
+5.3.5
+可采用以下儿种方法进行比较检验：
+a)
+特征标示法：将检材与样本的物品特征逐一比对，标示出两者的符合点和差异点；
+b)
+测量比较法：选取检材和样本物品上若干共同的测量点，用适当的测量工具进行测量，比较各
+测量点之间的数值及比例关系，或比较各连接线交叉组合成的几何形态及交叉角度；
+拼接比较法：通过检验软件将检材和样本物品图像调整为同一大小，在等大的检材和样本物品
+图像上选取两个相同的测量点，将其连成线，再沿连接线将对应的检材和样本物品进行拼接，
+观察其吻合程度；
+d)
+重叠比较法：通过检验软件将检材和样本物品图像调整为同一大小，利用软件的相关工具进
+行重叠比较，观察其吻合程度。
+5.3.6
+时空特征提取。分别提取检材与样本的时空特征。
+5.3.7
+时空关系分析。按下列步骤分析不同检材时空特征的关系是否符合逻辑、常理和客观规律：
+a)
+计算均速；
+b)
+现场实验；
+综合分析。
+5.3.8
+对检验中发现的检材与样本物品特征的符合点和差异点作出客观评断、合理解释，并根据物品
+特征符合点或差异点总和的价值作出相应的鉴定意见。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 5 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1018-2013 视频中物品图像检验技术规范_pages/page_005.jpg" alt="第5页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1018—2013
+6鉴定意见表述
+6.1确定性鉴定意见
+6.1.1种类同一
+不同检材或检材与样本中，物品图像反映出的种类特征相同，但个体特征不具有特定性，出具鉴定
+书，鉴定意见表述为“××检材与××检材图像中物品属同种类物品”或“检材与样本图像中物品属同种
+类物品”。
+6.1.2个体同一
+不同检材或检材与样本中，物品图像反映出的种类特征相同，个体特征具有特定性，没有出现本质
+差异，出具鉴定书，鉴定意见表述为“××检材与××检材图像中物品是同一物品”或“检材与样本图像
+中物品是同一物品”。
+6.1.3否定同一
+不同检材或检材与样本中，物品图像反映出的种类特征不同，或者种类特征相同但个体特征存在本
+质差异，出具鉴定书，鉴定意见表述为“×X检材与××检材图像中物品不是同一物品”或“检材与样本
+图像中物品不是同一物品”。
+6.2非确定性鉴定意见
+6.2.1倾向肯定个体同一
+不同检材中出现的物品图像种类特征相同，且其之间的时空特征符合逻辑、常理和客观规律，出具
+鉴定意见书，鉴定意见表述为“××检材与××检材图像中物品倾向是同一物品”。
+6.2.2倾向否定个体同一
+不同检材中物品图像种类特征相同，但其之间的时空特征不符合逻辑、常理和客观规律，出具鉴定
+意见书，鉴定意见表述为“××检材与×X检材图像中物品倾向不是同一物品”。
+6.3不具备检验条件
+不同检材或检材与样本中，物品图像质量差、无法辨识，或物品图像反映出的特征少、不稳定，出具
+检验报告，检验结果表述为“送检的检材不具备检验条件”。
+6.4表述要求
+鉴定意见应简明拒要，突出重点，鉴定意见所涉及的视频光盘或视频截图应以附件的形式附于鉴定
+文书之后。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 6 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1018-2013 视频中物品图像检验技术规范_pages/page_006.jpg" alt="第6页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1018—201
+中华人民共和国公共安全
+行业标准
+视频中物品图像检验技术规范
+GA/T1018—2013
+中国标准出版社出版发行
+北京市朝阳区和平里西街甲2号（100013）
+北京市西城区三里河北街16号（100045）
+网址www.spc.net.cn
+总编室：（010)64275323发行中心：（010)51780235
+读者服务部：（010）68523946
+中国标准出版社秦皇岛印刷厂印刷
+各地新华书店经销
+开本880X12301/16印张0.5字数8千字
+2013年7月第一版2013年7月第一次印刷
+书号：155066·2-25743定价14.00元
+如有印装差错由本社发行中心调换
+版权专有侵权必究
+GA/T1018-2013
+举报电话：（010)68510107
+打印日期：2014年6月11日F053</div></div>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · OCR 双层版 · 共 6 页 · 识别文字 3085 字 · 原文以 PDF 为准</div>
 </div>
 </body>
 </html>

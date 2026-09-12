@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>即时通讯记录检验技术方法</title>
+<title>GAT 1173-2014 即时通讯记录检验技术方法</title>
 <style>
-:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--warn:#b8860b;--ocr:#a93226}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
 .wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
@@ -17,111 +17,240 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 .doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
 .doc-actions a:hover{background:#eef4ff}
 .doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
-.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
-.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
-.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
-.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
-.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.content p{margin:0 0 12px;text-indent:2em}
-.content .no-indent{text-indent:0}
-.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
-.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
-.content h3{font-size:15.5px}
-.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
-.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
-.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.ocr-banner{margin:14px 0;padding:12px 18px;border-radius:8px;font-size:13.5px;line-height:1.7;background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.ocr-banner b{font-weight:700}
+.page-block{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:18px 0;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.page-header{background:#f0f3f7;padding:8px 16px;font-size:13px;color:var(--ink2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.page-header .pageno{font-weight:700;color:var(--brand)}
+.page-img{text-align:center;padding:12px;background:#fafbfc}
+.page-img img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page-ocr{padding:16px 20px;border-top:1px dashed var(--line);background:#fffdf8}
+.page-ocr .ocr-label{font-size:12px;color:var(--ocr);font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+.page-ocr .ocr-text{font-size:14px;line-height:1.9;color:#333;white-space:pre-wrap;word-break:break-word}
+.page-ocr .ocr-empty{color:#999;font-style:italic;font-size:13px}
 .footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="doc-head">
-<h1>即时通讯记录检验技术方法</h1>
-<div class="doc-meta"><span><b>文号：</b>GA/T 1173—2014</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2014-07-09</span></div>
-<div class="doc-actions"><a href="GAT 1173-2014 即时通讯记录检验技术方法.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://img.antpedia.com/standard/files/pdfs_ora/CN-GA/300/GA_T%201173-2014_0499.pdf" target="_blank" rel="noopener">🔗 来源</a></div>
+<h1>GAT 1173-2014 即时通讯记录检验技术方法</h1>
+<div class="doc-meta"><span><b>文号：</b>GAT 1173-2014</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2014-07-09</span><span><b>备注：</b>仅获取节选（来源：other，https://img.antpedia.com/standard/files/pdfs_ora/CN-GA/300/GA_T%201173-2014_0499.pdf）</span></div>
+<div class="doc-actions"><a href="GAT 1173-2014 即时通讯记录检验技术方法.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://www.mps.gov.cn/n6557558/c4911584/content.html" target="_blank" rel="noopener">🔗 官方来源</a></div>
 </header>
-<div class="banner pdf">📄 正文来源：分析测试百科网PDF全文，以下为节选内容，全文请下载原PDF</div>
-<div class="content">
-<h2>前言</h2>
-<p>本标准按照 GB/T 1.1—2009 给出的规则起草。</p>
-<p>本标准由公安部第三研究所提出。</p>
-<p>本标准由公安部信息系统安全标准化技术委员会归口。</p>
-<p>本标准起草单位：公安部第三研究所、北京市公安局刑侦总队。</p>
-<p>本标准主要起草人：高峰、郭弘、金波、徐隽、姚波、邱敏。</p>
-<h2>4 检验步骤</h2>
-<h3>4.1 即时通讯记录文件的固定保全</h3>
-<h3>4.1.1 确定检材</h3>
-<p>确定检材的步骤：</p>
-<p class="no-indent">a）对可能存在即时通讯记录的检材进行唯一性标识，并贴上标签；</p>
-<p class="no-indent">b) 对检材拍照，并记录检材的特征。</p>
-<h3>4.1.2 获取即时通讯记录文件</h3>
-<p>根据检材，应选用适当的仪器设备，按照 GA/T 756—2008 的要求获取即时通讯记录文件：</p>
-<p class="no-indent">a）获取即时通讯记录文件的步骤：</p>
-<p class="no-indent">1）检验即时通讯客户端：查找检材中即时通讯中客户端的安装路径和相关用户目录存放路径，获取客户端的版本、用户相关信息和即时通讯记录文件；</p>
-<p class="no-indent">2）检验易失性即时通讯：查找并获取检材中浏览器的版本和浏览器缓存中即时通讯记录文件；</p>
-<p class="no-indent">3）服务器端即时通讯记录的检出：根据检材中检出的用户即时通讯账号，在有条件的情况下获取该用户在服务器端存储的即时通讯记录。</p>
-<p class="no-indent">b) 计算并校验获取的即时通讯记录文件。</p>
-<h3>4.2 即时通讯记录的呈现</h3>
-<h3>4.2.1 搭建检验环境</h3>
-<p>检验环境应包括：</p>
-<p class="no-indent">a）针对即时通讯客户端软件版本搭建检验环境；</p>
-<p class="no-indent">b）即时通讯记录文件为加密文件时需搭建解密环境。</p>
-<h3>4.2.2 客户端即时通讯记录的检出</h3>
-<p>根据搭建的环境将即时通讯记录检出至特定文件，检出的内容应包括：</p>
-<p class="no-indent">a）即时通讯客户端的名称、安装路径；</p>
-<p class="no-indent">b) 用户目录存放路径；</p>
-<p class="no-indent">c) 用户即时通讯账号、即时通讯中的昵称和即时通讯账号中关联的邮件、手机等相关信息；</p>
-<p class="no-indent">d）即时通讯历史记录和即时通讯中传递的文件、图片等；</p>
-<p class="no-indent">e）检出的文件的哈希值。</p>
-<h3>4.3 即时通讯记录的真实性分析</h3>
-<h3>4.3.1 客户端与服务器端即时通讯记录的验证</h3>
-<p>验证客户端与服务器端即时通讯记录，包括以下内容：</p>
-<p class="no-indent">a）将客户端即时通讯记录与服务器端即时通讯记录的内容进行比对；</p>
-<p class="no-indent">b）将两者内容不符的部分进行分析阐述。</p>
-<h3>4.3.2 即时通讯记录文件的环境分析</h3>
-<p>即时通讯记录文件的环境分析，包括以下内容：</p>
-<p class="no-indent">a）即时通讯记录文件等的存放路径；</p>
-<p class="no-indent">b）即时通讯客户端或者浏览器的配置信息；</p>
-<p class="no-indent">c）即时通讯客户端或者浏览器涉及的日志文件。</p>
-<h3>4.3.3 即时通讯记录文件的属性信息分析</h3>
-<p>即时通讯记录文件的属性信息分析，包括以下内容：</p>
-<p class="no-indent">a）包括文件名、文件格式、创建时间和修改时间等；</p>
-<p class="no-indent">b）即时通讯记录文件属性与其他文件属性的关联；</p>
-<p class="no-indent">c）即时通讯记录文件属性与即时通讯内容是否存在矛盾。</p>
-<h3>4.3.4 即时通讯记录的文件结构分析</h3>
-<p>即时通讯记录的文件结构分析，包括以下内容：</p>
-<p class="no-indent">a) 文件呈现的拼接痕迹；</p>
-<p class="no-indent">b) 文件结构的完整性；</p>
-<p class="no-indent">c) 文件结构的规范性。</p>
-<h3>4.3.5 即时通讯记录的上下文语义环境分析</h3>
-<p>即时通讯记录的上下文语义环境分析，包括以下内容：</p>
-<p class="no-indent">a) 语义的连续性和同一性；</p>
-<p class="no-indent">b) 语义的关联性和逻辑性；</p>
-<p class="no-indent">c) 语义的自然度与话题的匹配性。</p>
-<h2>5 结论表述</h2>
-<p>根据即时通讯记录的检验步骤阐述检验结果，可以包括以下内容：</p>
-<p class="no-indent">a) 即时通讯记录文件固定保全的实现情况；</p>
-<p class="no-indent">b) 即时通讯记录的检出结果；</p>
-<p class="no-indent">c) 客户端与服务器端即时通讯记录的验证结果；</p>
-<p class="no-indent">d) 针对即时通讯记录的真实性分析，结论可以是以下四种之一：</p>
-<p class="no-indent">1）发现修改；</p>
-<p class="no-indent">2）没有发现修改；</p>
-<p class="no-indent">3）没有修改；</p>
-<p class="no-indent">4）不能判定。</p>
-<h2>6 检材记录</h2>
-<h3>6.1 记录检材相关信息</h3>
-<p>应记录检材的以下信息：</p>
-<p class="no-indent">a）类别；</p>
-<p class="no-indent">b) 型号；</p>
-<p class="no-indent">c）出厂时唯一性编号(如果适用)；</p>
-<p class="no-indent">d) 照片。</p>
-<h3>6.2 检验过程记录</h3>
-<p>即时通讯记录检验中，记录应贯穿整个检验过程，记录应包括：</p>
-<p class="no-indent">a）检验过程中所使用的软、硬件工具；</p>
-<p class="no-indent">b）在搭建环境的过程中检出的检验内容、操作条件、原始观察结果、计算和取得的数据等；</p>
-<p class="no-indent">c）根据获取的即时通讯记录文件计算出的哈希值。</p>
+<div class="ocr-banner">
+<b>⚠️ OCR 识别版</b>：本文档由原 PDF 逐页扫描识别生成，每页上方为原图，下方为 OCR 识别文字。<br>
+OCR 可能存在少量识别误差（尤其是表格、公式、生僻字），<b>请以原图 / 原 PDF 为准</b>。全文检索已收录 OCR 文字。
 </div>
-<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 1 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1173-2014 即时通讯记录检验技术方法_pages/page_001.jpg" alt="第1页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">ICS35.240.01
+GA
+A92
+中华人民共和国公共安全行业标准
+GA/T1173—2014
+即时通讯记录检验技术方法
+Technical methods for examination of instant messaging data
+2014-07-09发布
+2014-07-09实施
+中华人民共和国公安部
+发布
+刮涂层查真伪</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 2 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1173-2014 即时通讯记录检验技术方法_pages/page_002.jpg" alt="第2页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1173—2014
+前言
+本标准按照GB/T1.1一2009给出的规则起草。
+本标准由公安部第三研究所提出。
+本标准由公安部信息系统安全标准化技术委员会归口。
+本标准起草单位：公安部第三研究所、北京市公安局刑侦总队。
+本标准主要起草人：高峰、郭弘、金波、徐隽、姚波、邱敏。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 3 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1173-2014 即时通讯记录检验技术方法_pages/page_003.jpg" alt="第3页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1173—2014
+即时通讯记录检验技术方法
+1范围
+本标准规定了电子数据检验时，即时通讯记录获取、呈现和分析的检验方法。
+本标准适用于电子数据检验中获取、呈现和分析即时通讯记录
+2规范性引用文件
+HINA
+下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件仅注期的版本适用于本文
+件。凡是不注日期的用又件，其最新版本（包括所有的修改单）适用于本文件。
+GA/T756—206&amp;L数字化设备证据数据发现提取固定方法
+3术语和定义
+GA/T756-
+界定的以及下列术语和定义适用于本文件。
+3.1
+即时通讯
+instant messaging
+一种使用网络进行实时交谈和互传信息的集声音、文字、图像的综合性交流方式。
+3.2
+即时通讯客户端iastantmessaging elient
+与即时通讯服务器配合运行并且安装在本地操作系统或智能终端中用于接受即时通讯服务的应用
+程序。
+3.3
+易失性即时通讯
+volatie-instant messaging
+无需在本地操作系统或者智能终端中安装任何应用程序，仅使用浏览器进行即时通讯，并由服务器
+提供并维持整个即时通讯网络服务的一种通讯方式
+3.4
+即时通讯协议instantmessagingprotocol
+对即时通讯中对通讯记录内容等数据进行通讯传输控制的规则。
+3.5
+即时通讯中所传递的文字消息、传输的文件和语音通话记录等。
+3.6
+即时通讯记录文件instantmessagingdatafile
+存储即时通讯记录的数据文件。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 4 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1173-2014 即时通讯记录检验技术方法_pages/page_004.jpg" alt="第4页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1173—2014
+4检验步骤
+4.1
+即时通讯记录文件的固定保全
+4.1.1
+确定检材
+确定检材的步骤：
+对可能存在即时通讯记录的检材进行唯一性标识，并贴上标签；
+对检材拍照，并记录检材的特征。
+4.1.2
+获取即时通讯记录文件
+根据检材，应选用适当的仪器设备，按照GA/T756一2008的要求获取即时通讯记录文件：
+a）获取即时通讯记录文件的步骤：
+1）检验即时通讯客户端
+查找检材中即时通讯中客户端的安装路径和相关用户目录存放路径，获取客户端的版本、
+用户相关信息和即时通讯记录文件；
+2）
+检验易失性即时通讯
+查找并获取检材中浏览器的版本和浏览器缓存中即时通讯记录文件；
+3）
+服务器端即时通讯记录的检出
+根据检材中检出的用户即时通讯账号，在有条件的情况下获取该用户在服务器端存储的
+即时通讯记录。
+b）计算并校验获取的即时通讯记录文件。
+4.2
+即时通讯记录的呈现
+4.2.1
+搭建检验环境
+检验环境应包括：
+a)
+针对即时通讯客户端软件版本搭建检验环境；
+b)
+即时通讯记录文件为加密文件时需搭建解密环境。
+4.2.2
+客户端即时通讯记录的检出
+根据搭建的环境将即时通讯记录检出至特定文件，检出的内容应包括：
+a)
+即时通讯客户端的名称、安装路径；
+b)
+用户目录存放路径；
+c)
+用户即时通讯账号、即时通讯中的昵称和即时通讯账号中关联的邮件、手机等相关信息；
+d)
+即时通讯历史记录和即时通讯中传递的文件、图片等；
+e)
+检出的文件的哈希值。
+4.3
+即时通讯记录的真实性分析
+4.3.1
+客户端与服务器端即时通讯记录的验证
+验证客户端与服务器端即时通讯记录，包括以下内容：
+将客户端即时通讯记录与服务器端即时通讯记录的内容进行比对；
+将两者内容不符的部分进行分析阐述。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 5 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1173-2014 即时通讯记录检验技术方法_pages/page_005.jpg" alt="第5页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1173—2014
+4.3.2
+即时通讯记录文件的环境分析
+即时通讯记录文件的环境分析，包括以下内容：
+a)
+即时通讯记录文件等的存放路径；
+b)
+即时通讯客户端或者浏览器的配置信息；
+即时通讯客户端或者浏览器涉及的日志文件。
+4.3.3
+即时通讯记录文件的属性信息分析
+即时通讯记录文件的属性信息分析，包括以下内容：
+包括文件名、文件格式、创建时间和修改时间等；
+b)
+即时通讯记录文件属性与其他文件属性的关联；
+c)
+即时通讯记录文件属性与即时通讯内容是否存在矛盾。
+4.3.4
+即时通讯记录的文件结构分析
+即时通讯记录的文件结构分析，包括以下内容：
+a)
+文件呈现的拼接痕迹；
+b)
+文件结构的完整性；
+c)
+文件结构的规范性。
+4.3.5
+即时通讯记录的上下文语义环境分析
+即时通讯记录的上下文语义环境分析，包括以下内容：
+a)
+语义的连续性和同一性；
+b)
+语义的关联性和逻辑性；
+语义的自然度与话题的匹配性。
+结论表述
+根据即时通讯记录的检验步骤阐述检验结果，可以包括以下内容：
+a)
+即时通讯记录文件固定保全的实现情况；
+b)
+即时通讯记录的检出结果；
+c)
+客户端与服务器端即时通讯记录的验证结果；
+d)
+针对即时通讯记录的真实性分析，结论可以是以下四种之一：
+发现修改；
+2)
+没有发现修改；
+3)
+没有修改；
+4)
+不能判定。
+6检材记录
+6.1记录检材相关信息
+应记录检材的以下信息：
+a)
+类别；
+b)
+型号；
+出厂时唯一性编号（如果适用）；</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 6 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1173-2014 即时通讯记录检验技术方法_pages/page_006.jpg" alt="第6页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1173—2014
+GA/T1173—2014
+d)
+照片。
+6.2
+检验过程记录
+即时通讯记录检验中，记录应贯穿整个检验过程，记录应包括：
+a)
+检验过程中所使用的软、硬件工具；
+b)
+在搭建环境的过程中检出的检验内容、操作条件、原始观察结果、计算和取得的数据等；
+c)
+根据获取的即时通讯记录文件计算出的哈希值。
+版权专有侵权必究
+书号：155066·2-27343
+GA/T1173-2014
+定价：
+14.00元</div></div>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · OCR 双层版 · 共 6 页 · 识别文字 2558 字 · 原文以 PDF 为准</div>
 </div>
 </body>
 </html>

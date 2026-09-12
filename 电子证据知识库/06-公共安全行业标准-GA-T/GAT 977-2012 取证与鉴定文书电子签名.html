@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>取证与鉴定文书电子签名</title>
+<title>GAT 977-2012 取证与鉴定文书电子签名</title>
 <style>
-:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--warn:#b8860b;--ocr:#a93226}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
 .wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
@@ -17,93 +17,255 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 .doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
 .doc-actions a:hover{background:#eef4ff}
 .doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
-.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
-.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
-.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
-.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
-.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.content p{margin:0 0 12px;text-indent:2em}
-.content .no-indent{text-indent:0}
-.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
-.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
-.content h3{font-size:15.5px}
-.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
-.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
-.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.ocr-banner{margin:14px 0;padding:12px 18px;border-radius:8px;font-size:13.5px;line-height:1.7;background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.ocr-banner b{font-weight:700}
+.page-block{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:18px 0;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.page-header{background:#f0f3f7;padding:8px 16px;font-size:13px;color:var(--ink2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.page-header .pageno{font-weight:700;color:var(--brand)}
+.page-img{text-align:center;padding:12px;background:#fafbfc}
+.page-img img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page-ocr{padding:16px 20px;border-top:1px dashed var(--line);background:#fffdf8}
+.page-ocr .ocr-label{font-size:12px;color:var(--ocr);font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+.page-ocr .ocr-text{font-size:14px;line-height:1.9;color:#333;white-space:pre-wrap;word-break:break-word}
+.page-ocr .ocr-empty{color:#999;font-style:italic;font-size:13px}
 .footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="doc-head">
-<h1>取证与鉴定文书电子签名</h1>
-<div class="doc-meta"><span><b>文号：</b>GA/T 977—2012</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2012-02-01</span></div>
-<div class="doc-actions"><a href="GAT 977-2012 取证与鉴定文书电子签名.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://img.antpedia.com/standard/files/pdfs_ora/CN-GA/d8c/GA_T%20977-2012_0000.pdf" target="_blank" rel="noopener">🔗 来源</a></div>
+<h1>GAT 977-2012 取证与鉴定文书电子签名</h1>
+<div class="doc-meta"><span><b>文号：</b>GAT 977-2012</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2012-01-31</span><span><b>备注：</b>仅获取节选（来源：other，https://img.antpedia.com/standard/files/pdfs_ora/CN-GA/d8c/GA_T%20977-2012_0000.pdf）；</span></div>
+<div class="doc-actions"><a href="GAT 977-2012 取证与鉴定文书电子签名.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://www.mps.gov.cn/n6557558/c3619294/content.html" target="_blank" rel="noopener">🔗 官方来源</a></div>
 </header>
-<div class="banner pdf">📄 正文来源：分析测试百科网PDF全文，以下为节选内容，全文请下载原PDF</div>
-<div class="content">
-<h2>前言</h2>
-<p>本标准按照 GB/T 1.1—2009 给出的规则起草。</p>
-<p>本标准由公安部网络安全保卫局提出。</p>
-<p>本标准由公安部信息系统安全标准化技术委员会归口。</p>
-<p>本标准起草单位:公安部网络安全保卫局,公安部第三研究所。</p>
-<p>本标准主要起草人：许剑卓、卢涛、王婷、李勋、金波、徐隽。</p>
-<h2>4 技术要求（节选）</h2>
-<h3>4.3 数字证书格式</h3>
-<p>取证与鉴定电子文书电子签名的认证证书应符合 ITU-T X.509 的规定。</p>
-<h3>4.4 电子签名过程</h3>
-<p>签名方在生成取证与鉴定电子文书后，应对电子文书的签名按图1表示的过程执行：</p>
-<p class="no-indent">a）将电子文书全文作为输入参数，用散列算法做电子文书摘要；</p>
-<p class="no-indent">b）对电子文书摘要使用数字证书持有者的签名私钥做非对称加密，生成电子签名内容；</p>
-<p class="no-indent">c）将取证与鉴定电子文书原文、生成的电子签名以及签名证书进行封装，形成签名结果。</p>
-<h3>4.5 电子签名验证过程</h3>
-<p>取证与鉴定电子文书电子签名的结果，即待验证数据，包括电子签名内容、电子文书原文和签名方公钥。</p>
-<p>取证与鉴定电子文书签名验证按照图2表示的过程执行：</p>
-<p class="no-indent">a）验证方首先将电子文书原文用散列算法得到电子文书摘要；</p>
-<p class="no-indent">b）对电子签名结果中的电子签名内容，用签名方数字证书解密签名内容，得到根据签名内容导出的电子文书摘要；</p>
-<p class="no-indent">c）将两个摘要进行验证比较，相同则电子文书原文有效，否则无效。</p>
-<h3>4.6 电子签名格式</h3>
-<p>取证与鉴定文书电子签名存取格式应按照 RFC 3075 和 RFC 3280 的要求进行存放，文字编码全部采用 UTF-8 格式。格式如下：</p>
-<pre>[L01] &lt;Signature Id="xmlns=""&gt;
-[L02] &lt;SignedInfo&gt;
-[L03] &lt;CanonicalizationMethod Algorithm="" /&gt;
-[L04] &lt;SignatureMethod Algorithm="" /&gt;
-[L05] &lt;Reference URI="" /&gt;
-[L06] &lt;Transforms&gt;
-[L07] &lt;Transform Algorithm="" /&gt;
-[L08] &lt;/Transforms&gt;
-[L09] &lt;DigestMethod Algorithm="" /&gt;
-[L10] &lt;DigestValue&gt;&lt;/DigestValue&gt;
-[L11] &lt;/Reference&gt;
-[L12] &lt;/SignedInfo&gt;
-[L13] &lt;SignatureValue /&gt;
-[L14] &lt;CertInfo /&gt;
-[L15] &lt;/Signature&gt;</pre>
-<p>其中，各个 xml 标签定义如下：</p>
-<p>Signature 标签标明一个完整的 xml 签名，标识为电子文书编号，xml 的命名空间应唯一。</p>
-<p>SignedInfo 标签标明待签名的信息。</p>
-<p>CanonicalizationMethod 标签中的 Algorithm 属性指定 SignatureInfo 内容在签名前的规范化算法。</p>
-<p>SignatureMethod 标签中的 Algorithm 属性指定签名过程中使用的散列算法和签名算法。</p>
-<p>Reference 标签包括摘要算法和摘要值等。</p>
-<p>Transforms 标签包括签名前的转换算法。</p>
-<p>DigestMethod 标签标明摘要算法。</p>
-<p>DigestValue 标签标明摘要值。</p>
-<p>SignatureValue 标签标明签名结果。</p>
-<p>CertInfo 标签标明签名中使用的证书信息。</p>
-<h3>4.7 电子签名管理系统</h3>
-<h3>4.7.1 总则</h3>
-<p>取证与鉴定文书电子签名管理系统应具有系统管理和签名显示的功能。</p>
-<h3>4.7.2 系统管理</h3>
-<p>系统建立、修改、维保或传送取证与鉴定电子文书应使用能够保证记录真实性、完整性和适当的机密性的程序和控制，以保证签名者不能轻易地否认已经签署的记录是不真实的。这样的程序和控制应包括如下过程：</p>
-<p class="no-indent">a）系统应验证以保证准确、可靠、稳定地预期性能，有能力识别无效的和被改变的记录；</p>
-<p class="no-indent">b）确保产生的人们易读的和适合检查、回顾和拷贝的电子文档准确、完整。</p>
-<h3>4.7.3 签名的显示</h3>
-<p>签署的取证与鉴定电子文书应包含能清晰显示如下所有与签名相关的信息：</p>
-<p class="no-indent">a) 用印刷体书写出签名者的名字；</p>
-<p class="no-indent">b) 签名生效的日期和时间；</p>
-<p class="no-indent">c) 和签名相关的涵意(例如"同意")。</p>
+<div class="ocr-banner">
+<b>⚠️ OCR 识别版</b>：本文档由原 PDF 逐页扫描识别生成，每页上方为原图，下方为 OCR 识别文字。<br>
+OCR 可能存在少量识别误差（尤其是表格、公式、生僻字），<b>请以原图 / 原 PDF 为准</b>。全文检索已收录 OCR 文字。
 </div>
-<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 1 页 / 共 7 页</span><span>原图 1224×1685</span></div>
+<div class="page-img"><img src="GAT 977-2012 取证与鉴定文书电子签名_pages/page_001.jpg" alt="第1页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">ICS 35.220.20
+A90
+GA
+中华人民共和国公共安全行业标准
+GA/T9772012
+取证与鉴定文书电子签名
+Electronic signature of forensic and identification document
+2012-02-01发布
+2012-02-01实施
+中华人民共和国公安部
+发布
+数码防伪</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 2 页 / 共 7 页</span><span>原图 1224×1685</span></div>
+<div class="page-img"><img src="GAT 977-2012 取证与鉴定文书电子签名_pages/page_002.jpg" alt="第2页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">中华人民共和国公共安全
+行业标准
+取证与鉴定文书电子签名
+GA/T977—2012
+中国标准出版社出版发行
+北京市朝阳区和平里西街甲2号（100013）
+北京市西城区三里河北街16号（100045）
+网址www.spc.net.cn
+总编室：（010)64275323发行中心：（010)51780235
+读者服务部：（010）68523946
+中国标准出版社秦皇岛印刷厂印刷
+各地新华书店经销
+开本880×12301/16印张0.5字数9千字
+2012年4月第一版2012年4月第一次印刷
+书号：1550662-23319定价14.00元
+如有印装差错由本社发行中心调换
+版权专有侵权必究
+举报电话：（010）68510107</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 3 页 / 共 7 页</span><span>原图 1224×1685</span></div>
+<div class="page-img"><img src="GAT 977-2012 取证与鉴定文书电子签名_pages/page_003.jpg" alt="第3页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T977—2012
+前言
+本标准按照GB/T1.1—2009给出的规则起草。
+本标准由公安部网络安全保卫局提出。
+本标准由公安部信息系统安全标准化技术委员会归口。
+本标准起草单位：公安部网络安全保卫局，公安部第三研究所。
+本标准主要起草人：许剑卓、卢涛、王婷、李勋、金波、徐隽</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 4 页 / 共 7 页</span><span>原图 1224×1685</span></div>
+<div class="page-img"><img src="GAT 977-2012 取证与鉴定文书电子签名_pages/page_004.jpg" alt="第4页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T 977—2012
+取证与鉴定文书电子签名
+1范围
+本标准规定了取证与鉴定文书电子文档中的电子签名。
+本标准适用于基于PKI的取证与鉴定文书的电子文档的电子签名。
+2规范性引用文件
+下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文
+件。凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。
+ITU-TX.509电子证书国际标准
+RFC3075
+xml-signature syntax and processing
+RFC3280
+因特网X.509公钥基础设施证书和CRL轮廓
+3术语和定义
+ITU-TX.509、RFC3075、RFC3280界定的以及下列术语和定义适用于本文件。
+3.1
+电子文档electronicdocument
+以电子形式表现的信息的混合，能被计算机识别与处理。
+3.2
+电子签名electronicsignature
+电子文档中以电子形式所含、所附用于识别签名人身份并表明签名人认可其中内容的数据。
+3.3
+数字证书digital certification
+经过数字证书签发机构签名的包括证书持有人信息和公钥的文件。
+3.4
+签名算法signaturealgorithm
+对信息摘要进行加密的非对称加密算法。
+电子签名
+4.1电子文档
+取证与鉴定文书电子文档应载有能够识别鉴定委托人、鉴定人、鉴定时间的内容以及鉴定结论，并
+应能够有效地表现取证与鉴定文书所载内容，可供随时调取查用。取证与鉴定文书电子文档格式应符
+合司法鉴定相关规定。
+4.2数字证书签发机构
+数字证书应由合法权威机构签发。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 5 页 / 共 7 页</span><span>原图 1224×1685</span></div>
+<div class="page-img"><img src="GAT 977-2012 取证与鉴定文书电子签名_pages/page_005.jpg" alt="第5页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T9772012
+4.3
+数字证书格式
+取证与鉴定电子文书电子签名的认证证书应符合ITU-TX.509的规定。
+4.4
+电子签名过程
+签名方在生成取证与鉴定电子文书后，应对电子文书的签名按图1表示的过程执行：
+将电子文书全文作为输人参数，用散列算法做电子文书摘要；
+b)
+对电子文书摘要使用数字证书持有者的签名私钥做非对称加密，生成电子签名内容；
+将取证与鉴定电子文书原文、生成的电子签名以及签名证书进行封装，形成签名结果。
+取证与鉴定电子文书
+散列
+算法
+电子文书摘要
+取证与鉴定电子文书
+签名
+电子签名内容
+算法
+数字证书
+图1取证与鉴定电子文书电子签名过程
+4.5电子签名验证过程
+取证与鉴定电子文书电子签名的结果，即待验证数据，包括电子签名内容、电子文书原文和签名方
+公钥。
+取证与鉴定电子文书签名验证按照图2表示的过程执行：
+a)
+验证方首先将电子文书原文用散列算法得到电子文书摘要；
+b)
+对电子签名结果中的电子签名内容，用签名方数字证书解密签名内容，得到根据签名内容导出
+的电子文书摘要；
+将两个摘要进行验证比较，相同则电子文书原文有效，否则无效
+取证与鉴定电子文书
+电子签名内容
+签名算法
+数字证书
+散列算法
+签名内容导出的
+电子文书摘要
+验证
+电子文书摘要
+验证是否通过
+图2取证与鉴定电子文书电子签名验证过程</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 6 页 / 共 7 页</span><span>原图 1224×1685</span></div>
+<div class="page-img"><img src="GAT 977-2012 取证与鉴定文书电子签名_pages/page_006.jpg" alt="第6页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T977—2012
+4.6电子签名格式
+取证与鉴定文书电子签名存取格式应按照RFC3075和RFC3280的要求进行存放，文字编码全部
+采用UTF-8格式。格式如下：
+[LO1]&lt;Signature Id-&quot;
+&quot;xmlns=&quot;&quot;)
+[L02]
+&lt;SignedInfo)
+[L03]
+&lt;CanonicalizationMethodAlgorithm=&quot;&quot;/)
+[L04]
+《SignatureMethodAlgorithm-&quot;&quot;/)
+[L05]
+&lt;Reference URI-&quot;&quot;)
+[L06]
+&lt;Transforms)
+[L07]
+&lt;TransformAlgorithm=&quot;&quot;/)
+[L08]
+&lt;/Transforms)
+[L09]
+&lt;DigestMethodAlgorithm=&quot;&quot;/&gt;
+[L10]
+《DigestValue)&lt;/DigestValue)
+[L1]
+&lt;/Reference)
+[L12]
+&lt;/SignedInfo)
+[L13]
+《SignatureValue/)
+[L14]&lt;CertInfo/】
+[L15]&lt;/Signature)
+其中，各个xml标签定义如下：
+Signature标签标明一个完整的xml签名，标识为电子文书编号，xml的命名空间应唯一。
+SignedInfo标签标明待签名的信息。
+CanonicalizationMethod标签中的Algorithm属性指定SignatureInfo内容在签名前的规范化
+算法。
+SignatureMethod标签中的Algorithm属性指定签名过程中使用的散列算法和签名算法。
+Reference标签包括摘要算法和摘要值等。
+Transforms标签包括签名前的转换算法。
+DigestMethod标签标明摘要算法。
+DigestValue标签标明摘要值。
+SignatureValue标签标明签名结果。
+CertInfo标签标明签名中使用的证书信息。
+4.7
+电子签名管理系统
+4.7.1
+总则
+取证与鉴定文书电子签名管理系统应具有系统管理和签名显示的功能。
+4.7.2
+系统管理
+系统建立、修改、维保或传送取证与鉴定电子文书应使用能够保证记录真实性、完整性和适当的机
+密性的程序和控制，以保证签名者不能轻易地否认已经签署的记录是不真实的。这样的程序和控制应
+包括如下过程：
+a)
+系统应验证以保证准确、可靠、稳定地预期性能，有能力识别无效的和被改变的记录；
+b)
+确保产生的人们易读的和适合检查、回顾和拷贝的电子文档准确、完整；</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 7 页 / 共 7 页</span><span>原图 1224×1685</span></div>
+<div class="page-img"><img src="GAT 977-2012 取证与鉴定文书电子签名_pages/page_007.jpg" alt="第7页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T 977—2012
+GA/T977—2012
+c)
+保护系统操作记录以使记录能够在整个的保存期内准确和易于检索；
+d)
+通过授权个人用户以限制系统的登录；
+e)
+使用安全的、计算机产生的、时间印记的审核跟踪以便独立地记录操作者登录和建立、修改、或
+删除电子记录的行为的日期和时间，记录的改变不能使先前的记录信息被覆盖。
+4.7.3
+签名的显示
+签署的取证与鉴定电子文书应包含能清晰显示如下所有与签名相关的信息：
+a)
+用印刷体书写出签名者的名字；
+b)
+签名生效的日期和时间；
+和签名相关的涵意（例如“同意”）。
+版权专有侵权必究
+书号：1550662-23319
+定价：
+GA/T977-2012
+14.00元
+打印日期：2012年11月26日F053</div></div>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · OCR 双层版 · 共 7 页 · 识别文字 3268 字 · 原文以 PDF 为准</div>
 </div>
 </body>
 </html>

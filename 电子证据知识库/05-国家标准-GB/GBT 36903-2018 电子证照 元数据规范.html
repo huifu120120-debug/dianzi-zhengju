@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GBT 36903-2018 电子证照 元数据规范</title>
 <style>
-:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--warn:#b8860b;--ocr:#a93226}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
 .wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
@@ -17,19 +17,17 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 .doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
 .doc-actions a:hover{background:#eef4ff}
 .doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
-.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
-.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
-.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
-.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
-.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.content p{margin:0 0 12px;text-indent:2em}
-.content .no-indent{text-indent:0}
-.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
-.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
-.content h3{font-size:15.5px}
-.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
-.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
-.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.ocr-banner{margin:14px 0;padding:12px 18px;border-radius:8px;font-size:13.5px;line-height:1.7;background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.ocr-banner b{font-weight:700}
+.page-block{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:18px 0;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.page-header{background:#f0f3f7;padding:8px 16px;font-size:13px;color:var(--ink2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.page-header .pageno{font-weight:700;color:var(--brand)}
+.page-img{text-align:center;padding:12px;background:#fafbfc}
+.page-img img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page-ocr{padding:16px 20px;border-top:1px dashed var(--line);background:#fffdf8}
+.page-ocr .ocr-label{font-size:12px;color:var(--ocr);font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+.page-ocr .ocr-text{font-size:14px;line-height:1.9;color:#333;white-space:pre-wrap;word-break:break-word}
+.page-ocr .ocr-empty{color:#999;font-style:italic;font-size:13px}
 .footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
 </style>
 </head>
@@ -40,21 +38,457 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 <div class="doc-meta"><span><b>文号：</b>GBT 36903-2018</span><span><b>层级：</b>国家标准 (GB / GB-T)</span><span><b>日期：</b>2018-11-15</span></div>
 <div class="doc-actions"><a href="GBT 36903-2018 电子证照 元数据规范.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=E866EE7490DE55FDD195979D70A19EE3" target="_blank" rel="noopener">🔗 官方来源</a></div>
 </header>
-<div class="banner pdf">📄 正文来源：本地 PDF 文本层提取（保持原文；排版可能与原件略有差异，以原 PDF 为准）</div>
-<div class="content">
-<p>犐犆犛３５．２４０．９９ 犔７６ ! &quot; # $ % &amp; &#x27; &#x27; ( ) * 犌犅／犜３６９０３—２０１８ !&quot;#$　%&amp;&#x27;() 犈犾犲犮狋狉狅狀犻犮犮犲狉狋犻犳犻犮犪狋犲—犕犲狋犪犱犪狋犪狊狆犲犮犻犳犻犮犪狋犻狅狀 ２０１８１１１５*+ ２０１９０１０１,- &#x27; ( + , - . / 0 1 2 !&#x27;&#x27;()*3/0456 * +</p>
-<p>!　　&quot; !&quot; Ⅲ ………………………………………………………………………………………………………… １　#$ １ ……………………………………………………………………………………………………… ２　%#&amp;&#x27;()* １ ………………………………………………………………………………………… ３　+,-./ １ ……………………………………………………………………………………………… ４　0. １ ……………………………………………………………………………………………………… ４．１　12 １ ………………………………………………………………………………………………… ４．２　3)45 １ …………………………………………………………………………………………… ４．３　./ １ ………………………………………………………………………………………………… ４．４　6)45 ２ …………………………………………………………………………………………… ４．５　789: ２ …………………………………………………………………………………………… ４．６　;&lt; ２ ………………………………………………………………………………………………… ４．７　=4 ２ ………………………………………………………………………………………………… ４．８　0&gt; ２ ………………………………………………………………………………………………… ４．９　?;@A ２ …………………………………………………………………………………………… ５　BCDEF78 ２ ………………………………………………………………………………………… ５．１　GHI: ２ …………………………………………………………………………………………… ５．２　JKGH ３ …………………………………………………………………………………………… ５．３　LMGH ５ …………………………………………………………………………………………… ５．４　NO*GH ５ ………………………………………………………………………………………… ６　F78PQ%2 ６ ………………………………………………………………………………………… ６．１　JRST ６ …………………………………………………………………………………………… ６．２　UVST ７ …………………………………………………………………………………………… WXＡ（%#&amp;WX）　YDZ[\]9: ８ ……………………………………………………………… Ⅰ 犌犅／犜３６９０３—２０１８</p>
-<p>#　　$ R^_`EＧＢ／Ｔ１．１—２００９abc%2de。 fOgR)*chijklmnopq。R)*crstuvwxyz{ipqc|}。 R^_~]b。 R^_de：3GH3、3BC+^_、*、 *（ ¡）、¢£¤*（ ¡）、 ¡7¥¦§+|}、¨©ª« ¬GH­L®¯、°±*²³、 ¡´µGH+®¯、¶J*® ¯、·¸¹ºGH3、»¼¹GH3、 ¡½¾¿¥®¯、 ¡ÀÁBC +、Â·ÃG¥、ÄÅÆ§GH+、»ÇÈ3É*Êr、Ë¼ ¹^_、3*Ì+ÍM®¯、 ¡ÎGÏ¥、 ¡ÏG£F¥ rQ、ÐÑÒGGH+、3Ï¦Î（ ¡）+®¯、Ó½§ÔGHÏÕ +。 R^_ZSdeÖ：×½Ø、ÙÚÛ、ÜÝ、Þß、×àá、âã、äåæ、çè、éêà、ëìí、 î、ïðè、ëñ、ëò、ëó、ôÛ、õö÷、×Ø、Ùøù、úû、ÙCü、ýwþ、ÿ!à、&quot;#$、ë%&amp;、 ô&#x27;、()、*)+、ë,/、îª-、./、0))、12Ë、â)、34Ñ、ë£5、ú&amp;、67Û、 ô8、9:、;Z、×&lt;、Ù=、&gt;?)。 Ⅲ 犌犅／犜３６９０３—２０１８</p>
-<p>%&amp;&#x27;(　)*+,- １　-. R^_%.@BCDEcGHI:，./@DEcJKGH、LMGH-BCDENO*GH， ab@F78cPQ%2。 R^_A(BBCDEcÁ¨、CDÌq(。 ２　,-/0123 EF)*GBR)*cH(IJvlìc。KIOLMc&#x27;()*，NOLMcORA(BR) *。KIvOLMc&#x27;()*，PQROR（STUcVW）A(BR)*。 ＧＢ／Ｔ１９８８—１９９８　GH+　GHCD(XY]Z[² ＧＢ／Ｔ７４０８—２００５　78F-CD\]　GHCD　LM-^_`@a ＧＢ／Ｔ２００９１—２００６　bctu9: ＧＢ３２１００　aÖ-PdbcefghG(\]Y]%2 ＧＢ／Ｔ３６９０１—２０１８　BCDE　1[+iu ＧＢ／Ｔ３６９０２—２０１８　BCDE　jXGH%# ＧＢ／Ｔ３６９０４—２０１８　BCDE　^y%# ＧＡ／Ｔ２０００．１５６—２０１６　ÏGH\]　k１５６lm：n(D*\] ３　45678 ＧＢ／Ｔ３６９０１—２０１８、ＧＢ／Ｔ３６９０２—２０１８o.cpoEF+,-./A(BR)*。 ３．１ %&amp;&#x27;()*+　犲犾犲犮狋狉狅狀犻犮犮犲狉狋犻犳犻犮犪狋犲犿犲狋犪犱犪狋犪 ./-qrBCDEstc78。 ４　97 ４．１　:; R^_u(vS`@c]./-qrF78，vSjkST3)45、./、6)45、789 :、;&lt;、=4、0&gt;-?;@A。 ４．２　&lt;2=&gt; F78c3)45。 ４．３　78 F78cJRjk，abBCDEs.F78wcxy-z{。 １ 犌犅／犜３６９０３—２０１８</p>
-<p>４．４　?2=&gt; F78c6)45，f|(Õ5。}kf~ÃcZ!，Ub¨ÃcZ， vSÕo。 ４．５　*+@A F78c789:，：Z[、LM:、^_:、s:、:、:。 ４．６　BC F78l?;c#$。;&lt;3cLM:?;ef ¡^_。 ４．７　D= F78c=4f|u(3)45cZ，vSÕo。 ４．８　9E F78IlpoPdGH。 ４．９　FBGH ab?;c#A。 ５　%&amp;&#x27;()*+ ５．１　IJKA DEGHSTJKGH、LMGHoNO*GH，PGHI:１U@。 L１　&#x27;(IJKA lmz{E： ａ）　DEJKGHHSDE^y、rtu、YDZ[-ÁGH； ｂ）　v9:cDEvcLMGH，l`R^_abc%2 ¡PQ； ｃ）　NO*GHH¢(BBCDENO*，£¤¨NO*^，¥¦)*3§NGHcF78w。 ２ 犌犅／犜３６９０３—２０１８</p>
-<p>５．２　MNIJ ５．２．１　&#x27;(=&gt; 3)45：DE45； .　　/：¨8©¡Lª«%.¬­.cDE®4，¬nÌU¯DE9:c9:45ª； 6)45：ｃｅｒｔｉｆｉｃａｔｅＮａｍｅ； 789:：Z[； ;　　&lt;：°~)R； =　　4：ＺＺＭＣ； 0　　&gt;：J； ?;@A：±²;V²ýlD。 ５．２．２　&#x27;(@AOP DEU¯9:c\]，³ＧＢ／Ｔ３６９０２—２０１８c５．２．２“DE9:\]”。 ５．２．３　&#x27;(QR 3)45：DEY； .　　/：DErtu`Ef.%2DE´µcY； 6)45：ｃｅｒｔｉｆｉｃａｔｅＮｕｍｂｅｒ； 789:：Z[； ;　　&lt;：¶89:DE./tu©rtucY%2°¡­.； =　　4：ＺＺＢＨ； 0　　&gt;：J； ?;@A：ＺＢ３８６２３３。 ５．２．４　&#x27;(ST DEc·f^y，³ＧＢ／Ｔ３６９０４—２０１８。 ５．２．５　&#x27;(UVWX 3)45：DErtu； .　　/：DErtucÕ5©%#&amp;¸5； 6)45：ｃｅｒｔｉｆｉｃａｔｅＩｓｓｕｉｎｇＡｕｔｈｏｒｉｔｙＮａｍｅ； 789:：Z[； ;　　&lt;：¹~rtu，(“＾”（ＧＢ／Ｔ１９８８—１９９８%.cY]５Ｅ）mº； =　　4：ＺＺＢＦＪＧ； 0　　&gt;：J； ?;@A：××È××»¼½Ìº¾¿h。 ５．２．６　&#x27;(UVWXOP 3)45：DErtu\]； .　　/：DErtucefghG(\]； 6)45：ｃｅｒｔｉｆｉｃａｔｅＩｓｓｕｉｎｇＡｕｔｈｏｒｉｔｙＣｏｄｅ； ３ 犌犅／犜３６９０３—２０１８</p>
-<p>789:：Z[； ;　　&lt;：¹~rtu，\]À_(“＾”mº； =　　4：ＺＺＢＦＪＧＤＭ； 0　　&gt;：l，\]efghG(\]c，ÁÂＧＢ３２１００%#，?;vmÃ； ?;@A：１１３２０４８２８６０Ｐ。 ５．２．７　&#x27;(UVYZ 3)45：DErLM； .　　/：DErcLM，f|Ä­ÅL； 6)45：ｃｅｒｔｉｆｉｃａｔｅＩｓｓｕｅｄＤａｔｅ； 789:：Z[； ;　　&lt;：(ÆÇÈ7ZÉÊ、Ë、L^Õ，Ë、Lv^Ì，©ÁÂＧＢ／Ｔ７４０８—２００５； =　　4：ＺＺＢＦＲＱ； 0　　&gt;：J； ?;@A：２０１６Ê４Ë１５L。 ５．２．８　[&#x27;\] 3)45：YDZ[； .　　/：DEYZ[c45； 6)45：ｃｅｒｔｉｆｉｃａｔｅＨｏｌｄｅｒＮａｍｅ； 789:：Z[； ;　　&lt;：ÌDEEÍGHfÎ，ÏL45、°ÐÖÑ4，¹~YDZ[，(“＾”mº； =　　4：ＣＺＺＴ； 0　　&gt;：J； ?;@A：××È××××。 ５．２．９　[&#x27;\]OP 3)45：YDZ[\]； .　　/：DEYZ[c\]，aÖ-PdbccefghG(\]、°ÐÖcÒ¯D* ]； 6)45：ｃｅｒｔｉｆｉｃａｔｅＨｏｌｄｅｒＣｏｄｅ； 789:：Z[； ;　　&lt;：¹~YDZ[\]，(“＾”mº，5ÓÌYDZ[455Óª； =　　4：ＣＺＺＴＤＭ； 0　　&gt;：l，YDZ[\]Ô(efghG(\]-ÕÒ¯]c，w?;vmÃ； ?;@A：９１３２０４Ｈ５６５５０。 ５．２．１０　[&#x27;\]OP@A 3)45：YDZ[\]9:； .　　/：DEYZ[\]9:c3)45； 6)45：ｃｅｒｔｉｆｉｃａｔｅＨｏｌｄｅｒＴｙｐｅＮａｍｅ； 789:：Z[； ;　　&lt;：³WXＡ，¹~YDZ[，2P9:45(“＾”mº，5ÓÌYDZ[5Óª； ４ 犌犅／犜３６９０３—２０１８</p>
-<p>=　　4：ＣＺＺＴＤＭＬＸ； 0　　&gt;：l； ?;@A：efghG(\]。 ５．２．１１　[&#x27;\]OP@AOP 3)45：YDZ[\]9:\]； .　　/：DEYZ[\]9:c\]； 6)45：ｃｅｒｔｉｆｉｃａｔｅＨｏｌｄｅｒＴｙｐｅＣｏｄｅ； 789:：Z[； ;　　&lt;：³WXＡ，¹~YDZ[，2P9:\](“＾”mº，5ÓÌYDZ[5Óª； =　　4：ＣＺＺＴＤＭＬＸＤＭ； 0　　&gt;：l； ?;@A：１１１。 ５．２．１２　&#x27;(^_Z`aYZ 3)45：DEMdÖLM； .　　/：DEMcdÖLM； 6)45：ｃｅｒｔｉｆｉｃａｔｅＥｆｆｅｃｔｉｖｅＤａｔｅ； 789:：Z[； ;　　&lt;：(ÆÇÈ7ZÉÊ、Ë、L^Õ，Ë、Lv^Ì，©ÁÂＧＢ／Ｔ７４０８—２００５； =　　4：ＺＺＹＸＱＱＳＲＱ； 0　　&gt;：l； ?;@A：２０１６Ê４Ë１５L。 ５．２．１３　&#x27;(^_ZbcYZ 3)45：DEM×ØLM； .　　/：DEMc×ØLM； 6)45：ｃｅｒｔｉｆｉｃａｔｅＥｘｐｉｒｉｎｇＤａｔｅ； 789:：Z[； ;　　&lt;：Ù^_，“DEMdÖLM”;&lt;ST； BCDEÚM，?;“ÚM”，Û¹;“ÚM”； =　　4：ＺＺＹＸＱＪＺＲＱ； 0　　&gt;：l； ?;@A：２０１６Ê４Ë１５L，ÚM。 ５．３　deIJ DEcLMGHqrHÁÂÜ&lt;cef%#。Ý^，l`Ek６Þ­.c%2 ¡PQ。 ５．４　fg3IJ ５．４．１　fg3hijk 3)45：NO*ßà^_； .　　/：ßàBCDENO*（³ＧＢ／Ｔ３６９０１—２０１８c３．６）c^_； ５ 犌犅／犜３６９０３—２０１８</p>
-<p>6)45：ｃｅｒｔｉｆｉｃａｔｅＣｏｐｙＣｒｅａｔｉｏｎＴｉｍｅ； 789:：^_:； ;　　&lt;：ÁÂＧＢ／Ｔ７４０８—２００５； =　　4：ＪＺＪＺＺＳＪ； 0　　&gt;：l； ?;@A：２０１６Ê４Ë１５L１１：０１：１１。 ５．４．２　fg3hil 3)45：NO*ßàá； .　　/：ßàBCDENO*c°ÐÖ©tuc45； 6)45：ｃｅｒｔｉｆｉｃａｔｅＣｏｐｙＣｒｅａｔｏｒ； 789:：Z[； ;　　&lt;：NO*ßàcÕ5©%#&amp;¸5； =　　4：ＪＺＪＺＺＺ； 0　　&gt;：l； ?;@A：××È¡âÍM3。 ５．４．３　fg3himn 3)45：NO*ßàã~； .　　/：ßàBCDENO*cäå，cãw45，f|æç@¦èéjk3； 6)45：ｃｅｒｔｉｆｉｃａｔｅＣｏｐｙＣａｕｓｅ； 789:：Z[； ;　　&lt;：¡âÍMãwêf©Pdjk； =　　4：ＪＺＪＺＺＳＹ； 0　　&gt;：l； ?;@A：ÏÕÁ­ýlDêf。 ５．４．４　fg3^_Zbcjk 3)45：NO*M×Ø^_； .　　/：BCDENO*cM×Ø^_，f|æç@¦èéjk3； 6)45：ｃｅｒｔｉｆｉｃａｔｅＣｏｐｙＥｘｐｉｒｉｎｇＴｉｍｅ； 789:：Z[； ;　　&lt;：(ÆÇÈ7ZÉÊ、Ë、L^Õ，Ë、Lv^Ì，©ÁÂＧＢ／Ｔ７４０８—２００５； =　　4：ＪＺＪＹＸＱＪＺＳＪ； 0　　&gt;：l； ?;@A：２０１６Ê６Ë１５L。 ６　)*+op,; ６．１　Mqrs GR^_./cF78 ¡PQ，ëHSR^_ì./clm。 íýEFPQ9:： ａ）　îNRcF78w，ë¦à^_©¡L^_rs!，78wc6)45o=4ÊïH ６ 犌犅／犜３６９０３—２０１８</p>
-<p>“ＫＺ＿”； ｂ）　á\]`，\ð;&lt;“Z[”cñF78Fòc;&lt;； ｃ）　G;&lt;\]`cF78c;&lt; ¡Pó； ｄ）　GñF78VNôõ\cl&amp;ß。 ６．２　turs F78PQUVSTE： ａ）　RPQcF78vHÌR^_ì./cF78ö4©/ª； ｂ）　GB÷~îNcF78，H`Ek４Þc%.，u(vS`@c]，./P3)45、./、 6)45、789:、;&lt;、=4、0&gt;，QøabùAc@A； ｃ）　GBRc\]`，Hz{?;\]oPú/。 ７ 犌犅／犜３６９０３—２０１８</p>
-<p>v　w　犃 （,-/vw） [&#x27;\]OP@A Y D Z [ \ ] n ³ 9 : o P \ ] ³ ` Ａ．１。` Ａ．１¨ 8 ＧＢ／Ｔ２００９１—２００６、ＧＢ３２１００- ＧＡ／Ｔ２０００．１５６—２０１６ßà。 x犃．１　[&#x27;\]OPyz@A{OP Ó YDZ[9z 9zûm YDZ[\]9: \] １ ２ aÖ-Pdbc aÖ-Pdbc efghG(\] ００１ PdaÖ©PdbcD*\] ０９９ ３ ４ ５ ６ ７ ８ ９ １０ １１ １２ １３ １４ １５ １６ °ÐÖ f|üÕ ÛÖ Ñý-þÖ« ÿ!Ö« &quot;#Ö« ÕÒ¯] １１１ 3ÖÕ$%ÛÛ&amp;DY １１４ 3ÖÕ*&#x27;()l*(&amp;DY １１５ 3ÖÕ$%Û«-DY １１８ 3ÖÕ*&#x27;()l*«-DY １１９ 3ÖÕ$%Û)+Ö¿DY １２０ 3ÖÕ*&#x27;()l*)+Ö¿DY １２２ C,E,E ４１１ M,E,E ４１２ MÐ¬,E,E ４１３ Ð¬,E,E ４１４ ÿ!üÕ-./¬¡D] ５１１ &quot;#üÕ-.j0¬¡D] ５１６ Pd°ÐÖD*\] ９９９ ８ 犌犅／犜３６９０３—２０１８</p>
+<div class="ocr-banner">
+<b>⚠️ OCR 识别版</b>：本文档由原 PDF 逐页扫描识别生成，每页上方为原图，下方为 OCR 识别文字。<br>
+OCR 可能存在少量识别误差（尤其是表格、公式、生僻字），<b>请以原图 / 原 PDF 为准</b>。全文检索已收录 OCR 文字。
 </div>
-<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 1 页 / 共 11 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GBT 36903-2018 电子证照 元数据规范_pages/page_001.jpg" alt="第1页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">ICS 35.240.99
+L 76
+GB
+中华人民共和国国家标准
+GB/T36903—2018
+电子证照
+元数据规范
+Electronic certificateMetadata specification
+国家标准全文公开系统专用，此文本仅供个人学习、研究之用
+未经授权，禁止复制、发行、汇编、翻译或网络传播等，侵权必究。
+全国标准信息公共服务平台：https://std.samr.gov.cn
+2018-11-15发布
+2019-01-01实施
+国家市场监督管理总局
+发布
+中国国家标准化管理委员会</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 2 页 / 共 11 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GBT 36903-2018 电子证照 元数据规范_pages/page_002.jpg" alt="第2页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GB/T36903—2018
+目次
+前言
+范围
+规范性引用文件
+术语和定义
+约定
+4.1
+总则
+4.2
+中文名称
+4.3
+定义
+4.4
+英文名称
+4.5
+数据类型
+4.6
+值域
+4.7
+短名
+4.8
+约束
+4.9
+取值示例
+电子证照元数据
+信息模型
+5.2
+基础信息
+5.3
+业务信息
+5.4
+加注件信息
+元数据扩展规则
+6.1
+基本要求
+6.2
+实施要求
+附录A（规范性附录）
+持证主体代码类型</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 3 页 / 共 11 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GBT 36903-2018 电子证照 元数据规范_pages/page_003.jpg" alt="第3页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GB/T369032018
+前言
+本标准按照GB/T1.1一2009给出的规则起草。
+请注意本文件的某些内容可能涉及专利。本文件的发布机构不承担识别这些专利的责任。
+本标准由国家密码管理局提出并归口。
+本标准起草单位：中央办公厅信息中心、中国电子技术标准化研究院、福建南威软件有限公司、方正
+国际软件（北京）有限公司、航天福昕软件（北京）有限公司、北京数科网维技术有限责任公司、成都卫士
+通信息产业股份有限公司、浪潮软件集团有限公司、北京冠群信息技术股份有限公司、福建榕基软件股
+份有限公司、江苏省建设信息中心、广东省信息中心、北京海泰方圆科技股份有限公司、北京书生电子技
+术有限公司、浙江汇信科技有限公司、甘肃万维信息技术有限公司、广州市中智软件开发有限公司、山东
+发展有限公司、普华诚信信息技术有限公司、中安网脉（北京）技术股份有限公司、上海维豪信息安全技
+术有限公司。
+本标准主要起草人：李海波、陈亚军、方春燕、汪翔、李平立、冯辉、丛培勇、宁方刚、钟伟平、王少康、
+张宇、袁峰、武文高、王忠义、董卫兵、梁国杰、黄文峰、逢锦山、冯文化、柴德华、王天顺、刘冰、苗银军、
+张静、乌兰、程主、李峙、陈晶、郑秉文。
+II</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 4 页 / 共 11 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GBT 36903-2018 电子证照 元数据规范_pages/page_004.jpg" alt="第4页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GB/T36903—2018
+电子证照
+元数据规范
+1范围
+本标准规定了电子证照的信息模型，定义了证照的基础信息、业务信息和电子证照加注件信息，并
+给出了元数据的扩展规则。
+本标准适用于电子证照的生成、交换与利用。
+2规范性引用文件
+下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文
+件。凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。
+GB/T1988一1998信息技术信息交换用七位编码字符集
+GB/T74082005
+数据元和交换格式信息交换日期和时间表示法
+GB/T20091—2006
+组织机构类型
+GB32100法人和其他组织统一社会信用代码编码规则
+GB/T36901—2018
+电子证照
+总体技术架构
+GB/T36902—2018
+电子证照
+目录信息规范
+GB/T36904—2018
+电子证照标识规范
+GA/T2000.156一2016公安信息代码第156部分：常用证件代码
+3术语和定义
+GB/T36901一2018、GB/T36902一2018界定的以及下列术语和定义适用于本文件。
+3.1
+电子证照元数据electroniccertificatemetadata
+定义和描述电子证照特征的数据。
+4约定
+4.1总则
+本标准采用摘要表示的方式定义和描述元数据，摘要内容包括中文名称、定义、英文名称、数据类
+型、值域、短名、约束和取值示例。
+4.2中文名称
+元数据的中文名称。
+4.3定义
+元数据的基本内容，给出电子证照特定元数据项的概念和说明。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 5 页 / 共 11 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GBT 36903-2018 电子证照 元数据规范_pages/page_005.jpg" alt="第5页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GB/T36903—2018
+4.4英文名称
+元数据的英文名称，一般用全称。除第一个词汇的首字母小写外，所有组成词汇的首字母大写，且
+不包含全角及半角逗号。
+4.5
+数据类型
+元数据的数据类型，如：字符串、日期型、时间型、布尔型、整型、浮点型等。
+4.6值域
+元数据可取值的范围。值域中的日期型取值统一为北京时间。
+4.7短名
+元数据的短名一般采用中文名称的拼音首字母大写连写，且不包含全角及半角逗号。
+4.8约束
+该元数据是否可选以及其他信息。
+4.9
+取值示例
+给出取值的参考范例。
+5电子证照元数据
+5.1信息模型
+证照信息包括基础信息、业务信息及加注件信息等，其信息模型如图1所示。
+加注件信息
+证照信息
+业务信息
+·加注件制作时间
+●业务信息项1
+·加注件制作者
+·业务信息项2
+·加注件制作事由
+·加注件有效期截止时间
+基础信息
+证照标识
+颁发机构
+持证主体
+生效信息
+·证照名称
+·持证主体
+·证照颁发机构
+·证照有效期起始日期
+·证照类型代码
+·证照颁发机构代码
+·持证主体代码
+·证照有效期截止日期
+·证照编号
+·证照颁发日期
+·持证主体代码类型
+·证照标识
+·持证主体代码类型代码
+图1
+证照信息模型
+各部分说明如下：
+a)
+证照基础信息应包含证照标识、颁发机构、持证主体和生效信息等；
+b)
+不同类型的证照有不同的业务信息，可按本标准给出的规则进行扩展；
+c)
+加注件信息应只用于电子证照加注件，当形成加注件时，需在文件中添加对应的元数据项。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 6 页 / 共 11 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GBT 36903-2018 电子证照 元数据规范_pages/page_006.jpg" alt="第6页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GB/T36903—2018
+5.2
+基础信息
+5.2.1
+证照名称
+中文名称：证照名称；
+定义：依据国家或行业相关规定而确定的证照命名，通常与所属证照类型的类型名称相同；
+英文名称：certificateName；
+数据类型：字符串；
+值 
+域：自由文本；
+名：ZZMC;
+束：必选；
+取值示例：建筑工程施工许可证。
+5.2.2
+证照类型代码
+该证照所属类型的代码，见GB/T36902一2018的5.2.2证照类型代码”。
+5.2.3 i
+证照编号
+中文名称：证照编号；
+定义：证照颁发机构按照一定规则为该证照赋予的编号；
+英文名称：certificateNumber；
+数据类型：字符串；
+域：根据各类型证照定义机构或颁发机构的编号规则自行确定；
+名：ZZBH;
+束：必选；
+取值示例：ZB386233。
+5.2.4
+证照标识
+该证照的唯一标识，见GB/T36904一2018。
+5.2.5证照颁发机构
+中文名称：证照颁发机构；
+定义：证照颁发机构的全称或规范性简称；
+英文名称：certificatelssuingAuthorityName；
+数据类型：字符串；
+域：如有多个颁发机构，用“”（GB/T1988一1998规定的编码为5E)分隔；
+名：ZZBFJG;
+束：必选；
+取值示例：XX市XX区住房与建设委员会。
+5.2.6i
+证照颁发机构代码
+中文名称：证照颁发机构代码；
+定义：证照颁发机构的统一社会信用代码；
+英文名称：certificateIssuingAuthorityCode；</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 7 页 / 共 11 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GBT 36903-2018 电子证照 元数据规范_pages/page_007.jpg" alt="第7页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GB/T36903—2018
+数据类型：字符串；
+域：如有多个颁发机构，代码之间用“”分隔；
+名：ZZBFJGDM；
+束：可选，代码为统一社会信用代码的，遵循GB32100规范，且取值不能为空；
+取值示例：11320482******860P。
+5.2.7
+证照颁发日期
+中文名称：证照颁发日期；
+定义：证照颁发的日期，一般精确到日；
+英文名称：certificatelssuedDate
+数据类型：字符串；
+名：ZZBFRQ；
+束：必选；
+取值示例：2016年4月15日。
+5.2.8持证主体
+中文名称：持证主体；
+定义：证照持有主体的名称；
+英文名称：certificateHolderName；
+数据类型：字符串；
+名:CZZT;
+束：必选；
+取值示例：XX市XX×X有限公司。
+5.2.9持证主体代码
+中文名称：持证主体代码；
+定义：证照持有主体的代码，如法人和其他组织的统一社会信用代码、自然人的身份证件号
+码等；
+英文名称：certificateHolderCode；
+数据类型：字符串；
+域：如有多个持证主体代码，用“”分隔，顺序与持证主体名称顺序相同；
+名：CZZTDM;
+束：可选，持证主体代码使用统一社会信用代码和公民身份号码的，该项取值不能为空；
+取值示例：913204******H56550。
+5.2.10持证主体代码类型
+中文名称：持证主体代码类型；
+定义：证照持有主体代码类型的中文名称；
+英文名称：certificateHolderTypeName;
+数据类型：字符串；
+值域：见附录A，如有多个持证主体，则其类型名称用“”分隔，顺序与持证主体顺序相同；</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 8 页 / 共 11 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GBT 36903-2018 电子证照 元数据规范_pages/page_008.jpg" alt="第8页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GB/T36903—2018
+名：CZZTDMLX;
+束：可选；
+取值示例：统一社会信用代码。
+5.2.11持证主体代码类型代码
+中文名称：持证主体代码类型代码；
+定义：证照持有主体代码类型的代码；
+英文名称：certificateHolderTypeCode；
+数据类型：字符串；
+域：见附录A，如有多个持证主体，则其类型代码用“”分隔，顺序与持证主体顺序相同；
+名CZZTDMLXDM;
+束：可选；
+取值示例：111。
+5.2.12证照有效期起始日期
+中文名称：证照有效期起始日期；
+定义：证照有效期的起始日期；
+英文名称：certificateEffectiveDate；
+数据类型：字符串；
+域：用阿拉伯数字将年、月、日标全，月、日不标虚位，或遵循GB/T7408一2005；
+名：ZZYXQQSRQ;
+束：可选；
+取值示例：2016年4月15日。
+5.2.13证照有效期截止日期
+中文名称：证照有效期截止日期；
+定义：证照有效期的截止日期；
+英文名称：certificateExpiringDate；
+数据类型：字符串；
+域：如有失效时间，同“证照有效期起始日期”值域要求；
+如电子证照长期有效，取值为“长期”，缺省值为“长期”；
+名：ZZYXQJZRQ；
+束：可选；
+取值示例：2016年4月15日，长期。
+5.3业务信息
+证照的业务信息描述应遵循该领域的统一规范。没有时，可按照第6章确定的规则进行扩展。
+5.4加注件信息
+5.4.1加注件制作时间
+中文名称：加注件制作时间；
+义：制作电子证照加注件（见GB/T36901—2018的3.6）的时间；</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 9 页 / 共 11 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GBT 36903-2018 电子证照 元数据规范_pages/page_009.jpg" alt="第9页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GB/T36903—2018
+英文名称：certificateCopyCreationTime；
+数据类型：时间型；
+域：遵循GB/T7408—2005；
+名：JZJZZSJ;
+束：可选；
+取值示例：2016年4月15日11：01：11。
+5.4.2加注件制作者
+中文名称：加注件制作者；
+定义：制作电子证照加注件的自然人或机构的名称；
+英文名称：certificateCopyCreator；
+数据类型：字符串；
+值域：加注件制作单位的全称或规范性简称；
+名：JZJZZZ;
+束：可选；
+取值示例：XX市行政服务中心。
+5.4.3
+加注件制作事由
+中文名称：加注件制作事由；
+定义：制作电子证照加注件的原因，如办理的事项名称等，一般同步显示在水印内容中；
+英文名称：certificateCopyCause；
+数据类型：字符串；
+域：行政服务事项申请或其他内容；
+名:JZJZZSY;
+束：可选；
+取值示例：安全生产许可证申请。
+5.4.4加注件有效期截止时间
+中文名称：加注件有效期截止时间；
+定义：电子证照加注件的有效期截止时间，一般同步显示在水印内容中；
+英文名称：certificateCopyExpiringTime；
+数据类型：字符串；
+值域：用阿拉伯数字将年、月、日标全，月、日不标虚位，或遵循GB/T7408—2005；
+短名：JZJYXQJZSJ；
+约束：可选；
+取值示例：2016年6月15日。
+6元数据扩展规则
+6.1基本要求
+对本标准定义的元数据进行扩展，但应包含本标准已定义的部分。
+允许下列扩展类型：
+a）增加新的元数据项，但在作为国家标准或行业标准发布前，该数据项的英文名称及短名开头应</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 10 页 / 共 11 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GBT 36903-2018 电子证照 元数据规范_pages/page_010.jpg" alt="第10页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GB/T36903-2018
+为&quot;KZ_&quot;;
+b)
+建立代码表，代替值域为“字符串”的现有元数据元素的值域；
+c)
+对值域为代码表的元数据的值域进行扩充；
+d)
+对现有元数据施加更严格的可选性限制。
+6.2
+实施要求
+元数据扩展实施要求如下：
+a)
+新扩展的元数据不应与本标准已定义的元数据重名或含义相同；
+b)
+对于每个增加的元数据，应按照第4章的规定，采用摘要表示的方式，定义其中文名称、定义、
+英文名称、数据类型、值域、短名、约束，最后给出合适的示例；
+对于新建的代码表，应说明取值代码及其涵义。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 11 页 / 共 11 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GBT 36903-2018 电子证照 元数据规范_pages/page_011.jpg" alt="第11页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GB/T36903—2018
+附录A
+（规范性附录）
+持证主体代码类型
+持证主体代码常见类型及其代码见表A.1。表A.1依据GB/T20091一2006、GB32100和
+GA/T2000.1562016制作。
+表A.1持证主体代码常见类型及代码
+序号
+持证主体类别
+类别细分
+持证主体代码类型
+代码
+法人和其他组织
+统一社会信用代码
+001
+法人和其他组织
+其他法人或其他组织有效证件代码
+099
+一般居民
+公民身份号码
+111
+中国人民解放军军官证编号
+114
+中国人民武装警察部队警官证编号
+115
+中国人民解放军士兵证编号
+118
+军人
+中国人民武装警察部队士兵证编号
+119
+中国人民解放军文职人员证编号
+120
+中国人民武装警察部队文职人员证编号
+122
+自然人
+10
+外交护照护照号
+411
+公务护照护照号
+412
+华侨和外籍人士
+12
+公务普通护照护照号
+413
+普通护照护照号
+13
+414
+14
+台湾人士
+台湾居民来往大陆通行证号码
+511
+港澳居民来往内地通行证号码
+15
+港澳人士
+516
+16
+其他自然人有效证件代码
+666</div></div>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · OCR 双层版 · 共 11 页 · 识别文字 5714 字 · 原文以 PDF 为准</div>
 </div>
 </body>
 </html>

@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>移动终端取证检验方法</title>
+<title>GAT 1170-2014 移动终端取证检验方法</title>
 <style>
-:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--warn:#b8860b;--ocr:#a93226}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
 .wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
@@ -17,113 +17,272 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 .doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
 .doc-actions a:hover{background:#eef4ff}
 .doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
-.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
-.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
-.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
-.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
-.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.content p{margin:0 0 12px;text-indent:2em}
-.content .no-indent{text-indent:0}
-.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
-.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
-.content h3{font-size:15.5px}
-.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
-.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
-.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.ocr-banner{margin:14px 0;padding:12px 18px;border-radius:8px;font-size:13.5px;line-height:1.7;background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.ocr-banner b{font-weight:700}
+.page-block{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:18px 0;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.page-header{background:#f0f3f7;padding:8px 16px;font-size:13px;color:var(--ink2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.page-header .pageno{font-weight:700;color:var(--brand)}
+.page-img{text-align:center;padding:12px;background:#fafbfc}
+.page-img img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page-ocr{padding:16px 20px;border-top:1px dashed var(--line);background:#fffdf8}
+.page-ocr .ocr-label{font-size:12px;color:var(--ocr);font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+.page-ocr .ocr-text{font-size:14px;line-height:1.9;color:#333;white-space:pre-wrap;word-break:break-word}
+.page-ocr .ocr-empty{color:#999;font-style:italic;font-size:13px}
 .footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="doc-head">
-<h1>移动终端取证检验方法</h1>
-<div class="doc-meta"><span><b>文号：</b>GA/T 1170—2014</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2014-07-09</span></div>
-<div class="doc-actions"><a href="GAT 1170-2014 移动终端取证检验方法.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://img.antpedia.com/standard/files/pdfs_ora/CN-GA/ce1/GA_T%201170-2014_5842.pdf" target="_blank" rel="noopener">🔗 来源</a></div>
+<h1>GAT 1170-2014 移动终端取证检验方法</h1>
+<div class="doc-meta"><span><b>文号：</b>GAT 1170-2014</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2014-07-09</span><span><b>备注：</b>仅获取节选（来源：other，https://img.antpedia.com/standard/files/pdfs_ora/CN-GA/ce1/GA_T%201170-2014_5842.pdf）</span></div>
+<div class="doc-actions"><a href="GAT 1170-2014 移动终端取证检验方法.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://std.samr.gov.cn/hb/search/stdHBDetailed?id=8B1827F21FEEBB19E05397BE0A0AB44A" target="_blank" rel="noopener">🔗 官方来源</a></div>
 </header>
-<div class="banner pdf">📄 正文来源：分析测试百科网PDF全文，以下为节选内容，全文请下载原PDF</div>
-<div class="content">
-<h2>前言</h2>
-<p>本标准按照 GB/T 1.1—2009 给出的规则起草。</p>
-<p>本标准由公安部第三研究所提出。</p>
-<p>本标准由公安部信息系统安全标准化技术委员会归口。</p>
-<p>本标准起草单位：公安部第三研究所。</p>
-<p>本标准主要起草人：郭弘、黄道丽、金波、赵戈、杭强伟、徐隽。</p>
-<h2>4 现场证据的获取</h2>
-<h3>4.1 评估现场</h3>
-<p>确定对移动终端中的证据数据进行现场获取的人员和需携带的必要设备，人员应具备识别不同类型的移动终端并熟悉其特性和相关配件的能力。</p>
-<p>对移动终端中的证据数据进行现场获取前，需对现场情况进行评估，根据现场情况制定计划，包括：</p>
-<p class="no-indent">a） 现场获取的目的和范围；</p>
-<p class="no-indent">b) 现场获取采用的标准规范；</p>
-<p class="no-indent">c) 现场获取的顺序。</p>
-<h3>4.2 获取和保护证据设备</h3>
-<h3>4.2.1 获取</h3>
-<p>按照所制定的计划，获取移动终端及相关附件设备和资料。如需获取证据数据的移动终端正连接计算机进行同步，应采取以下措施：</p>
-<p class="no-indent">a）关闭计算机电源，防止数据传输或同步覆盖；</p>
-<p class="no-indent">b) 同时获取移动终端和连接的电缆、底座和与其同步的计算机，以便从计算机的硬盘中获取移动终端中未获取的同步数据；</p>
-<p class="no-indent">c）不可取出移动终端中的数据存储卡和 SIM 卡；</p>
-<p class="no-indent">d）获取移动终端的相关附件设备和资料，如：电源、电缆、底座、产品说明书和软件等。</p>
-<h3>4.2.2 隔离</h3>
-<p>为防止移动终端中的证据数据被破坏，应将移动终端从无线网络隔离，方法包括：</p>
-<p class="no-indent">a）立即关闭移动终端，不得再次打开，以免破坏数据。如电池可拆卸，取出电池；</p>
-<p class="no-indent">b) 紧急情况下，可保持移动终端开机状态作紧急处理。如果移动终端需保持开机，需在供电状态下将其从网络上隔离，方法包括：</p>
-<p class="no-indent">1）射频屏蔽；</p>
-<p class="no-indent">2）将移动终端设置为"飞行"模式；</p>
-<p class="no-indent">3）禁用 Wi-Fi、蓝牙和红外通信。</p>
-<h3>4.2.3 包装</h3>
-<p>对移动终端的包装应满足以下要求：</p>
-<p class="no-indent">a）将移动终端密封在防静电袋中，并予以标记；</p>
-<p class="no-indent">b) 正确保护移动终端，防止无意触碰按键，如放置在专门设计的硬质容器中；</p>
-<p class="no-indent">c） 使用射频隔离袋屏蔽移动终端的无线电信号。</p>
-<h3>4.2.4 运输</h3>
-<p>对移动终端的运输应满足以下要求：</p>
-<p class="no-indent">a）谨慎处理、充分保护移动终端，防止震动、湿度和极端温度对移动终端造成影响；</p>
-<p class="no-indent">b) 移动终端保持开机状态时，应使用独立的外部电源进行充电；</p>
-<p class="no-indent">c）如电源适配器与无线频率隔离袋一起使用，应妥善保护电缆，防止隔离袋失效。</p>
-<h2>5 实验室检验</h2>
-<h3>5.1 识别</h3>
-<p>通过查看品牌、型号、服务提供商和设备标识，识别送检移动终端。</p>
-<h3>5.2 准备检验用的设备</h3>
-<p>用于移动终端检验的实验室设备应满足以下要求：</p>
-<p class="no-indent">a）进行定期验证，确保性能稳定；</p>
-<p class="no-indent">b) 定期审查设备的当前信息（如用户手册）以及其他相关文件，确保可随时获取；</p>
-<p class="no-indent">c）确保检验用的应用程序是最新的稳定版本，并在使用前进行验证。</p>
-<h3>5.3 数据的检验分析</h3>
-<h3>5.3.1 移动终端的检验分析</h3>
-<p>移动终端中数据的检验和分析应分层次进行，根据情况选择以下的一项或多项进行检验：</p>
-<p class="no-indent">a） 手工分析：通过移动终端键盘和移动终端显示屏查看并记录移动终端内存中的数据；</p>
-<p class="no-indent">b) 逻辑分析：使用数据电缆连接到移动终端采集数据，不包括访问已被删除的数据；</p>
-<p class="no-indent">c) 镜像备份（物理分析）：对移动终端文件系统进行物理镜像备份，对备份数据进行分析，恢复未被覆盖的被删除数据；</p>
-<p class="no-indent">d）卸载内存芯片分析（物理分析）：卸载移动终端的存储芯片，读取芯片中的数据；</p>
-<p class="no-indent">e） 微读（物理分析）：使用高倍电子显微镜检验存储器的电子电路以采集数据。</p>
-<h3>5.3.2 记忆卡的检验分析</h3>
-<p>记忆卡中数据的检验分析按照 GA/T 756—2008 的要求进行。</p>
-<h3>5.3.3 SIM 卡的检验分析</h3>
-<p>SIM 卡中数据的检验分析使用专用的 SIM 卡读取设备进行。</p>
-<h3>5.3.4 注意事项</h3>
-<p>检验分析过程应注意以下事项：</p>
-<p class="no-indent">a）记录移动终端的状况；</p>
-<p class="no-indent">b) 采取预防措施隔离移动终端连接网络；</p>
-<p class="no-indent">c) 检验过程中，确保移动终端被持续供电；</p>
-<p class="no-indent">d) 如移动终端能进行多项检验，先进行物理分析，后进行逻辑分析；</p>
-<p class="no-indent">e）根据以下顺序，使用一种或多种方式获取数据：</p>
-<p class="no-indent">1) 电缆；</p>
-<p class="no-indent">2) 拍照/录像；</p>
-<p class="no-indent">3) 红外线；</p>
-<p class="no-indent">4) 蓝牙；</p>
-<p class="no-indent">f）单独分析移动终端的内存、SIM卡和存储卡等证据介质，以免破坏数据；</p>
-<p class="no-indent">g）所有含 SIM 卡的移动终端需检验两次：安装 SIM 卡检验和卸载 SIM 卡检验。</p>
-<h2>6 检出数据</h2>
-<p>计算检出数据的哈希值，并复制到专用的存储介质中。</p>
-<h2>7 记录</h2>
-<p>检验时需做好检验记录，记录应贯穿整个检验过程，记录应包括：</p>
-<p class="no-indent">a）检验开始的时间和日期；</p>
-<p class="no-indent">b) 送检移动终端的物理状况；</p>
-<p class="no-indent">c) 送检移动终端和其部件的照片；</p>
-<p class="no-indent">d）送检移动终端接受时的状态（关闭或开启）；</p>
-<p class="no-indent">e）送检移动终端的品牌、型号、服务提供商等信息；</p>
-<p class="no-indent">f) 检验过程中所使用的软、硬件工具。</p>
+<div class="ocr-banner">
+<b>⚠️ OCR 识别版</b>：本文档由原 PDF 逐页扫描识别生成，每页上方为原图，下方为 OCR 识别文字。<br>
+OCR 可能存在少量识别误差（尤其是表格、公式、生僻字），<b>请以原图 / 原 PDF 为准</b>。全文检索已收录 OCR 文字。
 </div>
-<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 1 页 / 共 7 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1170-2014 移动终端取证检验方法_pages/page_001.jpg" alt="第1页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">ICS 35.240.01
+GA
+A92
+中华人民共和国公共安全行业标准
+GA/T11702014
+移动终端取证检验方法
+Examination methods for evidence collection from mobile terminals
+2014-07-09发布
+2014-07-09实施
+中华人民共和国公安部
+发布
+刮涂屋袁真伤</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 2 页 / 共 7 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1170-2014 移动终端取证检验方法_pages/page_002.jpg" alt="第2页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">TO.GAS.BEPOT
+邦社业全安共公国共人车中
+MOS-OTITAD
+中华人民共和国公共安全
+行业标准
+移动终端取证检验方法
+GA/T1170—2014
+中国标准出版社出版发行
+北京市朝阳区和平里西街甲2号（100029）
+北京市西城区三里河北街16号（100045）
+网址www.spc.net.cn
+总编室：（010）64275323发行中心：（010）51780235
+读者服务部：（010）68523946
+中国标准出版社秦皇岛印刷厂印刷
+各地新华书店经销
+开本880×12301/16印张0.5字数8千字
+2014年9月第一版2014年9月第一次印刷
+书号：155066·2-27340定价14.00
+如有印装差错由本社发行中心调换
+版权专有侵权必究
+举报电话：（010）68510107</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 3 页 / 共 7 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1170-2014 移动终端取证检验方法_pages/page_003.jpg" alt="第3页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T 1170—2014
+前征言
+本标准按照GB/T1.1-2009给出的规则起草。
+本标准由公安部第三研究所提出。
+本标准由公安部信息系统安全标准化技术委员会归口。
+本标准起草单位：公安部第三研究所。
+本标准主要起草人：郭弘、黄道丽、金波、赵戈、杭强伟、徐隽。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 4 页 / 共 7 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1170-2014 移动终端取证检验方法_pages/page_004.jpg" alt="第4页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1170—2014
+移动终端取证检验方法
+目的和范围
+本标准规定了电子数据检验时，从移动终端（不包括具有无线上网功能的笔记本电脑）获取、分析与
+呈现证据数据的检验方法。
+本标准适用于电子数据检验工作中，从移动终端（不包括具有无线上网功能的笔记本电脑）获取、分
+析与呈现证据数据。
+2规范性引用文件
+下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文
+件。凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。
+GA/T756—2008数字化设备证据数据发现提取固定方法
+GA/T976—2012电子数据法庭科学鉴定通用方法
+3术语和定义
+GA/T756—2008和GA/T976—2012界定的以及下列术语和定义适用于本文件。
+3.1
+移动终端mobileterminal
+基于移动网络应用的设备，包括但不限于手机、无线上网卡等通讯终端、具有无线上网功能的笔记
+本电脑、平板电脑、游戏机、PDA、MP4等设备，以及无线定位、无线监控等终端。
+3.2
+蓝牙bluetooth
+一种无线数据和语音传输技术，将各种通信设备、计算机及其终端设备、各种数字数据系统，甚至家
+用电器采用无线方式连接起来，传输距离为10cm至10m。采用分散式网络结构以及快跳频和短包技
+术，支持点对点及点对多点通信，工作在全球通用的2.4GHzISM频段。
+3.3
+无线保真
+Wi-Fi
+一种无线局域网通讯技术，基于IEEE802.11标准，属于在办公室和家庭中使用的短距离无线
+技术。
+3.4
+红外通信infaredcommunication
+一种无线通讯技术，利用红外线进行点对点数据传输。
+3.5
+底座cradle
+一种对接站，使用户的计算机和移动终端能够端连接进行通信和充电。
+3.6
+文件系统file system
+操作系统的一个组成部分，是实现数据的存储、分级组织、访问和获取等操作的抽象数据类型。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 5 页 / 共 7 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1170-2014 移动终端取证检验方法_pages/page_005.jpg" alt="第5页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T 1170—2014
+4现场证据的获取
+4.1评估现场
+确定对移动终端中的证据数据进行现场获取的人员和需携带的必要设备，人员应具备识别不同类
+型的移动终端并熟悉其特性和相关配件的能力。
+对移动终端中的证据数据进行现场获取前，需对现场情况进行评估，根据现场情况制定计划，包括：
+现场获取的目的和范围；
+b)
+现场获取采用的标准规范；
+现场获取的顺序。
+4.2
+获取和保护证据设
+4.2.1
+获取
+CHINA
+按照所制定的计取移动终端及相关附件设备和资料。如需获取证据数据的移动终端正连接
+计算机进行同步，厂
+以下措施：
+a)
+关闭计算机电原，防止数据传输或同步覆盖
+同时获
+b)
+终端和连接的电缆底座和与其同步的计算机，以便从计算机的硬盘中获取移
+动终端
+获取的同步数据；
+不可取
+L移动终端中的数据存储卡和SIM卡；
+获取移
+d)
+瑞的相关附件设备和资料，如：电源、电缆底座、产品说明书和软件等。
+4.2.2
+隔离
+为防止移动终
+的证据数据被破坏应将移动终端从无线网络隔离，方法包括
+立即关闭
+a)
+端，不得再次打开，以免破坏数据。如电池可拆卸，取出电也；
+紧急情况
+b)
+保持移动终端开机状态作紧急处理。如果移动终端需保持开机，需在供电状
+态下将其从
+隔离，方法包括：
+射频屏商
+2)
+将移动终站
+禁用 Wi-Fi、
+4.2.3
+包装
+对移动终端的包装应满足以下要求，
+a)
+将移动终端密封在防静电袋中，并予以标记；
+b)
+正确保护移动终端，防止无意触碰按键，如放置在专门设计的硬质容器中；
+使用射频隔离袋屏蔽移动终端的无线电信号。
+4.2.4
+运输
+对移动终端的运输应满足以下要求：
+a)
+谨慎处理、充分保护移动终端，防止震动、湿度和极端温度对移动终端造成影响；
+b)
+移动终端保持开机状态时，应使用独立的外部电源进行充电；
+如电源适配器与无线频率隔离袋一起使用，应妥善保护电缆，防止隔离袋失效。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 6 页 / 共 7 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1170-2014 移动终端取证检验方法_pages/page_006.jpg" alt="第6页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T 1170—2014
+5实验室检验
+5.1识别
+通过查看品牌、型号、服务提供商和设备标识，识别送检移动终端。
+5.2
+准备检验用的设备
+用于移动终端检验的实验室设备应满足以下要求：
+a)
+进行定期验证，确保性能稳定；
+b)
+定期审查设备的当前信息（如用户手册）以及其他相关文件，确保可随时获取；
+确保检验用的应用程序是最新的稳定版本，并在使用前进行验证。
+5.3
+数据的检验分析
+5.3.1
+移动终端的检验分析
+移动终端中数据的检验和分析应分层次进行，根据情况选择以下的一项或多项进行检验：
+a)
+手工分析：通过移动终端键盘和移动终端显示屏查看并记录移动终端内存中的数据；
+b)
+逻辑分析：使用数据电缆连接到移动终端采集数据，不包括访问已被删除的数据；
+镜像备份（物理分析）：对移动终端文件系统进行物理镜像备份，对备份数据进行分析，恢复未
+被覆盖的被删除数据；
+d)
+卸载内存芯片分析（物理分析）：卸载移动终端的存储芯片，读取芯片中的数据；
+微读（物理分析）：使用高倍电子显微镜检验存储器的电子电路以采集数据。
+5.3.2
+记忆卡的检验分析
+记忆卡中数据的检验分析按照GA/T7562008的要求进行。
+5.3.3SIM卡的检验分析
+SIM卡中数据的检验分析使用专用的SIM卡读取设备进行。
+5.3.4注意事项
+检验分析过程应注意以下事项：
+记录移动终端的状况；
+b)
+采取预防措施隔离移动终端连接网络；
+c)
+检验过程中，确保移动终端被持续供电；
+d)
+如移动终端能进行多项检验，先进行物理分析，后进行逻辑分析；
+e)
+根据以下顺序，使用一种或多种方式获取数据：
+电缆；
+2)
+拍照/录像；
+3)
+红外线；
+4)
+蓝牙；
+单独分析移动终端的内存、SIM卡和存储卡等证据介质，以免破坏数据；
+所有含SIM卡的移动终端需检验两次：安装SIM卡检验和卸载SIM卡检验。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 7 页 / 共 7 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1170-2014 移动终端取证检验方法_pages/page_007.jpg" alt="第7页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T 1170—2014
+GA/T 1170—2014
+6检出数据
+计算检出数据的哈希值，并复制到专用的存储介质中。
+7记录
+检验时需做好检验记录，记录应贯穿整个检验过程，记录应包括：
+a)
+检验开始的时间和日期；
+b)
+送检移动终端的物理状况；
+c)
+送检移动终端和其部件的照片；
+d)
+送检移动终端接受时的状态（关闭或开启）；
+送检移动终端的品牌、型号、服务提供商等信息；
+检验过程中所使用的软、硬件工具。
+版权专有侵权必究
+书号：155066·2-27340
+GA/T1170-2014
+定价：
+14.00</div></div>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · OCR 双层版 · 共 7 页 · 识别文字 3324 字 · 原文以 PDF 为准</div>
 </div>
 </body>
 </html>

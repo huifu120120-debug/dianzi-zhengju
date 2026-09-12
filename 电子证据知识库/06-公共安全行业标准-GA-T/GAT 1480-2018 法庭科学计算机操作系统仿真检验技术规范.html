@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>法庭科学计算机操作系统仿真检验技术规范</title>
+<title>GAT 1480-2018 法庭科学计算机操作系统仿真检验技术规范</title>
 <style>
-:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--warn:#b8860b;--ocr:#a93226}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
 .wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
@@ -17,66 +17,173 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 .doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
 .doc-actions a:hover{background:#eef4ff}
 .doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
-.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
-.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
-.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
-.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
-.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.content p{margin:0 0 12px;text-indent:2em}
-.content .no-indent{text-indent:0}
-.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
-.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
-.content h3{font-size:15.5px}
-.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
-.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
-.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.ocr-banner{margin:14px 0;padding:12px 18px;border-radius:8px;font-size:13.5px;line-height:1.7;background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.ocr-banner b{font-weight:700}
+.page-block{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:18px 0;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.page-header{background:#f0f3f7;padding:8px 16px;font-size:13px;color:var(--ink2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.page-header .pageno{font-weight:700;color:var(--brand)}
+.page-img{text-align:center;padding:12px;background:#fafbfc}
+.page-img img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page-ocr{padding:16px 20px;border-top:1px dashed var(--line);background:#fffdf8}
+.page-ocr .ocr-label{font-size:12px;color:var(--ocr);font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+.page-ocr .ocr-text{font-size:14px;line-height:1.9;color:#333;white-space:pre-wrap;word-break:break-word}
+.page-ocr .ocr-empty{color:#999;font-style:italic;font-size:13px}
 .footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="doc-head">
-<h1>法庭科学计算机操作系统仿真检验技术规范</h1>
-<div class="doc-meta"><span><b>文号：</b>GA/T 1480-2018</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2018-04-17</span></div>
-<div class="doc-actions"><a href="GAT 1480-2018 法庭科学计算机操作系统仿真检验技术规范.PDF" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://max.book118.com/try_down/358012126061002021.pdf" target="_blank" rel="noopener">🔗 来源</a></div>
+<h1>GAT 1480-2018 法庭科学计算机操作系统仿真检验技术规范</h1>
+<div class="doc-meta"><span><b>文号：</b>GAT 1480-2018</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2018-04-17</span><span><b>备注：</b>仅获取节选（来源：book118，https://max.book118.com/try_down/358012126061002021.pdf）；仅获取到第1-4.1章（前言、范围、规范性引用文件、</span></div>
+<div class="doc-actions"><a href="GAT 1480-2018 法庭科学计算机操作系统仿真检验技术规范.PDF" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://www.mps.gov.cn/n6557558/c6483397/content.html" target="_blank" rel="noopener">🔗 官方来源</a></div>
 </header>
-<div class="banner scanned">⚠️ 以下为节选内容（第1-4.1章），全文请下载原PDF。正文来源：原创力文档(book118)及GB/T英文版网站(gb-gbt.com)，附URL</div>
-<div class="content">
-<h2>前言</h2>
-<p>本标准按照GB/T 1.1—2009给出的规则起草。</p>
-<p>请注意本文件的某些内容可能涉及专利。本文件的发布机构不承担识别这些专利的责任。</p>
-<p>本标准由全国刑事技术标准化技术委员会电子物证检验分技术委员会(SAC/TC 179/SC 7)提出并归口。</p>
-<p>本标准起草单位：公安部网络侦察技术研发中心、盘石软件(上海)有限公司、厦门美亚柏科信息股份有限公司、上海弘连网络科技有限公司。</p>
-<p>本标准主要起草人：刘晓宇、翟晓飞、宋庆飞、李毅、陆道宏、赵庸。</p>
-
-<h2>1 范围</h2>
-<p>本标准规定了Windows、Linux以及MacOS操作系统仿真检验的技术方法。</p>
-<p>本标准适用于法庭科学领域电子物证检验中的计算机操作系统仿真检验。</p>
-
-<h2>2 规范性引用文件</h2>
-<p>下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文件。凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。</p>
-<p>GB/T 5271.1—2000 信息技术 词汇 第1部分：基本术语</p>
-<p>GA/T 755—2008 电子数据存储介质写保护设备要求及检测方法</p>
-<p>GA/T 756—2008 数字化设备证据数据发现提取固定方法</p>
-<p>GA/T 976—2012 电子数据法庭科学鉴定通用方法</p>
-
-<h2>3 术语和定义</h2>
-<p>GB/T 5271.1—2000、GA/T 755—2008、GA/T 756—2008和GA/T 976—2012界定的以及下列术语和定义适用于本文件。</p>
-<h3>3.1 系统仿真 system emulation</h3>
-<p>利用虚拟化技术、重新定向技术对计算机操作系统的内核、硬件设备、用户环境、各种网络协议、应用程序、数据记录等信息进行动态模拟。</p>
-<h3>3.2 仿真对象 emulation object</h3>
-<p>用于系统仿真的存储介质、镜像文件及虚拟机文件等。</p>
-
-<h2>4 仿真检验步骤</h2>
-<h3>4.1 检验准备</h3>
-<h4>4.1.1 检材编号</h4>
-<p>对送检的检材进行唯一性编号。</p>
-<h4>4.1.2 检材拍照</h4>
-<p>对送检的检材加上唯一性编号并拍照。</p>
-<h4>4.1.3 检材保全备份</h4>
-<p>按照GA/T 756—2008的要求对具备保全条件的检材进行固定保全。</p>
+<div class="ocr-banner">
+<b>⚠️ OCR 识别版</b>：本文档由原 PDF 逐页扫描识别生成，每页上方为原图，下方为 OCR 识别文字。<br>
+OCR 可能存在少量识别误差（尤其是表格、公式、生僻字），<b>请以原图 / 原 PDF 为准</b>。全文检索已收录 OCR 文字。
 </div>
-<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 1 页 / 共 8 页</span><span>原图 1183×1680</span></div>
+<div class="page-img"><img src="GAT 1480-2018 法庭科学计算机操作系统仿真检验技术规范_pages/page_001.jpg" alt="第1页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">ICS 13.310
+A 92
+GA
+中华人民共和国公共安全行业标准
+GA/T1480—2018
+法庭科学计算机操作系统仿真检验
+技术规范
+Technical specifications for computer operating system emulation
+examination in Forensics
+2018-04-17发布
+2018-04-17实施
+中华人民共和国公安部
+发布</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 2 页 / 共 8 页</span><span>原图 1183×1680</span></div>
+<div class="page-img"><img src="GAT 1480-2018 法庭科学计算机操作系统仿真检验技术规范_pages/page_002.jpg" alt="第2页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text ocr-empty">（本页未识别到文字，可能为纯图片/空白页）</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 3 页 / 共 8 页</span><span>原图 1183×1680</span></div>
+<div class="page-img"><img src="GAT 1480-2018 法庭科学计算机操作系统仿真检验技术规范_pages/page_003.jpg" alt="第3页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1480—2018
+前言
+本标准按照GB/T1.1一2009给出的规则起草。
+请注意本文件的某些内容可能涉及专利。本文件的发布机构不承担识别这些专利的责任。
+并归口。
+本标准起草单位：公安部网络侦察技术研发中心、盘石软件（上海）有限公司、厦门美亚柏科信息股
+份有限公司、上海弘连网络科技有限公司。
+本标准主要起草人：刘晓宇、翟晓飞、宋庆飞、李毅、陆道宏、赵庸。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 4 页 / 共 8 页</span><span>原图 1183×1680</span></div>
+<div class="page-img"><img src="GAT 1480-2018 法庭科学计算机操作系统仿真检验技术规范_pages/page_004.jpg" alt="第4页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text ocr-empty">（本页未识别到文字，可能为纯图片/空白页）</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 5 页 / 共 8 页</span><span>原图 1183×1680</span></div>
+<div class="page-img"><img src="GAT 1480-2018 法庭科学计算机操作系统仿真检验技术规范_pages/page_005.jpg" alt="第5页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1480—2018
+法庭科学计算机操作系统仿真检验
+技术规范
+1范围
+本标准规定了Windows、Linux以及MacOS操作系统仿真检验的技术方法。
+本标准适用于法庭科学领域电子物证检验中的计算机操作系统仿真检验。
+2规范性引用文件
+下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文
+件。凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。
+GB/T5271.12000信息技术司汇第1部分：基本术语
+GA/T755一2008电子数据存储介质写保护设备要求及检测方法
+GA/T756—2008
+数字化设备证据数据发现提取固定方法
+GA/T976-2012
+电子数据法庭科学鉴定通用方法
+3术语和定义
+语和定义适用于本文件。
+3.1
+系统仿真systememulation
+利用虚拟化技术、重新定向技术对计算机操作系统的内核、硬件设备、用户环境、各种网络协议、应
+用程序、数据记录等信息进行动态模拟。
+3.2
+仿真对象emulationobject
+用于系统仿真的存储介质、镜像文件及虚拟机文件等。
+4仿真检验步骤
+4.1
+检验准备
+4.1.1
+检材编号
+对送检的检材进行唯一性编号。
+4.1.2检材拍照
+对送检的检材加上唯一性编号并拍照。
+4.1.3检材保全备份
+按照GA/T756—2008的要求对具备保全条件的检材进行固定保全。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 6 页 / 共 8 页</span><span>原图 1183×1680</span></div>
+<div class="page-img"><img src="GAT 1480-2018 法庭科学计算机操作系统仿真检验技术规范_pages/page_006.jpg" alt="第6页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1480-—2018
+4.2仿真对象接入
+使用符合GA/T7552008要求的写保护设备接人检材（若已保全，使用保全的存储设备或文件），
+对仿真对象进行加载。
+4.3仿真检验步骤
+4.3.1运行环境设置
+对仿真对象的运行环境进行设置，包括内存、硬盘类型、网络配置等。
+4.3.2检验环境设置
+设定仿真对象适用的检验环境，包括设定检验工具集、检验目标介质等。
+4.3.3仿真启动设置
+必要时，在仿真对象启动过程中，进行选择和替换启动自动加载的驱动和程序、规避登录密码等系
+统安全措施等处理。
+4.4仿真对象数据提取固定
+4.4.1数据获取
+按照GA/T756一2008要求获取仿真对象中的静态数据和易失性数据，以及处于开机或联网状态
+下的仿真对象的网络活动数据、数据传输交互等产生的系统外部数据等。
+4.4.2数据保存
+将检出数据采用封盘刻录方式刻录在不可擦写的空白光盘上或者保存在专用存储介质中，并计算
+检出数据的哈希值。
+5检验记录
+按照GA/T756—2008的要求记录检验过程。
+6检验结果表述
+检验结果表述应符合以下规定：
+a）检验结果分为检出、未检出、不具备检验条件3种；
+b）检验结果应根据检验要求对检验对象、检验范围、检验所得进行客观、概括、有针对性的描述；
+c)
+检验结果表述应包含检材编号、检出情况、检出数据文件或保存检出数据介质哈希值、保存检
+出数据介质编号等必要信息。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 7 页 / 共 8 页</span><span>原图 1183×1680</span></div>
+<div class="page-img"><img src="GAT 1480-2018 法庭科学计算机操作系统仿真检验技术规范_pages/page_007.jpg" alt="第7页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text ocr-empty">（本页未识别到文字，可能为纯图片/空白页）</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 8 页 / 共 8 页</span><span>原图 1183×1680</span></div>
+<div class="page-img"><img src="GAT 1480-2018 法庭科学计算机操作系统仿真检验技术规范_pages/page_008.jpg" alt="第8页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T 1480—2018
+中华人民共和国公共安全
+行业标准
+法庭科学计算机操作系统仿真检验
+技术规范
+GA/T14802018
+中国标准出版社出版发行
+北京市朝阳区和平里西街甲2号（100029）
+北京市西城区三里河北街16号（100045）
+网址www.spc.net.cn
+总编室：（010)68533533发行中心：(010)51780238
+读者服务部：（010)68523946
+中国标准出版社秦皇岛印刷厂印刷
+各地新华书店经销
+开本880×12301/16印张0.5字数7千字
+2018年9月第一版2018年9月第一次印刷
+书号：1550662-44571定价14.00元
+如有印装差错由本社发行中心调换
+版权专有侵权必究
+GA/T1480-2018
+举报电话：（010)68510107
+打印H期：2018年10月9HF002AA</div></div>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · OCR 双层版 · 共 8 页 · 识别文字 1953 字 · 原文以 PDF 为准</div>
 </div>
 </body>
 </html>

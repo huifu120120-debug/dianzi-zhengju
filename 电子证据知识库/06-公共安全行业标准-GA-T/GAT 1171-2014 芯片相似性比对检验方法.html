@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>芯片相似性比对检验方法</title>
+<title>GAT 1171-2014 芯片相似性比对检验方法</title>
 <style>
-:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--warn:#b8860b;--ocr:#a93226}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
 .wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
@@ -17,66 +17,222 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 .doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
 .doc-actions a:hover{background:#eef4ff}
 .doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
-.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
-.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
-.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
-.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
-.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.content p{margin:0 0 12px;text-indent:2em}
-.content .no-indent{text-indent:0}
-.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
-.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
-.content h3{font-size:15.5px}
-.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
-.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
-.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.ocr-banner{margin:14px 0;padding:12px 18px;border-radius:8px;font-size:13.5px;line-height:1.7;background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.ocr-banner b{font-weight:700}
+.page-block{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:18px 0;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.page-header{background:#f0f3f7;padding:8px 16px;font-size:13px;color:var(--ink2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.page-header .pageno{font-weight:700;color:var(--brand)}
+.page-img{text-align:center;padding:12px;background:#fafbfc}
+.page-img img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page-ocr{padding:16px 20px;border-top:1px dashed var(--line);background:#fffdf8}
+.page-ocr .ocr-label{font-size:12px;color:var(--ocr);font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+.page-ocr .ocr-text{font-size:14px;line-height:1.9;color:#333;white-space:pre-wrap;word-break:break-word}
+.page-ocr .ocr-empty{color:#999;font-style:italic;font-size:13px}
 .footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="doc-head">
-<h1>芯片相似性比对检验方法</h1>
-<div class="doc-meta"><span><b>文号：</b>GA/T 1171—2014</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2014-07-09</span></div>
-<div class="doc-actions"><a href="GAT 1171-2014 芯片相似性比对检验方法.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://img.antpedia.com/standard/files/pdfs_ora/CN-GA/ba3/GA_T%201171-2014_5873.pdf" target="_blank" rel="noopener">🔗 来源</a></div>
+<h1>GAT 1171-2014 芯片相似性比对检验方法</h1>
+<div class="doc-meta"><span><b>文号：</b>GAT 1171-2014</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2014-07-09</span><span><b>备注：</b>仅获取节选（来源：other，https://img.antpedia.com/standard/files/pdfs_ora/CN-GA/ba3/GA_T%201171-2014_5873.pdf）</span></div>
+<div class="doc-actions"><a href="GAT 1171-2014 芯片相似性比对检验方法.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://www.mps.gov.cn/n6557558/c4911584/content.html" target="_blank" rel="noopener">🔗 官方来源</a></div>
 </header>
-<div class="banner pdf">📄 正文来源：分析测试百科网PDF全文，以下为节选内容，全文请下载原PDF</div>
-<div class="content">
-<h2>前言</h2>
-<p>本标准按照 GB/T 1.1—2009 给出的规则起草。</p>
-<p>本标准由公安部第三研究所提出。</p>
-<p>本标准由公安部信息系统安全标准化技术委员会归口。</p>
-<p>本标准起草单位：公安部第三研究所。</p>
-<p>本标准主要起草人：沙晶、金波、杭强伟、蔡立明、徐隽。</p>
-<h2>5 检验步骤（节选）</h2>
-<h3>5.1 检材和样本编号</h3>
-<p>对送检的检材和样本进行唯一性编号。</p>
-<h3>5.2 检材和样本拍照</h3>
-<p>对送检的检材和样本进行拍照。</p>
-<h3>5.3 检材和样本备份</h3>
-<p>制作原始检材的副本或镜像。</p>
-<h3>5.4 检材和样本的功能检验</h3>
-<p>对具备功能检验条件的检材和样本进行功能检验。</p>
-<h3>5.5 布图与芯片的一致性检查</h3>
-<p>分别检查检材、样本的布图与芯片的一致性，即验证芯片是否是由布图生成的。</p>
-<h3>5.6 数字模块相似性比对</h3>
-<h3>5.6.1 网表与布图的一致性检查</h3>
-<p>分别检查检材、样本的网表与布图的一致性，即验证布图是否是由网表生成的。</p>
-<h3>5.6.2 布图的相似性比对</h3>
-<p>分别从检材、样本的总布图中提取相似的功能模块的布图，并进行几何形状的比对。</p>
-<h3>5.6.3 RTL 代码与网表的一致性检查</h3>
-<p>分别检查检材、样本的 RTL 代码与网表的一致性，即验证网表是否是由 RTL 代码生成的。</p>
-<h3>5.6.4 网表的比对</h3>
-<p>比对检材、样本的总网表，比较两者的模块数，相似模块的功能、标识、注释。比对时忽略标识名的不同，从逻辑来进行判别。</p>
-<h3>5.6.5 RTL 代码的比对</h3>
-<p>比对检材和样本的 RTL 代码，比较代码的目录结构，代码文件名，文件内容，功能，标识，注释。比对时忽略标识名的不同，从逻辑来进行判别。</p>
-<h3>5.7 模拟模块相似性比对</h3>
-<h3>5.7.1 电路原理图与布图一致性检查</h3>
-<p>分别检查检材与样本的电路原理图与布图的一致性，即验证布图是否是由电路原理图生成的。</p>
-<h3>5.7.2 布图的相似性比对</h3>
-<p>分别从检材和样本的总布图中提取相似的功能模块的布图，并进行几何形状的比对。</p>
+<div class="ocr-banner">
+<b>⚠️ OCR 识别版</b>：本文档由原 PDF 逐页扫描识别生成，每页上方为原图，下方为 OCR 识别文字。<br>
+OCR 可能存在少量识别误差（尤其是表格、公式、生僻字），<b>请以原图 / 原 PDF 为准</b>。全文检索已收录 OCR 文字。
 </div>
-<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 1 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1171-2014 芯片相似性比对检验方法_pages/page_001.jpg" alt="第1页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">ICS 31.200
+L56
+GA
+中华人民共和国公共安全行业标准
+GA/T 11712014
+芯片相似性比对检验方法
+Examination methods for similarity comparison of integrated circuit chips
+2014-07-09发布
+2014-07-09实施
+中华人民共和国公安部
+发布
+刮涂操查真伪</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 2 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1171-2014 芯片相似性比对检验方法_pages/page_002.jpg" alt="第2页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T 1171—2014
+前言
+本标准按照GB/T1.1一2009给出的规则起草。
+本标准由公安部第三研究所提出。
+本标准由公安部信息系统安全标准化技术委员会归口。
+本标准起草单位：公安部第三研究所。
+本标准主要起草人：沙晶、金波、杭强伟、蔡立明、徐隽。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 3 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1171-2014 芯片相似性比对检验方法_pages/page_003.jpg" alt="第3页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1171—2014
+芯片相似性比对检验方法
+1  范围
+本标准规定了集成电路芯片相似性比对检验方法。
+本标准适用于集成电路芯片相似性比对，检验集成电路芯片设计的相似性。
+2规范性引用文件
+下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文
+件。凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。
+GA/T756—2008数字化设备证据数据发现提取固定方法
+GA/T976—2012电子数据法庭科学鉴定通用方法
+3术语和定义
+GA/T756—2008和GA/T976—2012界定的以及下列术语和定义适用于本文件。
+3.1
+RTL代码（寄存器传输级代码）RTLcode（registertransferlevelcode）
+电路逻辑的描述，一般用硬件描述语言。
+3.2
+网表netlist
+网表是一种描述逻辑单元和它们之间互连的数据文件。
+3.3
+布图layout
+把门级网表转换成形成硅芯片层结构的物理表述的几何图形。
+3.4
+电路原理图
+schematics
+用电气符号表示的电路连接图，又称电路图。
+4仪器设备
+4.1
+硬件
+存储介质保全备份设备、检验所需硬件环境等。
+4.2软件
+检验所需软件工具等，例如文件比较工具等。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 4 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1171-2014 芯片相似性比对检验方法_pages/page_004.jpg" alt="第4页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1171—2014
+检验步骤
+5.1 
+检材和样本编号
+对送检的检材和样本进行唯一性编号。
+5.2
+检材和样本拍照
+对送检的检材和样本进行拍照
+5.3
+检材和样本备份
+制作原始检材的副本或
+5.4
+检材和样本的功能检验
+对具备功能检验条件的检材和样本进行功能检验
+布图与芯片的
+5.5
+性检查
+分别检查检材、样本的布图与芯片的一致性，即验证芯片是否是由布图生成的。
+数字模块相
+5.6
+比对
+图的
+5.6.1
+网表与布
+一致性检查
+分别检查检材样本的网表与布图的一致性，即验证布图是否是由网表生成的。
+5.6.2
+布图的相似性比对
+分别从检材、样总布图中提取相似的功能模块的布图并进行几何形状的比对。
+5.6.3
+致性检查
+STAND
+分别检查检材、样
+TL代码与网表的一致性，即验证网表是否是由RTL代码生成的。
+5.6.4
+网表的比对
+比对检材、样本的总网表比校两者的模块数，相似模块的功能、标识、注释。比对时忽略标识名的
+不同，从逻辑来进行判别。
+5.6.5RTL代码的比对
+比对检材和样本的RTL代码，比较代码的目录结构，代码文件名，文件内容，功能，标识，注释。比
+对时忽略标识名的不同，从逻辑来进行判别。
+5.7
+模拟模块相似性比对
+5.7.1电路原理图与布图一致性检查
+分别检查检材与样本的电路原理图与布图的一致性，即验证布图是否是由电路原理图生成的。
+5.7.2
+布图的相似性比对
+分别从检材和样本的总布图中提取相似的功能模块的布图，并进行几何形状的比对。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 5 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1171-2014 芯片相似性比对检验方法_pages/page_005.jpg" alt="第5页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1171—2014
+5.7.3
+电路原理图的比对
+分别从检材和样本的总布图中提取相似的功能模块的电路原理图，并进行对应网表的比对。
+5.8
+检验记录
+5.8.1
+对于检材为数字化设备的，应记录检材的：
+a)
+类别；
+b)
+型号：
+出厂时唯一性编号（如果适用）；
+d)
+照片。
+5.8.2
+对于检材为独立于数字化设备的文件时，应记录文件的：
+a)
+名称；
+b)
+哈希值。
+5.8.3
+比对过程应记录：
+a)
+比对文件的名称；
+b)
+比对的内容；
+比对的过程；
+比对的结果。
+5.9
+检出数据保全
+5.9.1
+将检出的数据拷贝到电子数据鉴定工作站的存储介质中，并计算校验码。
+5.9.2
+将检出的数据刻录在空白光盘上，要采用封盘刻录。
+结论表述
+结论表述为“经对检材和样本进行技术检验后，检验结果如下：（列出检验比对的项目及检验比对结
+果)”。
+附则
+7.1
+在检验时做好检验记录。
+7.2
+在检验时，不应改变检验对象中的数据。
+7.3
+在检验过程中，检出的数据应存储在专用的存储介质中。
+7.4
+对送检的检验对象要做好防震、防水、防磁和防静电保护。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 6 页 / 共 6 页</span><span>原图 1190×1684</span></div>
+<div class="page-img"><img src="GAT 1171-2014 芯片相似性比对检验方法_pages/page_006.jpg" alt="第6页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T 1171—2014
+中华人民共和国公共安全
+行业标准
+芯片相似性比对检验方法
+GA/T1171—2014
+中国标准出版社出版发行
+北京市朝阳区和平里西街甲2号（100029）
+北京市西城区三里河北街16号（100045）
+网址www.spc.net.cn
+总编室：（010）64275323发行中心：（010)51780235
+读者服务部：（010）68523946
+中国标准出版社秦皇岛印刷厂印刷
+各地新华书店经销
+开本880×12301/16印张0.5字数6千字
+2014年9月第一版2014年9月第一次印刷
+书号：155066·2-27341定价14.00元
+如有印装差错由本社发行中心调换
+版权专有侵权必究
+GA/T 1171-2014
+举报电话：（010）68510107</div></div>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · OCR 双层版 · 共 6 页 · 识别文字 2314 字 · 原文以 PDF 为准</div>
 </div>
 </body>
 </html>

@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>公路建设项目电子文件与电子档案元数据标准</title>
+<title>DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准</title>
 <style>
-:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--warn:#b8860b;--ocr:#a93226}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
 .wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
@@ -17,94 +17,7556 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 .doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
 .doc-actions a:hover{background:#eef4ff}
 .doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
-.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
-.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
-.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
-.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
-.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.content p{margin:0 0 12px;text-indent:2em}
-.content .no-indent{text-indent:0}
-.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
-.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
-.content h3{font-size:15.5px}
-.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
-.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
-.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.ocr-banner{margin:14px 0;padding:12px 18px;border-radius:8px;font-size:13.5px;line-height:1.7;background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.ocr-banner b{font-weight:700}
+.page-block{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:18px 0;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.page-header{background:#f0f3f7;padding:8px 16px;font-size:13px;color:var(--ink2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.page-header .pageno{font-weight:700;color:var(--brand)}
+.page-img{text-align:center;padding:12px;background:#fafbfc}
+.page-img img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page-ocr{padding:16px 20px;border-top:1px dashed var(--line);background:#fffdf8}
+.page-ocr .ocr-label{font-size:12px;color:var(--ocr);font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+.page-ocr .ocr-text{font-size:14px;line-height:1.9;color:#333;white-space:pre-wrap;word-break:break-word}
+.page-ocr .ocr-empty{color:#999;font-style:italic;font-size:13px}
 .footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="doc-head">
-<h1>公路建设项目电子文件与电子档案元数据标准</h1>
-<div class="doc-meta"><span><b>文号：</b>DB53/T 1138-2023</span><span><b>层级：</b>地方标准 (DB)</span><span><b>日期：</b>2023-02-23 发布 / 2023-05-23 实施</span></div>
-<div class="doc-actions"><a href="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://img.antpedia.com/standard/pdf/1/2304/DB53_T%201138-2023.pdf" target="_blank" rel="noopener">🔗 来源</a></div>
+<h1>DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准</h1>
+<div class="doc-meta"><span><b>文号：</b>DB53T 1138-2023</span><span><b>层级：</b>地方标准 (DB)</span><span><b>日期：</b>2023-02-23</span><span><b>备注：</b>仅获取节选（来源：antpedia，https://img.antpedia.com/standard/pdf/1/2304/DB53_T%201138-2023.pdf）；仅获取封面信息、范围、目次</span></div>
+<div class="doc-actions"><a href="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="http://amr.yn.gov.cn/info/1030/32237.htm" target="_blank" rel="noopener">🔗 官方来源</a></div>
 </header>
-<div class="banner scanned">⚠️ 原PDF为扫描件（无文本层），以下为封面信息、范围、目次及公开概述。完整元数据元素表（约120页）请下载原PDF查阅。</div>
-<div class="content">
-
-<h2>封面信息</h2>
-<p>标准号：DB53/T 1138—2023</p>
-<p>标准名称：公路建设项目电子文件与电子档案 元数据标准</p>
-<p>发布日期：2023-02-23</p>
-<p>实施日期：2023-05-23</p>
-<p>发布机构：云南省市场监督管理局</p>
-<p>提出部门：云南省交通运输厅</p>
-<p>归口单位：云南省交通标准化技术委员会(YNTC13)</p>
-<p>ICS号：01.140.20</p>
-<p>CCS号：R01</p>
-
-<h2>范围</h2>
-<p>本文件对云南省公路建设项目的电子文件与电子档案元数据实体、构成及描述方法，文件实体元数据元素的描述，机构人员实体元数据元素的描述，业务实体元数据元素的描述，实体关系元数据元素的描述做出了规定。</p>
-<p>本文件适用于云南省公路建设项目对计算机系统中直接生成的项目电子文件元数据的管理。</p>
-
-<h2>目次</h2>
-<p>前言 …… III</p>
-<p>1 范围 …… 1</p>
-<p>2 规范性引用文件 …… 1</p>
-<p>3 术语和定义 …… 1</p>
-<p>4 元数据实体、构成及描述方法 …… 3</p>
-<p>　4.1 元数据实体类型 …… 3</p>
-<p>　4.2 元数据实体约束性 …… 3</p>
-<p>　4.3 元数据实体构成 …… 3</p>
-<p>　4.4 元数据的描述方法 …… 7</p>
-<p>　4.5 电子文件元数据表 …… 8</p>
-<p>5 文件实体元数据元素的描述 …… 8</p>
-<p>　5.1 聚合层次 …… 8</p>
-<p>　5.2 来源 …… 9</p>
-<p>　5.3 生成方式 …… 13</p>
-<p>　5.4 电子文件号 …… 14</p>
-<p>　5.5 档号 …… 15</p>
-<p>　5.6 内容描述 …… 18</p>
-<p>　5.7 形式特征 …… 26</p>
-<p>　5.8 电子属性 …… 32</p>
-<p>　5.9 数字化属性 …… 39</p>
-<p>　5.10 背景信息 …… 43</p>
-<p>　5.11 全球定位信息 …… 59</p>
-<p>　5.12 捕获设备 …… 66</p>
-<p>　5.13 电子签名 …… 70</p>
-<p>　5.14 存储位置 …… 77</p>
-<p>　5.15 权限管理 …… 79</p>
-<p>　5.16 附注 …… 83</p>
-<p>6 机构人员实体元数据元素的描述 …… 84</p>
-<p>　6.1 机构人员类型 …… 84</p>
-<p>　6.2 机构人员标识符 …… 85</p>
-<p>　6.3 机构人员名称 …… 86</p>
-<p>　6.4 机构人员隶属 …… 87</p>
-<p>　6.5 个人职位 …… 87</p>
-<p>7 业务实体元数据元素的描述 …… 88</p>
-<p>　7.1 职能业务 …… 88</p>
-<p>　7.2 管理活动 …… 94</p>
-<p>8 实体关系元数据元素的描述（详见原文）</p>
-
-<h2>标准概述</h2>
-<p>本文件将元数据划分为文件实体、机构人员实体、业务实体和关系实体四类。文件实体为必选元数据实体，推荐采用多实体方案构造元数据集；在采用多实体方案时，文件实体、业务实体和机构人员实体均为必选，关系实体为可选。各元数据实体的构成通过约束性（M-必选、C-条件选、O-可选）和可重复性（R-可重复、NR-不可重复）进行标准化界定。</p>
-<p>文件实体元数据的描述涵盖十六个核心聚合层次，从聚合层次、来源、档号等基础标识信息，到内容描述、形式特征、电子属性等文件自身特征，再到背景信息、全球定位信息、电子签名等业务场景相关信息，均给出了具体的元素编号、定义、数据类型及约束规则。本文件特别针对公路建设行业特点，在背景信息中详细纳入了项目名称、建设性质、工程部位、桥隧比例、路线长度等行业特有元数据项。</p>
-<p>机构人员实体从类型、标识符、名称、隶属及个人职位五个维度进行描述。业务实体则分为职能业务和管理活动两大类。该标准充分参考了DA/T 46、DA/T 54、DA/T 63等国家档案行业标准，并与公路建设项目的工程实际深度融合。</p>
-<p>（注：本PDF为扫描件，无可提取文本层，以上内容来源于标准封面、目次页及公开介绍。完整元数据元素表请下载原PDF查阅。）</p>
-
+<div class="ocr-banner">
+<b>⚠️ OCR 识别版</b>：本文档由原 PDF 逐页扫描识别生成，每页上方为原图，下方为 OCR 识别文字。<br>
+OCR 可能存在少量识别误差（尤其是表格、公式、生僻字），<b>请以原图 / 原 PDF 为准</b>。全文检索已收录 OCR 文字。
 </div>
-<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 1 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_001.jpg" alt="第1页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">ICS 01.140.20
+CCSR01
+DB53
+云南省地方
+标准
+DB53/T1138—2023
+公路建设项目电子文件与电子档案
+元数据标准
+地方标准信息服务平台
+2023-02-23发布
+2023-05-23实施
+云南省市场监督管理局
+发布</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 2 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_002.jpg" alt="第2页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">地方标准信息服务平台</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 3 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_003.jpg" alt="第3页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+目次
+1范围.
+2规范性引用文件
+3术语和定义
+4元数据实体、构成及描述方法
+4.1元数据实体类型
+4.2元数据实体约束性
+4.3元数据实体构成：
+4.4元数据的描述方法
+4.5电子文件元数据表
+5文件实体元数据元素的描述
+5.1聚合层次.
+5.2来源..
+5.3生成方式，
+13
+5.4电子文件号
+14
+5.5档号
+15
+5.6内容描述，
+18
+5.7形式特征
+26
+5.8电子属性
+32
+5.9数字化属性
+39
+5.10背景信息.
+43
+5.11全球定位信息
+59
+5.12捕获设备。
+66
+5.13电子签名.
+70
+5.14存储位置
+77
+5.15权限管理
+79
+5.16附注
+83
+6机构人员实体元数据元素的描述
+84
+6.1机构人员类型
+84
+6.2机构人员标识符
+85
+6.3机构人员名称
+86
+6.4机构人员隶属
+87
+6.5个人职位.
+87
+7业务实体元数据元素的描述
+88
+7.1职能业务.
+88
+7.2管理活动.
+94</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 4 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_004.jpg" alt="第4页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+8实体关系元数据元素的描述
+100
+8.1实体标识符
+100
+8.2关系类型
+101
+8.3关系...
+102
+8.4关系描述
+103
+附录A
+（资料性）
+电子文件元数据表
+105
+参考文
+112
+地方标准信息服务平台</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 5 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_005.jpg" alt="第5页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+前言
+本文件按照GB/T1.1一2020《标准化工作导则第1部分：标准化文件的结构和起草规则》的规定
+起草。
+请注意本文件的某些内容可能涉及专利。本文件的发布机构不承担识别这些专利的责任。
+本文件由云南省交通运输厅提出。
+本文件由云南省交通标准化技术委员会（YNTC13）归口。
+本文件起草单位：云南云岭高速公路工程咨询有限公司、福建华闽通达信息技术有限公司。
+本文件主要起草人：李文军、韩志刚、郭峰、孟祥昌、杨中庆、吴军、段文红、吴勇木、何泽、张
+金丽、李少春、周国伟、任振鹏、江鸥、闫文佳、刘谦谦、席恩伟、沈攀、杨荣焕、唐浩、张亮坤、张
+国晶、周林、郭钰瑞、翟奕淇、汤国琼、邱雷、刘江华、李雨峰、李明跃、张现屋、陈世艾、马锡斌、
+汪欣、刘昌文、邓杰、闻恩友、邓龙仟、邱灵锋、阮喜燕、杨新锋、谢村平、苏鎏亮、王晓园、骆海涛、
+周晓峰。
+地方标准信息服务平台
+III</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 6 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_006.jpg" alt="第6页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">地方标准信息服务平台</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 7 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_007.jpg" alt="第7页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+公路建设项目电子文件与电子档案
+元数据标准
+1范围
+本文件对云南省公路建设项目的电子文件与电子档案元数据实体、构成及描述方法，文件实体元数
+据元素的描述，机构人员实体元数据元素的描述，业务实体元数据元素的描述，实体关系元数据元素的
+描述做出了规定。
+本文件适用于云南省公路建设项目对计算机系统中直接生成的项目电子文件元数据的管理。
+2规范性引用文件
+下列文件中的内容通过文中的规范性引用而构成本文件必不可少的条款。其中，注日期的引用文件，
+仅该日期对应的版本适用于本文件：不注日期的引用文件，其最新版本（包括所有的修改单）适用于本
+文件。
+GB/T4880.2-2000语种代码名称第2部分：3字母代码
+GB/T7156文献保密等级代码与标识
+GB/T7408-2005数据元和交换格式信息交换日期和时间表示法
+GB11643-1999
+公民身份号码
+GB11714-1997
+全国组织机构代码编制规则
+GB/T15418
+档案分类标引规则
+DA/T13-2022
+档号编制规则
+DA/T14-2012
+全宗指南编制规范
+DA/T18-2022档案著录规则
+DA/T22-2015归档文件整理规则
+DA/T31纸质档案数字化规范
+DA/T46-2009文书类电子文件元数据方案
+DA/T54-2014照片类电子档案元数据方案
+DA/T63-2017录音录像类电子档案元数据方案
+JTGF80/1-2017公路工程质量检验评定标准第一册：土建工程
+3术语和定义
+GB/T18894、DA/T28、DA/T58界定的以及下列术语和定义适用于本文件。
+3.1
+电子文件electronicdocument
+国家机构、社会组织或个人在履行其法定职责或处理事务过程中，通过计算机等电子设备形成、办
+理、传输和存储的数字格式的各种信息记录（含纸质文件/档案数字化图像、文本）。
+【来源：DA/T58-2014，2.1，有修改］</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 8 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_008.jpg" alt="第8页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+3.2
+电子档案electronicrecords
+具有凭证、考查和保存价值并归档保存的电子文件。
+【来源：DA/T58-2014，2.2]
+3.3
+文档document
+归档文件最小的文件单元，可以是一个独立的自然件，也可以是组合文件中的某一自然件或某一自
+然件的附件。
+［来源：DA/T46-2009，3.4]
+3.4
+元数据metadata
+描述文件的背景、内容、结构及其整个管望过
+数据。
+［来源：DA/T46-2009，3.5]
+3.5
+元素element
+通过标识、定义、约束性、值域等一组属性描述的数据单元。
+【来源：DA/T46-2009，3.6]
+地方标准
+3.6
+简单型simpletype
+不具有子元素的元素所对应的元素类型
+［来源：DA/T46-2009，3.7]
+3.7
+容器型containertype
+具有子元素且本身不能被赋值的元素所对应的元素类型
+［来源：DA/T46-2009，3.8]
+3.8
+复合型complextype
+本身可以被赋值且在一定条什下可以具有子元素的元素所对应的元素类型。
+[来源：DA/T46-2009，3.9]
+3.9
+捕获capture
+适时获取电子文件及其元数据的方法和过程。
+[来源：DA/T46-2009，3.10]
+3.10
+登记registration
+在电子档案管理系统或数字档案馆中分配给电子档案唯一标识符的过程，通常伴随着一些元数据的
+描述。
+【来源：DA/T54-2014，3.10]
+3.11
+实体entity
+任何已经存在的、将要存在的或可能存在的具体的或抽象的事物，包括事物间的联系。
+［来源：DA/T46-2009，3.11]</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 9 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_009.jpg" alt="第9页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+4元数据实体、构成及描述方法
+4.1元数据实体类型
+本文件参考DA/T46-2009、DA/T54-2014、DA/T63-2017等文件，将公路建设项目电子文件元数据
+划分为文件实体、机构人员实体、业务实体、关系实体四类元数据实体，元数据实体类型及其涵义如表
+1所示：
+表1元数据实体类型及描述
+中文名称
+英文名称
+描述
+文件实体
+Record entity
+描述任一聚合层次电子文件本身的元数据集合
+机构人员实体
+Agent entity
+描述负责施电子文件、电子档案管理活动的个人或组织的元数据集合
+推达子文等以形成询职能业务活动，以及电子文件归档和电子档案移
+业务实体
+Business entity
+专换、迁移、处置等管理活动
+Relation
+关系实体
+enti
+播述电子文件之间及里子文件内部对象之间的关系
+4.2元数据实体约束性
+文件实体为必选元数据实体。前来用单实体或多实体方案一推荐采用多实体方案构造公路建设项目
+电子文件、档案元数据集：
+a)
+单实体方案仅包含文件实体：
+采用多实体方案时：
+文件实体、业务实体机构人员实体为必选实体；关系实体为可选实体。
+4.3
+元数据实体构成
+各元数据实体的元数据构成应符合表2～表5的规定。圆括弧“（）”内标示了该元数据的约束性与
+C条件选；
+可重复性，分别为：M-必选，
+可选；R-可重复；N不可重复。
+表2
+文件实体元数据
+编号
+元数据
+编号
+元数据
+聚合层次M，
+M1
+NRO
+M3
+获取方式（O，NR）
+来源名称（O，NR）
+M2
+来源（M，NR）
+M5
+源文件标识符（M，NR）
+M6
+全宗名称（C，NR）
+M7
+立档单位名称（C，NR）
+M8
+生成方式（M，NR）
+M9
+电子文件号（M，NR）
+M11
+案卷号（C，NR）
+档号（M，NR）
+M10
+M12
+类别号（M，NR）
+M13
+保管期限（M，NR）</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 10 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_010.jpg" alt="第10页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表2文件实体元数据（续）
+编号
+编号
+元数据
+元数据
+M15
+题名（M，NR）
+M16
+关键词（M，NR）
+M17
+分类号（M，NR）
+M18
+文件编号（O，NR）
+M19
+图号（O，NR）
+M14
+内容描述（M，NR）
+M20
+责任者（M，NR）
+M21
+日期（M，NR）
+M22
+文种（O，NR)
+M23
+密级（M，NR）
+M24
+保密期限（O，NR）
+M26
+文件组合类型（M，NR）
+M27
+件数（C，NR）
+M28
+页数（M，NR）
+M25
+M29
+形式特征（M，NR）
+载体类型（O，NR）
+M30
+规格（O，NR）
+M31
+语种（O，NR）
+M32
+稿本（O，NR）
+地方标准
+M34
+格式名称（M，NR）
+M35
+格式版本（O，NR）
+M36
+格式描述（O，NR）
+M37
+校验方式（O，NR）
+M33
+电子属性（M，NR）
+M38
+校验值（O，NR）
+6CW
+计算机文件名（M，NR）
+M40
+计算机文件大小（M，NR）
+M41
+文档创建程序（O，NR）
+M42
+信息系统描述（O，R）
+M44
+数字化对象形态（O，NR）
+M45
+扫描分辨率（C，NR）
+M43
+数字化属性（C，NR）
+M46
+扫描色彩模式（C，NR）
+M47
+图像压缩方案（O，NR）</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 11 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_011.jpg" alt="第11页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表2文件实体元数据（续）
+编号
+编号
+元数据
+元数据
+M49
+项目名称（O，NR）
+M50
+项目简称（O，
+NR)
+M51
+路线名称（0，
+NR)
+M52
+建设性质（0，
+NR)
+M53
+建设规模（O，NR）
+M54
+建设依据（0，
+NR)
+M55
+建设里程（0，
+NR)
+M56
+桥隧比例（O，
+NR)
+M57
+工程概算（O，
+NR)
+M58
+批准工期（0，
+NR)
+M48
+背景信息（O，NR）
+M59
+省份（O，NR）
+M60
+设区市（O，NR）
+M61
+建设地址（O，NR）
+M62
+合同段（O，NR）
+M63
+单项工程（O，NR）
+M64
+单位工程（O，
+NR)
+M65
+分部工程
+(0,
+NR)
+地方标准有
+M66
+分项工程
+(O,
+NR)
+M67
+工程部位
+NR)
+M68
+工程地点（O，NR）
+M69
+路线长度（O，NR）
+M71
+全球定位系统版本（C，NR）
+M72
+纬度基准（C，NR）
+M73
+纬度（C，NR)
+M74
+经度基准（C，NR）
+M70
+M75
+全球定位信息（C，NR）
+经度（C,NR）
+M76
+海拔基准（O，NR）
+M77
+海拔（O，NR)
+M78
+方向基准（O，NR）
+M79
+镜头方向（O，NR）</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 12 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_012.jpg" alt="第12页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表2文件实体元数据（续）
+编号
+元数据
+编号
+元数据
+M81
+设备类型（O，NR）
+M82
+设备制造商（O，NR）
+捕获设备（C，NR）
+M83
+M80
+设备型号（O，NR）
+M84
+设备感光器（O，NR）
+M85
+设备信息（O，NR）
+28W
+签名标识符（C，NR）
+M88
+签名规则（C，NR）
+M89
+签名时间（C，NR）
+M90
+签名人（O，NR）
+M86
+电子签名（OR）
+M91
+东准化行政
+签名结果（C，NR）
+M92
+证书（C，R）
+M93
+证书引证（O，NR）
+M94
+签名算法标识（C，NR）
+M96
+在线存址（M，NR）
+M95
+存储位
+M97
+离线存址（O，NR）
+66W
+知识产权说明（O，NR）
+M100
+授权对象（O，R）
+M98
+权限管理
+M101
+授权行为（O，R）
+M102
+控制标识（O，NR）
+M103
+附注（0
+表3
+机构人员实体元数据
+编号
+元数据
+编号
+元数据
+M104
+机构人员类型（M，NR）
+M105
+机构人员标识符（M，NR）
+M106
+机构人员名称（M，NR）
+M107
+机构人员隶属（O，NR）
+M108
+个人职位（O，NR）</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 13 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_013.jpg" alt="第13页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表4业务实体元数据
+编号
+元数据
+编号
+元数据
+M110
+业务标识符（M，NR）
+M111
+业务类别（O，NR）
+M112
+业务行为（M，NR）
+M109
+职能业务（M，R）
+M113
+业务开始时间（M，NR）
+M114
+业务结束时间（O，NR）
+M115
+行为描述（O，NR）
+M116
+行为依据（O，NR）
+M118
+管理活动标识符（C，NR）
+M119
+管理类别（C，NR）
+M120
+管理行为（C，NR）
+管理活动
+M121
+M117
+活动开始时间（C，NR）
+化行
+M122
+活动结束时间（O，NR）
+123
+管理活动描述（O，NR）
+M124
+管理依据（O，NR）
+表5
+实体关系元数据
+编号
+编号
+元数据
+元数据
+M125
+实体标识符（ONR）
+M126
+关系养型
+M127
+关系0.NR）
+关系描述
+M128
+4.4
+元数据的描述方法
+本文件依据DA/T46-2009、DA/T54-2014、DA/T63-2017等标准的要求，采用表6给出的规则对元
+数据元素进行描述。
+表6元数据元素描述方法
+项目
+描述方法
+编号
+按一定规则排列的元数据的顺序号
+中文名称
+元数据的中文标识
+英文名称
+元数据的英文标识
+定义
+元数据含义的描述
+目的
+描述该元数据必要性和作用</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 14 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_014.jpg" alt="第14页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表6元数据元素描述方法（续）
+项目
+描述方法
+说明采用该元数据元素的强制性程度，分“必选”、“条件选”和“可选”。“必选”表示
+约束性
+采用，由用户根据需要确定
+可重复性
+元数据是否可以重复描述一个实体的性质
+元数据类型
+元数据所属的类别。本文件将元数据分为简单型、容器型和复合型
+为表达元数据而规定的具有相同数学特性和相同操作集的数据类别。本文件数据类型包括字
+数据类型
+符型、数值型、日期时间型。容器型元数据没有数据类型
+对该元数据的描述应遵循的编码规则，包括编码修饰体系的标识和名称。容器型元数据无需
+编码修饰体系
+著录
+值域
+可以分配给元数据的值。容器型元数据无需著录
+缺省值
+该元数据的默认值。容器型元数据无需著录
+子元数据
+该元数据具有的下属元数据
+信息来源
+元数据值的来源。容器型元数据无需著录
+应用层次
+该元数据能够应用的聚合层次。本文件各元数据的应用层次主要为文件、案卷
+相关元数据
+与该元数据有密切联系的元数据
+应用说明
+对元数据的进一步说明
+4.5电子文件元数据表
+电子文件元数据表：
+电子文件元数据表（聚合层次：文件）见附录A中的A.1：
+唯信息服务平会
+b)
+电子文件元数据表（聚合层次：案卷）见附录A中的A.2。
+文件实体元数据元素的描述
+5.1
+聚合层次
+按照表7给出的规则对聚合层次（M1）进行描述。
+表7聚合层次（M1）描述
+项目
+描述方法
+编号
+M1
+中文名称
+聚合层次</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 15 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_015.jpg" alt="第15页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表7聚合层次（M1）描述（续）
+项目
+描述方法
+英文名称
+aggregation hierarchy
+电子文件在分类、整理、著录、保管和提供利用时，作为个体和特定群体的控制层次。如卷、
+定义
+件等
+目的
+利于对电子文件的管理，为电子文件在某一层次的著录、检索提供条件
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+案卷、文件
+缺省值
+文件
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中通过预定义值域列表选择著录或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+推荐使用预定义值域列表选择著录
+5.2
+来源
+按照表8给出的规则对来源（M2）进行描述。其中，表9~表13分别为：
+一表9对来源（M2）中包含的获取方式（M3）进行描述。
+一表10对来源（M2）中包含的来源名称（M4）进行描述。
+一表11对来源（M2）中包含的源文件标识符（M5）进行描述。
+一表12对来源（M2）中包含的全宗名称（M6）进行描述。
+一表13对来源（M2）中包含的立档单位名称（M7）进行描述。
+表8来源（M2）描述
+项目
+描述方法
+编号
+M2
+中文名称
+来源
+英文名称
+provenance
+定义
+对形成、归档、移交、保管电子文件的单位（个人）和全宗的描述</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 16 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_016.jpg" alt="第16页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表8来源（M2）描述（续）
+项目
+描述方法
+目的
+利于对电子文件的管理，为电子文件在某一层次的著录、检索提供条件
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+容器型
+数据类型
+编码修饰体系
+管部
+值域
+缺省值
+获取方式（M3）
+来源名称（M4
+子元数据
+源文件标识符
+全宗名称（M6
+立档单位名称
+管理电子
+信息来源
+在形成、处理
+文件的系统中通过预定义值撼列畏选择著录或手工著录
+准化
+标准
+应用层次
+案卷、文件
+相关元素
+应用说明
+表获取方式（M3）
+描述
+项目
+描述方法
+编号
+M3
+中文名称
+获取方式
+英文名称
+acquisitionapproaches
+定义
+获取电子文件的途径
+记录电子文件、档案的获取方式和获取源等背景信息：有助于电子档案的利用、控制和管理；
+目的
+有利于保护电子档案版权所有者权益
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+10</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 17 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_017.jpg" alt="第17页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表9获取方式（M3）描述（续）
+项目
+描述方法
+编码修饰体系
+值域
+接收、著录、征集、馆拍、获赠、购买、寄存、下载、【其他］
+缺省值
+接收
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中通过预定义值域列表选择著录或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+表10来源名称（M4）描述
+项目
+描述方法二
+M4
+中文名称
+来源名称
+英文名称
+provenance name
+定义
+移交、提供、捐赠电子文件的机构、个人名称、网证等
+记录电子文件的获取方式和获取源等背景信品
+有助于电子档案的利用、控制和管理；
+目的
+有利于保护电子档案版权所有者权益
+约束性
+可选
+不可重复
+可重复性
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统从导入元数据中自动捕获或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 18 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_018.jpg" alt="第18页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表11
+源文件标识符（M5）描述
+项目
+描述方法
+编号
+M5
+中文名称
+源文件标识符
+英文名称
+source identifier
+定义
+电子文件在来源管理系统中的标识符
+记录电子文件、档案的获取方式和获取源等背景信息：有助于电子档案的利用、控制和管理；
+目的
+有利于保护电子档案版权所有者权益
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统从导入元数据中自动捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表12全宗名称（M6）描述
+项目
+描述方法
+编号
+M6
+中文名称
+全宗名称
+英文名称
+fondsname
+定义
+档案馆（室）赋予全宗的标识
+目的
+区分电子文件来源，利于电子文件的管理，提供检索点
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+12</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 19 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_019.jpg" alt="第19页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表12全宗名称（M6）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中通过预定义值域列表选择著录或手工著录
+应用层次
+案卷、文件
+相关元素
+全宗名称一般由接收、保管电子文件的档案馆（室）给定，当给定全宗名称时，本元素必选。
+应用说明
+推荐使用预定义值域列表选择著录
+表13立档单位名称（M7）描述
+项目
+描述方法
+编号
+中文名称
+立档单位名称
+英文名称
+fonds constituting unit name
+定义
+构成档案（电子文件）全宗的国家机构、社会组织或个人的名称
+目的
+记录全宗构成者名称，明确电子文件来源，利于电子文件的管理和利用
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中通过预定义值域列表选择著录或手工著录
+应用层次
+案卷、文件
+相关元素
+当完成整理、立卷时，本元素必选。按照DA/T14-2012中5.1.1条规定著录。推荐使用预定
+应用说明
+义值域列表选择著录
+5.3生成方式
+按照表14给出的规则对生成方式（M8）进行描述。
+13</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 20 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_020.jpg" alt="第20页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表14生成方式（M8）描述
+项目
+描述方法
+编号
+M8
+中文名称
+生成方式
+英文名称
+creation way
+定义
+电子文件内容信息比特流首次形成的方式
+目的
+为电子文件的集成管理提供途径，利于电子文件的管理、利用和统计
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+北行政
+地方桥准
+编码修饰体系
+值域
+原生、数字化
+缺省值
+原生
+子元数据
+信息来源
+在形成、处理
+件的系统中通过预定
+表选择著录或手工著录
+应用层次
+文件
+相关元素
+应用说明
+5.4电子文件号
+按照表15给出的规则对电子文件号（M9进行撞述。
+表15电子文件号（M9）描述
+项目
+描述方法
+编号
+M9
+中文名称
+电子文件号
+英文名称
+electronicrecordcode
+定义
+唯一标识电子文件的一组代码
+目的
+为电子文件提供唯一标识：在电子文件之间、电子文件与其传统载体档案之间提供关联标识
+约束性
+必选
+14</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 21 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_021.jpg" alt="第21页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表15电子文件号（M9）描述（续）
+项目
+描述方法
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管
+管理电子文件的系统按照设定的规则生成
+应用层次
+文件
+相关元素
+应用说明
+5.5档号
+按照表16给出的规则对档号（M1O）进行描述。其中，
+表17表19分别为：
+一表17对档号（M10）4
+申包含的案卷号（M11）进行描述
+表18对档号（M10）中包含的类别号（M1②）进行描述
+表19对档号（M10）中包含的保管期限（M1B）进行猫
+表16／档号（M10）描述
+项目
+描述方法
+编号
+M10
+中文名称
+档号
+英文名称
+archival code
+定义
+以字符形式赋予档案（电子文件）的用以固定和反映档案（电子文件）排列顺序的一组代码
+揭示电子文件分类、组合、排列、编目的结果，利于统计，管理和利用，在电子文件与其传
+目的
+统载体档案之间提供关联标识
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+容器型
+数据类型
+15</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 22 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_022.jpg" alt="第22页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表16档号（M10）描述（续）
+项目
+描述方法
+标识
+名称
+编码修饰体系
+DA/T13-2022
+档号编制规则
+值域
+缺省值
+案卷号（M11）
+子元数据
+类别号（M12）
+保管期限（M13）
+信息来源
+由管理电子文件的系统按照设定的规则生成
+应用层次
+案卷、文件
+相关元素
+由档案馆（室）根据电子文件实际整理结果设定档号结构。未经整理、立卷、归档，尚未形
+应用说明
+成档号时，本元素可以为空值
+表17案卷号（M11）描述
+项目
+描述方法
+编号
+M11
+中文名称
+案卷号
+英文名称
+file number
+定义
+案卷顺序号
+目的
+标识电子文件所属案卷，利于电子文件的管理和利用
+准信息服
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由管理电子文件的系统按照设定的规则生成或手工著录
+16</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 23 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_023.jpg" alt="第23页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表17案卷号（M11）描述（续）
+项目
+描述方法
+应用层次
+案卷、文件
+相关元素
+当聚合层次（M1）的值为“文件”时，本元素可选：
+应用说明
+当聚合层次（M1）的值为“案卷”时，本元素必选
+表18类别号（M12）描述
+项目
+描述方法
+编号
+M12
+中文名称
+类别号
+英文名称
+category code
+定义
+根据电子文件实体分类方案赋予电子文件的类别代码
+目的
+标识电子文件类别，利于电子文件的管理
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+KJ、WS、ZP、LY、LX、[其他]
+缺省值
+KJ
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中通过预定义值域列表选择著录或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+当电子文件整理过程中区分类别时，应选用本元素并预定义值域列表选择著录
+表19保管期限（M13）描述
+项目
+描述方法
+编号
+M13
+中文名称
+保管期限
+17</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 24 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_024.jpg" alt="第24页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表19保管期限（M13）描述（续）
+项目
+描述方法
+英文名称
+retention period
+定义
+对电子文件划定的存留年限
+标识电子文件保存期限，利于电子文件的鉴定、统计和管理
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+管部
+数据类型
+字符型
+编码修饰体系
+值域
+永久、30年、
+10年、
+【其他］
+缺省值
+永久
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中通过预定义值域列表选择著录或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+值域中的“其他表示值域中所列保管期限外的其他保管期限，由用户结合实际自定义
+5.6内容描述
+按照表20给出的规则对内容M14）进行描述。其申，表21~表30分别为：
+一表21对内容描述（M14）包含的题（M15）进行描述。
+一表22对内容描述（M14）中包含的关键词（M6）进行播述
+一表23对内容描述（M14）中包含的分类号7）进行描述
+一表24对内容描述（M14）中包含的文件编号（M18）进行描述。
+一表25对内容描述（M14）中包含的图号（M19）进行描述。
+表26对内容描述（M14）中包含的责任者（M20）进行描述。
+务平台
+表27对内容描述（M14）中包含的日期（M21）进行描述
+一表28对内容描述（M14）中包含的文种（M22）进行描述，
+表29对内容描述（M14）中包含的密级（M23）进行描述
+表30对内容描述（M14）中包含的保密期限（M24）进行描述。
+18</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 25 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_025.jpg" alt="第25页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表20内容描述（M14）描述
+项目
+描述方法
+编号
+M14
+中文名称
+内容描述
+英文名称
+content description
+定义
+对电子文件题名、主题、编号等内容特征的描述
+目的
+提供电子文件内容描述信息，利于检索和利用
+约束性
+必选
+可重复性
+不可重复
+管部
+元数据类型
+容器型
+数据类型
+编码修饰体系
+地方标准
+值域
+缺省值
+题名（MI
+关键词
+分类号
+文件编号
+图号（M19
+子元数据
+责任者
+日期（M21
+文种（M22
+密级（M23
+保密期限
+信息来源
+在形成、处理
+管理电子
+交件的系统中通过预定义值域列表选择著录或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+表21
+题名（M15）描述
+项目
+描述方法
+编号
+M15
+中文名称
+题名
+英文名称
+title
+定义
+又称标题、题目，是表达电子文件中心内容和形式特征的名称
+目的
+描述电子文件的中心内容，提供检索点
+61</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 26 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_026.jpg" alt="第26页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表21题名（M15）描述（续）
+项目
+描述方法
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+在形成、处理、管理电子文件的系统中手工著录；或由管理电子文件的系统从形成、处理电
+信息来源
+子文件的系统中捕获
+应用层次
+案卷、文件
+相关元素
+当聚合层次（M1）的值为“案卷”时，著录案卷标题；当聚合层次（M1）的值为“文件”时，
+应用说明
+著录文件正题名。建议尽可能由系统捕获。按照DA/T18-1999中9.1.1.1条以及DA/T
+22-2015相关规定著录
+表22关键词（M16）描述
+项目
+描述方法
+编号
+M16
+中文名称
+关键词
+英文名称
+Keyword
+在标引和检索过程中，取自电子文件题名或正文用以表达主题并具有检索意义的非规范化的
+定义
+词或词组
+目的
+揭示电子文件主题，提供检索点
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+20</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 27 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_027.jpg" alt="第27页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138-—2023
+表22关键词（M16）描述（续）
+项目
+描述方法
+缺省值
+子元数据
+在形成、处理、管理电子文件的系统中手工著录；或由管理电子文件的系统从形成、处理电
+信息来源
+子文件的系统中捕获
+应用层次
+文件
+相关元素
+应用说明
+建议尽可能由系统捕获。按照DA/T18-1999中9.7.6.2条规定著录
+表23分类号（M17）描述
+项目
+描述方法
+编号
+M17
+中文名称
+分类号
+英文名称
+class code
+采用《中国档案分类法》对电子文件进行主题分析，并依照电子文件的内容和特点分门别类
+定义
+后形成的类目标记符号
+目的
+揭示电子文件的分类结果，提供检索点
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+标识
+名称
+编码修饰体系
+CAC
+中国档案分类法
+值域
+缺省值
+PB
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中通过预定义值域列表选择著录或手工著录
+应用层次
+文件
+相关元素
+应用说明
+依据《中国档案分类法》和GB/T15418的有关规定著录
+21</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 28 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_028.jpg" alt="第28页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表24文件编号（M18）描述
+项目
+描述方法
+编号
+M18
+中文名称
+文件编号
+英文名称
+documentnumber
+定义
+文件制发过程中由制发机关、团体或个人赋予文件的顺序号，也称文号
+目的
+提供检索点
+约束性
+可选
+管部
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+北行政
+地方标准
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理
+文件的系统中手工著录或
+应用层次
+文件
+相关元素
+按照DA/T18-19992
+应用说明
+条规定著录
+表25图号（M19）描述
+项目
+描述方法
+编号
+M19
+中文名称
+图号
+英文名称
+drawing No
+定义
+图纸制发过程中由制发机关、团体或个人赋予图纸的编号
+目的
+提供检索点
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+22</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 29 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_029.jpg" alt="第29页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表25图号（M19）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的统中手工著录或由系统捕获
+应用层次
+文件
+相关元素
+应用说明
+按照DA/T18-1999中9.1.2条规定薯录
+表26
+责任者（M20）描述
+项目
+描述方法
+编号
+M20
+中文名称
+责任者！
+英文名称
+author
+定义
+电子文件内容进行创造、
+有责任的团体或个人
+目的
+明确电子文件的责任主体，提供检索点
+约束性
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中手工著录或由系统捕获
+应用层次
+相关元素
+应用说明
+按照DA/T18-1999中9.1.3条规定著录
+表27
+日期（M21）描述
+项目
+描述方法
+编号
+M21
+中文名称
+日期
+23</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 30 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_030.jpg" alt="第30页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表27
+日期（M21）描述（续）
+项目
+描述方法
+英文名称
+date
+定义
+文件形成的日期或者案卷内文件的起正日期
+目的
+明确文件形成时间或案卷内文件起止日期，提供检索点
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+日期时间型
+标识
+名称
+编码修饰体系
+数据元和交换格式信息交换日期和时间表
+GB/T7408-2005
+示法
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中手工著录或由系统捕获
+应用层次
+案卷、文件
+相关元素
+当聚合层次（M1）的值为“文件”时，著录成文时间。著录时，依据DA/T18-1999中9.4.1
+条相应规定选择著录发文时间、发表时间、签署时间或通过时间。时间精确到日，按照DA/T
+22-2000中5.5.1.5条和DA/T18-1999中9.4.2条规定，采用GB/T7408-2005中5.2.1.1
+应用说明
+条规定的基本格式（YYYYMMDD）著录。例如2021年10月1日表示为：20211001。
+当聚合层次（M1）的值为“案卷”时，著录案卷内文件起止时间（YYYYMMDD/YYYYMMDD）。例
+如，2021年10月1日至2021年10月10日表示为：20211001/20211010
+表28文种（M22）描述
+项目
+描述方法
+编号
+M22
+中文名称
+文种
+英文名称
+document type
+定义
+按性质和用途确定的文件种类的名称
+目的
+揭示文件的性质、特点，反映行文方向，表达目的与要求
+约束性
+可选
+24</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 31 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_031.jpg" alt="第31页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表28文种（M22）描述（续）
+项目
+描述方法
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+通知、通报、报告、请示、批复、意见函、会议纪要、指示、检验报告、检测报告、批复单、
+值域
+鉴定证书、[其他]
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中手工著录或由系统捕获
+应用层次
+文件
+相关元素
+值域中列出的是《中国共产党机关公文处理条例》（中办发（1996）14号）和《国家行政机
+应用说明
+关公文处理办法》（国发（2000）23号）规定的文种。值域中的“【其他】”表示值域中所列
+文种外的其他文种，由用户结合实际自定义
+表29密级（M23）描述
+项目
+描述方法
+编号
+M23
+中文名称
+密级
+英文名称
+securityclassification
+定义
+电子文件保密程度的等级
+目的
+利于电子文件的管理和利用
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+标识
+名称
+编码修饰体系
+GB/T7156
+文献保密等级代码与标识
+值域
+公开、限制、国家秘密、秘密、机密、绝密
+缺省值
+公开
+25</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 32 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_032.jpg" alt="第32页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表29
+密级（M23）描述（续）
+项目
+描述方法
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中手工著录或由系统捕获
+应用层次
+案卷、文件
+相关元素
+保密期限（M24）
+应用说明
+电子文件秘密等级为公开时，
+本元素为空值
+表30保密期限（M24）描述
+项目
+描述方法
+编号
+M24
+中文名称
+保密期限
+地方标推
+英文名称
+secrecyperic
+定义
+对电子文件密级时教的规定
+和说明
+目的
+利于电子文件的管理和利用
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+省标
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中手工著录或由系统捕获
+应用层次
+案卷、文件
+相关元素
+密级（M23）
+应用说明
+5.7形式特征
+按照表31给出的规则对形式特征（M25）进行描述。其中，表32~表37分别为：
+一表32对形式特征（M25）中包含的文件组合类型（M26）进行描述。
+表33对形式特征（M25）中包含的件数（M27）进行描述。
+26</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 33 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_033.jpg" alt="第33页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+一表34对形式特征（M25）中包含的页数（M28）进行描述。
+一表35对形式特征（M25）中包含的载体类型（M29）进行描述。
+一表36对形式特征（M25）中包含的规格（M30）进行描述。
+一表37对形式特征（M25）中包含的语种（M31）进行描述。
+一表38对形式特征（M25）中包含的稿本（M32）进行描述。
+表31形式特征（M25）描述
+项目
+描述方法
+编号
+M25
+中文名称
+形式特征
+管部
+英文名称
+formal characterist
+定义
+电子文件外在征象
+目的
+记录电子文件形式特征信息，利于电子文件的统计和利
+淮化行政
+必选
+约束性
+地标准
+可重复性
+不可重复
+元数据类型
+容器型
+数据类型
+编码修饰体系
+值域
+缺省值
+文件组合类
+件数（M27.）
+页数（M28）
+子元数据
+载体类型（M29）
+规格（M30）
+语种（M31）
+稿本（M32）
+信息来源
+在形成、处理、管理电子文件的系统中通过预定义值域列表选择著录或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+27</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 34 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_034.jpg" alt="第34页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表32文件组合类型（M26）描述
+项目
+描述方法
+编号
+M26
+中文名称
+文件组合类型
+英文名称
+documentaggregationtype
+定义
+文件级聚合层次上文档聚合状况的分类
+目的
+区分单份文件和组合文件，利于电子文件的管理和利用
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+单件、组合文件
+缺省值
+单件
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中通过预定义值域列表选择著录或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表33件数（M27）描述
+项目
+描述方法
+编号
+M27
+中文名称
+件数
+英文名称
+total number of items
+定义
+案卷内文件的数量
+目的
+记录案卷内文件数量，利于统计和管理
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+28</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 35 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_035.jpg" alt="第35页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表33件数（M27）描述（续）
+项目
+描述方法
+数据类型
+数值型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中自动生成或手工著录
+应用层次
+案卷
+相关元素
+应用说明
+当聚合层次（MI）的值为“案卷”时，本元素必选
+表34页数（M28）描述
+项目
+描述方法
+编号
+M28
+中文名称
+页数
+英文名称
+totalnumberofpages
+定义
+电子文件、电子档案的页数
+目的
+利于档案的统计、管理
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+数值型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中自动生成或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+件”时，著录文件页数
+29</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 36 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_036.jpg" alt="第36页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表35载体类型（M29）描述
+项目
+描述方法
+编号
+M29
+中文名称
+载体类型
+英文名称
+carrier type
+定义
+电子文件、电子档案载体的形态
+目的
+便于电子文件的保存和存储管理
+约束性
+可选
+管部
+可重复性
+不可重复
+简单型
+元数据类型
+数据类型
+字符型
+地方标准
+编码修饰体系
+值域
+硬盘、光盘、
+纸质、磁带、
+其他］
+缺省值
+硬盘
+子元数据
+信息来源
+在形成、处理
+文件的系统中白动生成或
+应用层次
+文件
+相关元素
+规格（M30）
+应用说明
+表36规格（M30）描述
+项目
+描述方法
+编号
+M30
+服务平
+中文名称
+规格
+英文名称
+specs
+定义
+电子文件、电子档案载体的尺寸及型号等
+目的
+便于电子文件的保存和存储管理
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+30</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 37 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_037.jpg" alt="第37页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表36规格（M30）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中自动生成或手工著录
+应用层次
+文件
+相关元素
+载体类型（M29
+应用说明
+表37
+语种（M31）
+描述
+项目
+标准
+编号
+M31
+中文名称
+语种
+英文名称
+language
+定义
+目的
+利于电子文件的查询、显示和理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+汉语
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中手工著录
+应用层次
+文件
+相关元素
+应用说明
+著录GB/T4880.2-2000中语种的汉语名称
+31</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 38 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_038.jpg" alt="第38页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表38稿本（M32）描述
+项目
+描述方法
+编号
+M32
+中文名称
+稿本
+英文名称
+manuscript type
+定义
+文件的文稿、文本和版本
+目的
+描述文件的形式特征，利于电子文件的控制和管理
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+草稿、定稿、草图、原图、底图、蓝图、正本、副本、原版、各种文字本、【其他】
+缺省值
+正本
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中通过预定义值域列表选择著录或手工著录
+应用层次
+文件
+相关元素
+应用说明
+值域中的“[其他]”表示值域中所列稿本外的其他稿本，由用户结合实际自定义
+5.8
+电子属性
+按照表39给出的规则对电子属性（M33）进行描述。其中，表40~表48分别为：
+表40对电子属性（M33）中包含的格式名称（M34）进行描述。
+表41对电子属性（M33）中包含的格式版本（M35）进行描述。
+表42对电子属性（M33）中包含的格式描述（M36）进行描述。
+表43对电子属性（M33）中包含的校验方式（M37）进行描述。
+表44对电子属性（M33）中包含的校验值（M38）进行描述。
+表45对电子属性（M33）中包含的计算机文件名（M39）进行描述。
+表46对电子属性（M33）中包含的计算机文件大小（M40）进行描述。
+表47对电子属性（M33）中包含的文档创建程序（M41）进行描述。
+表48对电子属性（M33）中包含的信息系统描述（M42）进行描述。
+32</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 39 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_039.jpg" alt="第39页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表39电子属性（M33）描述
+项目
+描述方法
+编号
+M33
+中文名称
+电子属性
+英文名称
+electronicattributes
+定义
+电子文件作为计算机文件所具有的一组特征
+目的
+记录电子文件的创建环境，保障电子文件真实、完整、有效，利于长期保存、管理和利用
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+容器型
+数据类型
+编码修饰体系
+值域
+缺省值
+格式名称（M34）
+格式版本（M35）
+格式描述（M36）
+校验方式（M37）
+子元数据
+校验值（M38）
+计算机文件名（M39）
+计算机文件大小（M40）
+文档创建程序（M41）
+信息系统描述（M42）
+信息来源
+在形成、处理、管理电子文件的系统中自动生成或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表40格式名称（M34）描述
+项目
+描述方法
+编号
+M34
+中文名称
+格式名称
+英文名称
+format name
+33</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 40 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_040.jpg" alt="第40页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表40格式名称（M34）描述（续）
+项目
+描述方法
+定义
+电子文件格式的名称
+目的
+保障电子文件真实、完整、可靠与可用，利于电子文件的解码、还原、利用和长期保存
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+管部
+编码修饰体系
+值域
+缺省值
+地方标
+子元数据
+信息来源
+在形成、处理、
+管理电子文件的系统中国动生成或手
+应用层次
+文件
+相关元素
+应用说明
+格式版本（M35）
+描述
+项目
+描述方法
+编号
+M35
+格式版本
+中文名称
+英文名称
+format version
+定义
+电子文件格式的版本号
+目的
+保障电子文件真实、完整、可靠与可用，利于电子文件的解码、还原、利用和长期保存
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+34</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 41 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_041.jpg" alt="第41页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表41格式版本（M35）描述（续）
+项目
+描述方法
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中自动生成或手工著录
+应用层次
+文件
+相关元素
+应用说明
+支42
+格式描述（M38）
+项目
+描述方法
+编号
+M36
+地方
+中文名称
+格式描述
+format desqifrop
+英文名称
+定义
+电子文件格式的描述信息
+保障电子文性真实、完整、
+目的
+可靠与可用，
+利手电子
+约束性
+可选
+可重复性
+不可重复
+省标
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中自动生成或手工著录
+应用层次
+文件
+相关元素
+应用说明
+35</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 42 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_042.jpg" alt="第42页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表43校验方式（M37）描述
+项目
+描述方法
+编号
+M37
+中文名称
+校验方式
+英文名称
+checkout mode
+定义
+为保证数据的完整性而采用的验证操作的方式
+目的
+保障电子文件真实、完整、可靠与可用，保证数据传输的正确性
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中自动生成或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表44
+校验值（M38）描述
+项目
+描述方法
+编号
+M38
+中文名称
+校验值
+英文名称
+checksum
+定义
+采用指定的算法对原始数据计算出的一个校验值
+目的
+保障电子文件真实、完整、可靠与可用，保证数据的完整性
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+36</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 43 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_043.jpg" alt="第43页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表44校验值（M38）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中自动生成或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表45计算机文件名（M39）描述
+项目
+描述方法
+编号
+M39
+中文名称
+计算机文件名
+英文名称
+computer file name
+定义
+标识计算机文件的一组特定字串
+目的
+记录电子文件形式特征，利于电子文件的控制和管理
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获
+应用层次
+文件
+相关元素
+应用说明
+计算机文件名一般由主文件名和扩展名组成，必要时，可增加著录路径
+表46计算机文件大小（M40）描述
+项目
+描述方法
+编号
+M40
+中文名称
+计算机文件大小
+37</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 44 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_044.jpg" alt="第44页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表46计算机文件大小（M40）描述（续）
+项目
+描述方法
+英文名称
+computer file size
+定义
+计算机文件的字节数
+目的
+记录计算机文件形式特征，利于电子文件存储、交换、统计和管理
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+管部
+数据类型
+字符型
+编码修饰体系
+值域
+B、KB、MB、GB、
+TB、镇他
+政13
+缺省值
+地方标
+子元数据
+信息来源
+由形成、处理、管趣电子文件的系统捕获
+应用层次
+文件
+相关元素
+计算机文件大小的统计单位为“字节”
+本元素的值由数量和单位两部分组成，例如：1024
+应用说明
+字节
+表47文档创建程序（M41）描述
+项目
+描述方法
+编号
+M41
+中文名称
+文档创建程序
+英文名称
+document creating application
+定义
+形成和处理文档的程序名称和版本
+目的
+描述电子文件创建环境，利于电子文件的管理和利用
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+38</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 45 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_045.jpg" alt="第45页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138-—2023
+表47文档创建程序（M41）描述（续）
+项目
+描述方法
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获
+应用层次
+文件
+相关元素
+应用说明
+表48信息系统（M42）描述
+项目
+描述方法
+政/3
+编号
+M42
+地方
+中文名称
+信息系统描述
+英文名称
+information sistem descriptic
+定义
+生成或管理电子文件的信息系统的拍述信息
+目的
+描述电子文件创建和管理背景信息，保存电子文源的真实性和合法性信息
+约束性
+可选
+可重复性
+可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、管理电子文件的系统通过预定义值自动生成或手工著录
+应用层次
+文件
+相关元素
+应用说明
+著录信息系统的名称、版本、功能、开发商名称
+5.9数字化属性
+按照表49给出的规则对数字化属性（M43）进行描述。其中，表50~表53分别为：
+39</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 46 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_046.jpg" alt="第46页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+一表50对数字化属性（M43）中包含的数字化对象形态（M44）进行描述。
+一表51对数字化属性（M43）中包含的扫描分辨率（M45）进行描述。
+一表52对数字化属性（M43）中包含的扫描色彩模式（M46）进行描述。
+一表53对数字化属性（M43）中包含的图像压缩方案（M47）进行。
+表49数字化属性（M43）描述
+项目
+描述方法
+编号
+M43
+中文名称
+数字化属性
+英文名称
+digitization attributes
+定义
+文件或档案数字化的一组关键特征描述
+目的
+记录电子文件来源的客观性和合法性信息，利于电子文件的利用
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+容器型
+数据类型
+编码修饰体系
+值域
+缺省值
+数字化对象形态（M44）
+扫描分辨率（M45）
+子元数据
+扫描色彩模式（M46）
+图像压缩方案（M47）
+信息来源
+由形成、管理电子文件的系统通过预定义值自动生成或手工著录
+应用层次
+文件
+相关元素
+应用说明
+当电子文件由扫描或缩影影像转换形成时，本元素必选
+表50数字化对象形态（M44）描述
+项目
+描述方法
+编号
+M44
+中文名称
+数字化对象形态
+英文名称
+physicalrecord characteristics
+40</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 47 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_047.jpg" alt="第47页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表50数字化对象形态（M44）描述（续）
+项目
+描述方法
+定义
+被数字化文件或档案的载体类型、物理尺寸等信息的描述
+目的
+描述被数字化对象的特征，记录电子文件来源的客观性和合法性信息
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由数字化系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+著录文件或档案载体的类型及尺寸，例如：缩微卷片，35mm
+表51扫描分辨率（M45）描述
+项目
+描述方法
+编号
+M45
+中文名称
+扫描分辨率
+英文名称
+scanning resolution
+文件或档案被数字化时，相关数字化设备所采用的取样分辨率，即单位长度内的取样点数，
+定义
+一般用每英寸点数（dpi）表示
+目的
+记录电子文件的质量特征，满足不同应用需求
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+41</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 48 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_048.jpg" alt="第48页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表51扫描分辨率（M45）描述（续）
+项目
+描述方法
+缺省值
+子元数据
+信息来源
+由数字化系统捕获或手工著录
+应用层次
+文件
+相关元素
+当电子文件由扫描或缩微影像转换形成时，
+本元素必选。本元素的值由数量和单位两部分组
+应用说明
+成，例如：300dpi
+表52扫描色彩模式（M46）描述
+项目
+描述方法
+编号
+M46
+政/3
+地方
+中文名称
+扫描色彩模式
+scanning colorlgder?
+英文名称
+定义
+文件或档案被数字化时，相关数字化设备所采用的打
+记录电子文件的数宝化特征。
+目的
+满足不同应用需求
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+黑白二值、灰度、彩色
+［其他】
+缺省值
+彩色
+子元数据
+信息来源
+在数字化系统中通过预定义值域列表选择著录或手工著录
+应用层次
+文件
+相关元素
+当电子文件由扫描或缩微影像转换形成时，本元素必选。扫描色彩模式的选择应符合DA/T31
+应用说明
+的有关规定
+42</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 49 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_049.jpg" alt="第49页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表53
+图像压缩方案（M47）描述
+项目
+描述方法
+编号
+中文名称
+图像压缩方案
+英文名称
+image compression scheme
+定义
+文件或档案数字化生成数字图像时所采用的压缩方案
+目的
+记录电子文件数字化特征，
+利于评估图像质量和维护电子文件的有效性
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+地方标准
+值域
+北行
+缺省值
+子元数据
+信息来源
+著录
+文件
+应用层次
+相关元素
+应用说明
+可著录图像压缩方案
+例如：CCIT
+Group 4
+5.10
+背景信息
+按照表54给出的规则对背景信信（M48进行插述。其中，表55~表75分别为：
+表55对背景信息（M48）中包含的项自称（M49）进行描述。
+表56对背景信息（M48）中包含的项目简称（M50）进行描述。
+一表57对背景信息（M48）中包含的路线名称（M5D）进行描述。
+表58对背景信息（M48）中包含的建设性质（M52）进行描述。
+表59对背景信息（M48）中包含的建设规模（M53）进行描述。
+表60对背景信息（M48）中包含的建设依据（M54）进行描述
+表61对背景信息（M48）中包含的建设里程（M55）进行描述。
+表62对背景信息（M48）中包含的桥隧比例（M56）进行描述。
+表63对背景信息（M48）中包含的工程概算（M57）进行描述。
+表64对背景信息（M48）中包含的批准工期（M58）进行描述。
+表65对背景信息（M48）中包含的省份（M59）进行描述。
+表66对背景信息（M48）中包含的设市区（M60）进行描述。
+表67对背景信息（M48）中包含的建设地点（M61）进行描述。
+43</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 50 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_050.jpg" alt="第50页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+一表68对背景信息（M48）中包含的合同段（M62）进行描述。
+一表69对背景信息（M48）中包含的单项工程（M63）进行描述。
+一表70对背景信息（M48）中包含的单位工程（M64）进行描述。
+一表71对背景信息（M48）中包含的分部工程（M65）进行描述。
+一表72对背景信息（M48）中包含的分项工程（M66）进行描述。
+一表73对背景信息（M48）中包含的工程部位（M67）进行描述。
+表74对背景信息（M48）中包含的工程地点（M68）进行描述。
+一表75对背景信息（M48）中包含的路线长度（M69）进行描述。
+表54背景信息（M48）描述
+项目
+描述方法
+编号
+M48
+中文名称
+背景信息
+英文名称
+backgroundinformation
+定义
+文件形成的相关项目背景信息
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+容器型
+数据类型
+编码修饰体系
+值域
+缺省值
+项目名称（M49）
+项目简称（M50）
+路线名称（M51）
+建设性质（M52）
+建设规模（M53）
+标准信息服务平台
+建设依据（M54）
+建设里程（M55）
+桥隧比例（M56）
+工程概算（M57）
+子元数据
+批准工期（M58）
+省份（M59）
+设市区（M60）
+建设地点（M61）
+合同段（M62）
+单项工程（M63）
+单位工程（M64）
+分部工程（M65）
+分项工程（M66）
+工程部位（
+(M67)
+44</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 51 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_051.jpg" alt="第51页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表54背景信息（M48）描述（续）
+项目
+描述方法
+工程地点（M68）
+子元数据
+路线长度（M69）
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表55名称（M49）描述
+项目
+描述方法
+编号
+M49
+中文名称
+项目名称
+英文名称
+project name
+定义
+公路建设项目审批的正式名称
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+项目简称（M50）
+相关元素
+路线名称（M51）
+应用说明
+45</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 52 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_052.jpg" alt="第52页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表561
+项目简称（M50）描述
+项目
+描述方法
+编号
+M50
+中文名称
+项目简称
+英文名称
+project abbreviation
+定义
+公路建设项目的简称
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+管部
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+北行政
+地方标准
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理
+件的统捕获或手工
+应用层次
+文件
+项目名称（M49
+相关元素
+路线名称（M5）
+应用说明
+5元路线名称M51Y描述
+项目
+描述方法
+编号
+M51
+中文名称
+路线名称
+英文名称
+route name
+定义
+公路建设项目审批的路线名称
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+46</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 53 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_053.jpg" alt="第53页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表57
+路线名称（M51）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+项目名称（M49）
+相关元素
+项目简称（M50）
+应用说明
+表58建设性质（M52）描述
+项目
+描述方法
+编号
+M52
+地坊标准
+中文名称
+建设性质
+英文名称
+building
+feature
+定义
+公路建设
+项自固定资产
+再生产中的不同性质
+目的
+提供文
+背景信息，利
+于对文件的理解
+可选
+约束性
+可重复性
+不可重
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+新建、扩建、改建、灰复、
+缺省值
+新建
+子元数据
+信息来源
+由形成、处理、管理电子艾件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+建设性质按整个建设项目划分，一个建设项目只能具有一种性质
+表59建设规模（M53）描述
+项目
+描述方法
+编号
+M53
+中文名称
+建设规模
+英文名称
+construction scale
+定义
+公路建设项目固定资产花费的资金总额为依据划分建设规模
+47</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 54 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_054.jpg" alt="第54页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表59建设规模（M53）描述（续）
+项目
+描述方法
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+大型项目、中型项目、小型项目、【其他]
+缺省值
+大型项目
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表60建设依据（M54）描述
+项目
+描述方法
+编号
+M54
+中文名称
+建设依据
+英文名称
+constructionbasis
+定义
+公路建设项目进行建设所依据的数据或资料
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+48</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 55 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_055.jpg" alt="第55页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表60
+建设依据（M54）描述（续）
+项目
+描述方法
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表61建设里程（M55）描述
+项目
+描述方法
+编号
+M55
+中文名称
+建设里程
+英文名称
+constructionmileage
+定义
+是指公路建设项目的起点至终点的建设长度，一般以千米为单位
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+49</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 56 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_056.jpg" alt="第56页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表62
+桥隧比例（M56）描述
+项目
+描述方法
+编号
+M56
+中文名称
+桥隧比例
+英文名称
+bridge and tunnel ratio
+定义
+指公路建设项目中桥梁、隧道的长度和占总长度的比例
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+管部
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+北行政
+地方标准
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理
+文件的系统捕获或手工
+应用层次
+文件
+相关元素
+应用说明
+表63
+工程概算（M57描述
+项目
+描述方法
+编号
+M57
+中文名称
+工程概算
+服务业
+英文名称
+project estimate
+定义
+批准的投资概算额
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+50</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 57 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_057.jpg" alt="第57页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表63
+工程概算（M57）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系维获或手工著录
+文件
+应用层次
+相关元素
+应用说明
+表64
+批准工期
+（M58)
+描述
+项目
+描述方法
+方标推
+编号
+M58
+中文名称
+批准工期
+英文名称
+approval
+period
+定义
+批准的建设期二
+目的
+提供文件背景信息，利于对义件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+51</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 58 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_058.jpg" alt="第58页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表65省份（M59）描述
+项目
+描述方法
+编号
+M59
+中文名称
+省份
+英文名称
+province
+定义
+公路建设项目所在省份
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表66
+设区市（M60）描述
+项目
+描述方法
+编号
+M60
+中文名称
+设区市
+英文名称
+districts and cities
+定义
+公路建设项目所在地级市
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+52</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 59 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_059.jpg" alt="第59页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表66设区市（M60）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表67建设地点（M61）描述
+项目
+描述方法
+编号
+M61
+中文名称
+建设地点
+英文名称
+constructionplace
+定义
+公路建设项目所在地点
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+53</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 60 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_060.jpg" alt="第60页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表68合同段（M62）描述
+项目
+描述方法
+编号
+M62
+中文名称
+合同段
+英文名称
+contractsegment
+定义
+依照相关专业、工程施工条件、施工布局、地质情况等合理划分为若干个独立的段落
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+管部
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+北行政
+地方标准
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理
+文件的系统捕获或手工
+应用层次
+文件
+相关元素
+应用说明
+表69
+单项工程（M63）描述
+项目
+描述方法
+编号
+M63
+中文名称
+单项工程
+英文名称
+single project
+定义
+具有独立的设计文件，竣工后可以独立发挥生产能力或效益的工程
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+54</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 61 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_061.jpg" alt="第61页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表69单项工程（M63）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系维获或手工著录
+文件
+应用层次
+相关元素
+应用说明
+单位工程
+（M64)
+描述
+项目
+描述方法
+编号
+M64
+中文名称
+单位工程
+英文名称
+unitproject
+定义
+在建设项目根拆订的合同，具有独立施工保的工程（摘自JTGF80/1-2017附录A）
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+55</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 62 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_062.jpg" alt="第62页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表71分部工程（M65）描述
+项目
+描述方法
+编号
+M65
+中文名称
+分部工程
+英文名称
+part project
+在单位工程中，应按结构部位、路段长度及施工特点或施工任务划分为若干个分部工程（摘
+定义
+自JTGF80/1-2017附录A）
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表72分项工程（M66）描述
+项目
+描述方法
+编号
+M66
+中文名称
+分项工程
+英文名称
+item project
+在分部工程中，应按不同的施工方法、材料、工序及路段长度等划分为若干个分项工程（摘
+定义
+自JTGF80/1-2017附录A）
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+56</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 63 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_063.jpg" alt="第63页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表72分项工程（M66）描述（续）
+项目
+描述方法
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表73工程部位（M67）描述
+项目
+描述方法
+编号
+M67
+中文名称
+工程部位
+英文名称
+project parts
+定义
+指某一分项在该工程结构物的位置，可以以桩号、墩台号、孔号等来描述
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+长服务平
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+57</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 64 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_064.jpg" alt="第64页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表74工程地点（M68）描述
+项目
+描述方法
+编号
+M68
+中文名称
+工程地点
+英文名称
+project location
+定义
+指工程结构物在地面的自然位置，可以地理坐标，地名或桩号来描述
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+管部
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+北行政
+地方标准
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理
+文件的系统捕获或手工
+应用层次
+文件
+相关元素
+应用说明
+表75
+路线长度（M69）描述
+项目
+描述方法
+编号
+M69
+中文名称
+路线长度
+服务业
+英文名称
+lengthoftransitline
+定义
+公路工程施工中检查或检测的路段实际长度
+目的
+提供文件背景信息，利于对文件的理解
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+58</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 65 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_065.jpg" alt="第65页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表75路线长度（M69）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系纳捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+5.11
+全球定位信息
+按照表76给出的规则对全球定位信息（M70）进行描述。
+表77~表85分别为：
+一表77对全球定位信息M7O中包含的全球定位系统版本（M71）进行描述。
+一表78对全球定位信息（M70）中包含的纬度基准（M72）进行描述。
+一表79对全球定位信息M7中包含的纬度（M73）进行描述
+一表81对全球定位信息（MZO中包含的经度（M75）进行描述。
+表82对全球定位信息MZ0中包含的海拔基准（ML6进行描述。
+表83对全球定位信息M70）中包含的海拔拨（M77）进行描述。
+表84对全球定位信息M7中包含的方向基准（M78）进行描述。
+表85对全球定位信息（MO）中包含的镜头方向（M79）进行描述。
+表76
+全球定位信息（M70描述
+项目
+描述方法
+编号
+M70
+中文名称
+全球定位信息
+英文名称
+global position information
+定义
+智能设备相关数据信息采集地点的一组全球定位信息
+目的
+准确描述电子档案记录内容的地理位置及方向
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+容器型
+59</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 66 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_066.jpg" alt="第66页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表76全球定位信息（M70）描述（续）
+项目
+描述方法
+数据类型
+编码修饰体系
+值域
+缺省值
+全球定位系统版本（M71）
+纬度基准（M72）
+纬度（M73）
+经度基准（M74）
+子元数据
+经度（M75）
+海拔基准（M76）
+海拔（M77）
+方向基准（M78）
+镜头方向（M79）
+信息来源
+在形成、处理、管理数据的智能设备中自动提取并赋值
+应用层次
+文件
+相关元素
+应用说明
+表77全球定位系统版本（M71）描述
+项目
+描述方法
+编号
+M71
+中文名称
+全球定位系统版本
+英文名称
+GPS version
+定义
+全球定位系统（GPS）接收器所使用的GPS系统版本信息
+目的
+准确描述智能设备在记录内容的地理位置及方向
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+60</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 67 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_067.jpg" alt="第67页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表77
+全球定位系统版本（M71）描述（续）
+项目
+描述方法
+缺省值
+V2.2
+子元数据
+信息来源
+在形成、处理、管理数据的智能设备中自动提取并赋值
+应用层次
+文件
+相关元素
+全球定位信息（M70）被选用时，本元数据必选：
+应用说明
+本元数据对应Exif2.2的GPSversionidentifier元素
+表78纬度基准（M72）描述
+项目
+描述方法
+编号
+M72
+中文名称
+纬度基准
+英文名称
+latitudereference
+定义
+智能设备相关数据信息采集地点的北纬或南纬标识
+目的
+准确描述智能设备在记录内容的地理位置及方向
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+North、South
+缺省值
+子元数据
+信息来源
+在形成、处理、管理数据的智能设备中自动提取并赋值
+应用层次
+文件
+相关元素
+全球定位信息（M70）被选用时，本元数据必选；
+应用说明
+“North”表示北纬，“South”表示南纬；
+本元数据对应Exif2.2的GPSLatitudeRef元素
+61</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 68 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_068.jpg" alt="第68页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表79纬度（M73）描述
+项目
+描述方法
+编号
+M73
+中文名称
+纬度
+英文名称
+latitude
+定义
+智能设备相关数据信息采集地点的纬度数据
+目的
+准确描述智能设备在记录内容的地理位置及方向
+约束性
+条件选
+管部
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+北行政
+地方标准
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理
+居的
+为智能设备中白动提取
+应用层次
+文件
+相关元素
+全球定位信息
+M79）被选！时，本元数据必选；
+应用说明
+80经度基准LM74Y描述
+项目
+描述方法
+编号
+M74
+中文名称
+经度基准
+英文名称
+longitude reference
+定义
+智能设备相关数据信息采集地点的东经或西经标识
+目的
+准确描述智能设备在记录内容的地理位置及方向
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+62</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 69 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_069.jpg" alt="第69页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表80
+经度基准（M74）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+值域
+East、West
+缺省值
+子元数据
+信息来源
+在形成、处理、管理数据的智能设备中自动提取并赋值
+文件
+应用层次
+相关元素
+全球定位信息（M7O）被选用时，本元数据必选；
+应用说明
+“East”表示东经“west】表示西经
+本元数据对应xi2n的GpSLatitudeRef元素
+表81经度（M75）
+描述
+项目
+描述方法
+标准
+编号
+M75
+中文名称
+经度
+英文名称
+longitude
+定义
+智能设备相关数据信息采集地点的经度数据
+目的
+准确描述智能设备已录内容的地理位置及方向
+条件选
+约束性
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理数据的智能设备中自动提取并赋值
+应用层次
+文件
+相关元素
+全球定位信息（M70）被选用时，本元数据必选：
+应用说明
+本元数据对应Exif2.2的GPSLatitudeRef元素
+63</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 70 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_070.jpg" alt="第70页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表82海拔基准（M76）描述
+项目
+描述方法
+编号
+M76
+中文名称
+海拔基准
+英文名称
+altitudereference
+定义
+智能设备相关数据信息采集地点在海平面之上或海平面之下的海拔标识
+目的
+准确描述智能设备在记录内容的地理位置及方向
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+Above Sea Level、Under Sea Level
+缺省值
+子元数据
+信息来源
+在形成、处理、管理数据的智能设备中自动提取并赋值
+应用层次
+文件
+相关元素
+本元数据对应Exif2.2的GPSAltitudeRef元素；
+应用说明
+“AboveSeaLevel”表示拍摄地点在海平面之上，“UnderSeaLevel”表示拍摄地点在海
+平面之下
+表83海拔（M77）描述
+项目
+描述方法
+编号
+M77
+中文名称
+海拔
+英文名称
+altitude
+定义
+智能设备相关数据信息采集地点的海拔数据
+目的
+准确描述智能设备在记录内容的地理位置及方向
+约束性
+可选
+可重复性
+不可重复
+64</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 71 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_071.jpg" alt="第71页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表83海拔（M77）描述（续）
+项目
+描述方法
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理数据的智能设备中自动提取并赋值
+应用层次
+文件
+相关元素
+应用说明
+本元数据对应Exif2.2的GPSAltitudeRef元素
+表84方向基准（M78）描述
+项目
+描述方法
+编号
+M78
+中文名称
+方向基准
+英文名称
+image direction reference
+定义
+智能设备镜头的方向标识
+目的
+准确描述智能设备在记录内容的地理位置及方向
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+TrueNorth、MagneticNorth
+缺省值
+子元数据
+信息来源
+在形成、处理、管理数据的智能设备中自动提取并赋值
+应用层次
+文件
+相关元素
+镜头方向（M79）
+本元数据对应Exif2.2的GPSImgDirectionRef元素：
+“TrueNorth”表示真北方向，“MagneticNorth”表示磁北方向：
+应用说明
+真北方向是指过地面上任一点指向地理北极的方向，磁北方向是指在地面上任一点磁针北端
+所指的方向
+65</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 72 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_072.jpg" alt="第72页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表85镜头方向（M79）描述
+项目
+描述方法
+编号
+M79
+中文名称
+镜头方向
+英文名称
+image direction
+定义
+智能设备的镜头方向，以0°～359.99°之间的一个值表示
+目的
+准确描述智能设备在记录内容的地理位置及方向
+约束性
+可选
+管部
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+地方标准
+编码修饰体系
+值域
+0~359.99°
+缺省值
+子元数据
+信息来源
+在形成、处理
+为智能设备中白动提取
+应用层次
+文件
+相关元素
+方向基准（M78）
+应用说明
+本元数据对应Exif22uGpsLmgDiectionkef元素
+5.12
+捕获设备
+按照表86给出的规则对全球定位信息（M80）进行描述。其中，表87~表91分别为：
+表87对捕获设备（M80）中包含的设备类型（M81）进行描述。
+表88对捕获设备（M80）中包含的设备制造商（M8进行描述。
+表89对捕获设备（M80）中包含的设备型号（M83）进行描述。
+表90对捕获设备（M80）中包含的设备感光器（M84）进行描述。
+表91对捕获设备（M80）中包含的设备信息（M85）进行描述。
+表86捕获设备（M80）描述
+项目
+描述方法
+编号
+M80
+中文名称
+捕获设备
+英文名称
+capture device
+66</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 73 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_073.jpg" alt="第73页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表86捕获设备（M80）描述（续）
+项目
+描述方法
+定义
+电子文件形成的技术环境信息
+目的
+记录电子文件形成的技术起源环境；为电子文件的真实、完整和可靠提供保障
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+容器型
+数据类型
+管部
+编码修饰体系
+值域
+缺省值
+设备类型
+地方
+设备制造商
+CM82）
+子元数据
+设备型号（M834
+设备感光器M84）
+设备信息
+（M85）
+标推
+信息来源
+在形成、处郵、管理数据的智能设备中自动提取开
+应用层次
+文件
+相关元素
+应用说明
+表87设备类型
+（M81)
+描述
+项目
+描述方法
+编号
+M81
+中文名称
+设备类型
+英文名称
+device type
+定义
+电子文件捕获设备的类型、种类
+记录电子文件的技术起源环境：为电子文件的真实、可靠和完整提供保障：有助于对电子文
+目的
+件的质量评估
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+67</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 74 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_074.jpg" alt="第74页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表87
+设备类型（M81）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+录音机、录音笔、摄像机、智能手机、平板电脑、非线性编辑系统、电视收录系统、视频监
+值域
+控系统、数字化设备、[其他]
+缺省值
+子元数据
+信息来源
+在形成、处理、管理数据的智能设备中自动提取并赋值
+应用层次
+文件
+相关元素
+应用说明
+表88设备制造商（M82）描述
+项目
+描述方法
+编号
+M82
+中文名称
+设备制造商
+英文名称
+device manufacturer
+定义
+生成电子文件的硬件设备制造商名称
+目的
+记录电子文件的技术起源环境；为电子文件的真实、可靠和完整提供保障
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理数据的智能设备中自动提取并赋值
+应用层次
+文件
+相关元素
+应用说明
+编号
+M83
+68</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 75 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_075.jpg" alt="第75页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138-—2023
+表89设备型号（M83）描述
+项目
+描述方法
+中文名称
+设备型号
+英文名称
+device model number
+定义
+生成电子文件的硬件设备型号
+记录电子文件形成的技术起源环境：为电子文件的真实、完整和可靠提供保障：有助于对电
+目的
+子文件的质量评估
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理数据的智能设备中自动提取并赋值
+应用层次
+文件
+相关元素
+应用说明
+表90
+设备感光器（M84）描述
+项目
+描述方法
+编号
+M84
+中文名称
+设备感光器
+英文名称
+device sensor
+定义
+创建并形成电子文件的设备感光器的类型和参数
+记录电子文件形成的技术起源环境：为电子文件的真实、完整和可靠提供保障，有助于对电
+目的
+子文件的质量评估
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+69</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 76 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_076.jpg" alt="第76页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表90
+设备感光器（M84）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+Notdefined,One-chipcolorarea sensor,Two-chipcolorarea sensor,Three-chipcolor
+值域
+areasensor、[其他]
+缺省值
+子元数据
+信息来源
+在形成、处理、管理数据的智能设备
+动提取并赋值
+应用层次
+文件
+相关元素
+应用说明
+北行政
+设备信息（M85）
+描达
+项目
+描述方法
+编号
+M85
+中文名称
+设备信息
+英文名称
+deviceinformation
+定义
+记录电子文件形成的技术起源环境：为电子文件的真实、完整和可靠提供保障；有助于对电
+目的
+子文件的质量评估。
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理、管理数据的智能设备中自动提取并赋值
+应用层次
+文件
+相关元素
+应用说明
+5. 13
+电子签名
+70</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 77 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_077.jpg" alt="第77页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+按照表92给出的规则对电子签名（M86）进行描述。其中，表93~表100分别为：
+表93对电子签名（M86）中包含的签名标识符（M87）进行描述。
+表94对电子签名（M86）中包含的签名规则（M88）进行描述。
+表95对电子签名（M86）中包含的签名时间（M89）进行描述。
+表96对电子签名（M86）中包含的签名人（M90）进行描述。
+表97对电子签名（M86）中包含的签名结果（M91）进行描述。
+表98对电子签名（M86）中包含的证书（M92）进行描述。
+表99对电子签名（M86）中包含的证书引证（M93）进行描述。
+表100对电子签名（M86）中包含的签名算法标识（M94）进行描述。
+表92电子签名（M86）描述
+管部
+项目
+描述方法
+编号
+M86
+中文名称
+电子签名
+英文名称
+electronie
+signature
+地坊标准
+定义
+对电子文件电子签的一组描述信息
+目的
+提供电子文件真实性、完整性依据
+约束性
+可选
+可重复性
+可重复
+元数据类型
+容器型
+数据类型
+编码修饰体系
+值域
+缺省值
+签名标识符（M87
+签名规则（M88）
+签名时间（M89）
+息服务平合
+签名人（M90）
+子元数据
+签名结果（M91）
+证书（M92）
+证书引证（M93）
+签名算法标识（M94）
+信息来源
+由形成、处理、管理电子文件的系统捕获
+应用层次
+文件
+相关元素
+应用说明
+编号
+M87
+71</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 78 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_078.jpg" alt="第78页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表93
+签名识别符（M87）描述
+项目
+描述方法
+中文名称
+签名标识符
+英文名称
+signature identifier
+定义
+对电子文件电子签名的一组标识编码
+目的
+利于对电子签名的管理、控制和验证
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获
+应用层次
+案卷、文件
+相关元素
+应用说明
+当选用电子签名（M86）元素时，本元素必选
+表94
+签名规则（M88）描述
+项目
+描述方法
+编号
+M88
+中文名称
+签名规则
+英文名称
+signature rules
+定义
+对电子文件的电子签名方法、手段等相关信息的描述
+目的
+利于对电子签名进行了解和验证
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+72</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 79 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_079.jpg" alt="第79页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表94签名规则（M88）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获
+应用层次
+案卷、文件
+相关元素
+当选用电子签名（M86）元素时，本元素必选。著录签名算法、被签名对象及其编码格式、验
+应用说明
+证签名和数字证书的简要说明
+表95签名时间（M89）描述
+项目
+描述方法
+编号
+M89
+中文名称
+签名时间
+英文名称
+signature time
+定义
+进行签名的时间
+目的
+记录电子文件被签名的时间，维护电子文件的真实性
+约束性
+条件选
+可重复性
+不可重复
+准信
+元数据类型
+简单型
+数据类型
+日期时间型
+标识
+名称
+编码修饰体系
+数据元和交换格式信息交换日期和时间表
+GB/T7408-2005
+示法
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获
+73</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 80 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_080.jpg" alt="第80页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表95
+签名时间（M89）描述（续）
+项目
+描述方法
+应用层次
+案卷、文件
+相关元素
+当选用电子签名（M86）元素时，本元素必选。
+时间可以是标准时间戳、服务器时间等。时间应精确到秒。采用GB/T7408-2005中5.4.1条的
+应用说明
+扩展格式：YYYY-MM-DDThh：mm：sS。例如，2021年10月1日10时15分30秒表示为：2021-10-01T10：
+15:30
+表签名大M90）描述
+项目
+描述方法
+编号
+M90
+中文名称
+签名人
+地方标准
+英文名称
+signer
+定义
+对电子签名负责的组织或个
+目的
+标识签名人，
+提供电子文件真实性、合法性证明
+标准化
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获
+应用层次
+案卷、文件
+相关元素
+应用说明
+表97签名结果（M91）描述
+项目
+描述方法
+编号
+M91
+74</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 81 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_081.jpg" alt="第81页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表97
+签名结果（M91）描述（续）
+项目
+描述方法
+中文名称
+签名结果
+英文名称
+signature
+定义
+电子文件中以电子形式所含、所附用于识别签名人身份并表明签名人认可其中内容的数据
+目的
+表明和识别签名人身份，保障电子文件完整性和真实性
+约束性
+条件选
+可重复性
+不可重复
+管部
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+地方标准
+缺省值
+子元数据
+信息来源
+处理管理电
+由形成、
+子文件的系统捕获
+应用层次
+案卷、
+相关元素
+应用说明
+当选用电子签名（M86）
+）元紫时，本元素可选
+表98
+证书（M92）描述
+项目
+描述方法
+编号
+M92
+中文名称
+证书
+英文名称
+certificate
+定义
+可证实电子签名人与电子签名制作数据有联系的电子文件或者其他电子记录
+目的
+用于保存证书、验证签名，保障电子文件完整性和真实性
+约束性
+条件选
+可重复性
+可重复
+元数据类型
+简单型
+数据类型
+字符型
+75</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 82 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_082.jpg" alt="第82页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表98证书（M92）描述（续）
+项目
+描述方法
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获
+应用层次
+案卷、文件
+相关元素
+当选用电子签名（M86）元素时，本元素可选。
+应用说明
+证书的制作、签发、管理、验证等应符合《电子认证服务管理办法》（中华人民共和国工业
+和信息化部令第1号）的规定
+表99证书引证（M93）描述
+项目
+描述方法
+编号
+M93
+中文名称
+证书引证
+英文名称
+certificatereference
+定义
+指向验证签名证书的链接
+目的
+验证签名证书的真实性
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+76</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 83 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_083.jpg" alt="第83页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表100
+签名算法标识（M94）描述
+项目
+描述方法
+编号
+M94
+中文名称
+签名算法标识
+英文名称
+signature algorithm identifier
+定义
+用于电子签名的算法标识
+目的
+利于了解和验证电子签名
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+1.2.840.113549.1.1.4
+1.2.840.113549.1.1.5
+1.2.840.113549.1.1.11
+值域
+1.2.840.113549.1.1.13、1.2.840.10040.4.3、[其他]
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+案卷、文件
+相关元素
+当选用电子签名（M86）元素时，本元素可选。
+应用说明
+值域中的“【其他】”表示值域中所列签名算法标识外的其他签名算法标识，由用户结合实际
+自定义
+5.14存储位置
+按照表101给出的规则对存储位置（M95）进行描述。其中，表102~表103分别为：
+一表102对存储位置（M95）中包含的在线存址（M96）进行描述。
+一表103对存储位置（M95）中包含的离线存址（M97）进行描述。
+表101存储位置（M95）描述
+项目
+描述方法
+编号
+中文名称
+storage location
+英文名称
+对电子文件物理和逻辑存址的一组描述信息
+77</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 84 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_084.jpg" alt="第84页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表101存储位置（M95）描述（续）
+项目
+描述方法
+定义
+利于电子文件的控制、管理和利用
+目的
+必选
+约束性
+不可重复
+可重复性
+容器型
+元数据类型
+数据类型
+编码修饰体系
+值域
+在线存址（M96
+缺省值
+离线存址（M97
+地方
+子元数据
+信息来源
+由形成、处理
+管理电子文
+件的系统捕获或手工
+著录
+应用层次
+文件
+相关元素
+应用说明
+在线存址（M96）
+表102
+项目
+描述方法
+编号
+M96
+中文名称
+在线存址
+英文名称
+online location
+定义
+电子文件在电子档案管理系统或数字代拍案馆中的在线存储位置
+为电子档案的完整与可用提供保障：利于电子档案的安全存储和有效管理
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+78</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 85 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_085.jpg" alt="第85页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表102
+在线存址（M96）描述（续）
+项目
+描述方法
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表10离线存证（Mg）描述
+项目
+描述方法
+编号
+M97
+地方
+中文名称
+离线存址
+英文名称
+oopt on
+offlinelo
+定义
+电子档案离线备份介质编号或存城
+目的
+为电子档案的完整与可用提供保障：利于电子档案
+约束性
+可选
+可重复性
+不可重复
+省标
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+5.15
+权限管理
+按照表104给出的规则对权限管理（M98）进行描述。其中，表105~表108分别为：
+79</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 86 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_086.jpg" alt="第86页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+一表105对权限管理（M98）中包含的知识产权说明（M99）进行描述。
+一表106对权限管理（M98）中包含的授权对象（M100）进行描述。
+一表107对权限管理（M98）中包含的授权行为（M101）进行描述。
+一表108对权限管理（M98）中包含的控制标识（M102）进行描述。
+表104权限管理（M98）描述
+项目
+描述方法
+编号
+M98
+中文名称
+权限管理
+英文名称
+rights management
+定义
+对电子文件内容涉及或具有的权益以及被赋予权限的一组描述信息
+目的
+描述电子文件权限信息，以利于电子文件安全管理、控制和利用
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+容器型
+数据类型
+编码修饰体系
+值域
+缺省值
+知识产权说明（M99）
+授权对象（M100）
+子元数据
+授权行为（M101）
+控制标识（M102）
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+知识产权说明（M99）描述
+表105
+项目
+描述方法
+编号
+66N
+中文名称
+知识产权说明
+英文名称
+intellectualpropertystatement
+80</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 87 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_087.jpg" alt="第87页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138-—2023
+表105知识产权说明（M99）描述（续）
+项目
+描述方法
+定义
+电子文件所涉及或具有的有关知识产权的描述
+目的
+明确电子文件知识产权情况，利于电子文件的控制、管理和利用
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统中手工著录
+应用层次
+案卷、文件
+授权对象（M100）
+相关元素
+授权行为（M101）
+应用说明
+用自由文本描述
+表106授权对象（M100）描述
+项目
+描述方法
+编号
+M100
+中文名称
+授权对象
+英文名称
+authorized agent
+定义
+被授权操作、利用电子文件的组织和个人
+目的
+保证电子文件在规定范围内被操作和利用
+约束性
+可选
+可重复性
+可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+81</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 88 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_088.jpg" alt="第88页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表106授权对象（M100）描述（续）
+项目
+描述方法
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+案卷、文件
+知识产权说明（M99）
+相关元素
+授权行为（M101）
+授权对象（M100）和授权行海M10
+应用说明
+录时需
+对应
+表107
+7授权行为（M101）描述
+项目
+描述方法
+编号
+M101
+地方标准
+中文名称
+授权行为
+英文名称
+permission assigement
+定义
+授权对象被授予的对电子文件操作和利用的行为类
+目的
+利于加强对电子文件的安全管理、控制和利用
+约束性
+可选
+可重复性
+可重复
+元数据类型
+简单型
+字符型
+数据类型
+编码修饰体系
+值域
+公布、复制、浏览、
+[其他]
+缺省值
+子元数据
+信息来源
+在形成、管理电子文件的系统中通过预定义值域列表选择著录或手工著录
+应用层次
+案卷、文件
+知识产权说明（M99）
+相关元素
+授权对象（M100）
+授权对象（M100）和授权行为（M101）著录时需一一对应。
+应用说明
+值域中的“【其他】”表示值域中所列授权行为外的其他授权行为，由用户结合实际自定义
+82</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 89 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_089.jpg" alt="第89页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表108控制标识（M102）描述
+项目
+描述方法
+编号
+M102
+中文名称
+控制标识
+英文名称
+control identifier
+定义
+电子文件是否公开、开放或控制使用的标识
+目的
+保障信息安全，促进开放利用
+约束性
+可选
+管部
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+地方桥准
+编码修饰体系
+值域
+开放、控制、【其他]
+缺省值
+子元数据
+在管理电子文伴的系统中
+信息来源
+中通过预定义值域列表选
+录或手工著录
+应用层次
+案卷、文件
+知识产权说明M99
+相关元素
+授权对象（M100）
+授权对象（N00）和授权行为M101著录时需一一对应。
+应用说明
+值域中的“「其他”表示使域中所列授权行为外的其他授权行为，由用户结合实际自定义
+5.16附注
+按照表109给出的规则对附注（M103进行描述。
+表109附注（M103）描述
+项目
+描述方法
+编号
+M103
+中文名称
+附注
+英文名称
+annotation
+定义
+电子文件和元数据中需要解释和补充说明的事项
+目的
+提供电子文件及其元数据有关补充信息
+83</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 90 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_090.jpg" alt="第90页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表109附注（M103）描述（续）
+项目
+描述方法
+约束性
+可选
+可重复性
+可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+在形成、处理电子文件的系统中手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+参照DA/T18-1999著录
+6机构人员实体元数据元素的描述
+6.1机构人员类型
+按照表110给出的规则对机构人员类型（M104）进行描述。
+表110
+机构人员类型（M104）描述
+项目
+描述方法
+编号
+M104
+中文名称
+机构人员类型
+英文名称
+agent type
+定义
+形成、处理和管理电子文件的机构/人员的类别
+目的
+记录电子文件背景信息，维护电子文件的真实性，利于机构人员的管理与控制
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+84</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 91 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_091.jpg" alt="第91页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表110
+机构人员类型（M104）描述（续）
+项目
+描述方法
+编码修饰体系
+值域
+单位、内设机构、个人
+缺省值
+子元数据
+信息来源
+在形成、处理、管理电子文件的系统中通过预定义值域列表选择著录或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+临时机构区分不同性质，可以著录为单位或内设机构。推荐使用预定义值域列表选择著录
+6.2机构人员标识符
+按照表111给出的规则对机构人员标识符（M105）进行描述。
+表111机构人员标识符（M105）描述
+项目
+描述方法
+编号
+M105
+中文名称
+机构人员标识符
+英文名称
+agent identifier
+定义
+形成、处理和管理电子文件的机构/人员的的一组标识编码
+目的
+记录电子文件背景信息，维护电子文件的真实性，利于机构人员的管理与控制
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+由形成、处理、管理电子文件的系统捕获；在形成、处理、管理电子文件的系统中通过预定
+信息来源
+义值域列表选择著录或手工著录
+85</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 92 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_092.jpg" alt="第92页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表111
+机构人员标识符（M105）描述（续）
+项目
+描述方法
+应用层次
+案卷、文件
+相关元素
+当机构人员类型（M104）为“单位”时，可著录组织机构代码或机构唯一标识符：
+当机构人员类型（M104）为“内设机构”时，如有，可著录部门代码或部门唯一标识符；
+应用说明
+当机构人员类型（M104）为“个人”时，可著录身份证号码或人员唯一标识符。
+依据GB11643-1999和GB11714-1997的有关规定著录
+6.3
+机构人员名称
+按照表112给出的规则对机构人员名称人
+表112/机构人员名称（M106）描述
+项目
+描述方法
+地方标准
+编号
+M106
+中文名称
+机构人员名称
+英文名称
+agent name
+定义
+形成、处理和管理电子文件的机构/入员称谓
+目的
+记录电子文件背景信息，维护电子文件的真实性
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+案卷、文件
+相关元素
+著录全称或规范化的简称。
+当机构人员类型（M104）的值为“单位”时，著录单位名称：
+应用说明
+当机构人员类型（M104）的值为“内设机构”时，著录内设机构名称；
+当机构人员类型（M104）的值为“个人”时，著录个人名称
+86</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 93 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_093.jpg" alt="第93页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+6.4机构人员隶属
+按照表113给出的规则对机构人员隶属（M107）进行描述。
+表113
+机构人员隶属（M107）描述
+项目
+描述方法
+编号
+M107
+中文名称
+机构人员隶属
+英文名称
+agent belongs to
+定义
+直接管辖机构人员的部门或机构科
+记录电子档案管理活动责信息有助于电子档案管理活动的问责与追溯；为电子档案的真
+目的
+实、完整、可靠提供保障
+约束性
+可选
+可重复性
+不可重复
+雁化行政
+地方标推
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕漆或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+6.5个人职位
+按照表114给出的规则对个人职位（M108）进行描述。
+表114个人职位（M108）描述
+项目
+描述方法
+编号
+M108
+中文名称
+个人职位
+英文名称
+position name
+87</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 94 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_094.jpg" alt="第94页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表114个人职位（M108）描述（续）
+项目
+描述方法
+定义
+履行电子文件形成、处理、管理等具体业务行为的个人的职位
+目的
+记录电子文件背景信息，提供电子文件合法性和真实性证明
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+业务实体元数据元素的描述
+7. 1
+职能业务
+按照表115给出的规则对职能业务（M109）进行描述。其中，表116~表122分别为：
+一表116对职能业务（M109）中包含的业务标识符（M110）进行描述。
+一表117对职能业务（M109）中包含的业务类别（M111）进行描述。
+一表118对职能业务（M109）中包含的业务行为（M112）进行描述。
+一表119对职能业务（M109）中包含的业务开始时间（M113）进行描述。
+一表120对职能业务（M109）中包含的业务结束时间（M114）进行描述。
+一表121对职能业务（M109）中包含的行为描述（M115）进行描述。
+一表122对职能业务（M109）中包含的行为依据（M116）进行描述。
+表115职能业务（M109）描述
+项目
+描述方法
+编号
+中文名称
+职能业务
+88</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 95 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_095.jpg" alt="第95页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表115职能业务（M109）描述（续）
+项目
+描述方法
+英文名称
+function business
+定义
+记录电子文件形成、处理、管理的职能业务描述信息
+记录电子文件形成的职能业务背景，确保电子文件的真实、完整和可靠：利于电子文件的价值
+目的
+鉴定、检索和利用
+约束性
+必选
+可重复性
+可重复
+元数据类型
+容器型
+数据类型
+编码修饰体系
+值域
+缺省值
+业务标识符（M110）
+业务类别（M111）
+业务行为（M112）
+子元数据
+业务开始时间（M113）
+业务结束时间（M114)
+行为描述（M115）
+行为依据（M116）
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+应用说明
+表116业务标识符（M110）描述
+项目
+描述方法
+编号
+M110
+中文名称
+业务标识符
+英文名称
+businessidentifier
+定义
+电子文件电子业务办理的一组标识编码
+目的
+建立与职能业务活动相关联的各实体间关系：为电子文件的真实、完整和可靠提供保障
+约束性
+必选
+89</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 96 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_096.jpg" alt="第96页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表116业务标识符（M110）描述（续）
+项目
+描述方法
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、
+管理电手文件的系统捕获或通过预定义值域列表选择著录
+应用层次
+文件
+相关元素
+应用说明
+表117
+业务类剃（M111）
+描述
+项目
+描述方法
+编号
+M111
+中文名称
+业务类别
+英文名称
+businesscategory
+定义
+电子文件形成、
+理利管理等业务行为的类别
+记录电子文件形成的职能业
+目的
+酶保电子文件的真实、完整和可靠，利于电子文件的管理
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或通过预定义值域列表选择著录
+90</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 97 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_097.jpg" alt="第97页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表117
+业务类别（M111）描述（续）
+项目
+描述方法
+应用层次
+文件
+相关元素
+应用说明
+表118
+业务行为（M112）描述
+项目
+描述方法
+编号
+M112
+中文名称
+业务行为
+英文名称
+business aetivit
+定义
+履行电子文件形成、处理、管理等业务的具体行为
+目的
+维护电子文件的证据待性，
+利于电子文件的控制
+约束性
+方标准
+必选
+可重复性
+不可重复
+简单型
+元数据类型
+数据类型
+字符型
+编码修饰体系
+测量、计算、
+创建、记录、
+检测、试验、
+复核、审核、签发、分发、签收、用印、数字签名、
+值域
+归档、封装[其他】
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系捐获或通过预定义值域列表选择著录
+应用层次
+文件
+相关元素
+应用说明
+值域中的“【其他]”表示值域中所列业务行为外的其他业务行为，由用户结合实际自定义
+表119
+业务开始时间（M113）描述
+项目
+描述方法
+编号
+M113
+中文名称
+业务开始时间
+91</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 98 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_098.jpg" alt="第98页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表119
+业务开始时间（M113）描述（续）
+项目
+描述方法
+英文名称
+businessbeginning date
+定义
+职能业务办理的开始时间
+记录电子文件得以形成的职能业务背景，确保电子文件的真实、完整和可靠：
+目的
+利于电子文件的价值鉴定、检索和利用
+约束性
+必选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+日期时间型
+标识
+名称
+编码修饰体系
+数据元和交换格式信息交换日期和时间表
+GB/T7408-2005
+示法
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统自动捕获
+应用层次
+文件
+相关元素
+应用说明
+表120业务结束时间（M114）描述
+项目
+描述方法
+编号
+M114
+中文名称
+业务结束时间
+英文名称
+business ending date
+定义
+职能业务办理的结束时间
+记录电子文件得以形成的职能业务背景，确保电子文件的真实、完整和可靠：
+目的
+利于电子文件的价值鉴定、检索和利用
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+92</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 99 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_099.jpg" alt="第99页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表120
+业务结束时间（M114）描述（续）
+项目
+描述方法
+数据类型
+日期时间型
+标识
+名称
+编码修饰体系
+数据元和交换格式信息交换日期和时间表
+GB/T7408-2005
+示法
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统自动捕获
+应用层次
+文件
+相关元素
+应用说明
+表121行为描述（M115）描述
+项目
+描述方法
+编号
+M115
+中文名称
+行为描述
+英文名称
+action description
+定义
+电子文件办理相关业务行为信息的描述
+目的
+记录背景信息，维护电子文件的合法性、真实性
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或手工著录
+应用层次
+文件
+相关元素
+主要著录电子文件及其元数据在行为开始前的状况和行为结束后的状况，业务活动过程、方
+应用说明
+法等
+93</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 100 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_100.jpg" alt="第100页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表122行为依据（M116）描述
+项目
+描述方法
+编号
+M116
+中文名称
+行为依据
+英文名称
+action mandate
+定义
+实施具体业务行为的依据、授权或原因
+目的
+记录背景信息，维护电子文件的合法性、真实性
+约束性
+可选
+管部
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+北行政
+地方标准
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理
+文件的系统捕获或手工著
+应用层次
+文件
+相关元素
+行为依据包括法律政
+第一制度大的依据，机构人员所具有的职能或授权，以及实施业务行
+应用说明
+为的其他原因
+7.2
+管理活动
+按照表123给出的规则对管理活动
+（M117）进行#述。其中，表124~表130分别为：
+一表124对管理活动（M117）中包含的管理活动标识符（M118）进行描述。
+一表125对管理活动（M117）中包含的管理类别（M119）进行描述。
+表126对管理活动（M117）中包含的管理行为（M120）进行描述。
+表127对管理活动（M117）中包含的活动开始时间（M121）进行描述。
+表129对管理活动（M117）中包含的管理活动描述（M123）进行描述。
+表130对管理活动（M117）中包含的管理依据（M124）进行描述。
+94</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 101 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_101.jpg" alt="第101页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表123
+管理活动（M117）描述
+项目
+描述方法
+编号
+M117
+中文名称
+管理活动
+英文名称
+management action
+定义
+记录电子文件归档和电子档案移交、接收、格式转换、迁移等管理历史的一组描述信息
+记录电子档案的全程管理历史，
+确保电子档案的真实、完整和可靠：利于电子文件的价值鉴
+目的
+定、检索和利用
+约束性
+条件选
+管部
+可重复性
+可重复
+元数据类型
+容器型
+数据类型
+地方标准
+编码修饰体系
+值域
+缺省值
+管理活动标识等（M118）
+管理类别
+子元数据
+活动开始时间M121
+活动结束时间M122）
+管理依据（#24）
+信息来源
+由形成、处理、
+管理电人伴的系统捕获或手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+表124
+管理活动标识符（M118）描述
+项目
+描述方法
+编号
+M118
+中文名称
+管理活动标识符
+英文名称
+action identifier
+定义
+电子档案管理系统或数字档案馆应用系统赋予电子档案管理活动的一组标识编码
+95</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 102 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_102.jpg" alt="第102页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表124
+管理活动标识符（M118）描述（续）
+项目
+描述方法
+目的
+建立与管理活动相关联的各实体间关系：为电子档案的真实、完整和可靠提供保障
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由电子档案管理系统或数字档案馆应用系统捕获或通过预定义值域列表选择著录
+应用层次
+文件
+相关元素
+应用说明
+表125
+管理类别（M119）描述
+项目
+描述方法
+编号
+M119
+中文名称
+管理类别
+英文名称
+management category
+定义
+电子档案鉴定、处置、利用和管理等活动的类别
+目的
+记录电子文件形成的职能业务背景，确保电子文件的真实、完整和可靠，利于电子文件的管理
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+96</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 103 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_103.jpg" alt="第103页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表125
+管理类别（M119）描述（续）
+项目
+描述方法
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统捕获或通过预定义值域列表选择著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+表126
+管理行为（M120）描述
+项目
+描述方法
+编号
+M120
+中文名称
+管理行为
+英文名称
+management activity
+定义
+电子档案鉴定、处置、利用和管理等活动的类别
+目的
+记录电子文件形成的职能业务背景，确保电子文件的真实、完整和可靠，利于电子文件的管理
+约束性
+条件选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+鉴定、整理、立卷、归档、检查、移交、接收、案卷调整、归档文件调整、真实性、完整性、
+有效性鉴定、格式检测、封装、划控、划控审批、升降解密、升降解密审批、重新标识、拷
+值域
+贝、缩微、扫描、载体迁移、平台迁移、格式转换、公布、公布审批、销毁、销毁审批、监
+销、备份、存储、利用、利用审批、【其他］
+缺省值
+子元数据
+信息来源
+由电子档案管理系统或数字档案馆应用系统自动捕获
+应用层次
+案卷、文件
+相关元素
+应用说明
+97</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 104 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_104.jpg" alt="第104页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表127活动开始时间（M121）描述
+项目
+描述方法
+编号
+M121
+中文名称
+活动开始时间
+英文名称
+action beginning date
+定义
+管理活动办理的开始时间
+记录电子档案得以形成的职能业务背景，确保电子档案的真实、完整和可靠：
+目的
+利于电子档案的价值鉴定
+检索和利用
+约束性
+条件选
+管部
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+日期时间型
+标识
+名称
+编码修饰体系
+数据元和交换格式信息交换日期和时间表
+GB/T7408-200
+示法
+值域
+缺省值
+子元数据
+信息来源
+应用层次
+案卷，文件
+相关元素
+应用说明
+表128活动结束时间（M122）描述
+项目
+措述方法
+编号
+M122
+中文名称
+活动结束时间
+英文名称
+action ending date
+定义
+管理活动办理的结束时间
+记录电子档案得以形成的职能业务背景，确保电子档案的真实、完整和可靠；
+目的
+利于电子档案的价值鉴定、检索和利用
+约束性
+可选
+98</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 105 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_105.jpg" alt="第105页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表128
+活动结束时间（M122）描述（续）
+项目
+描述方法
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+日期时间型
+标识
+名称
+编码修饰体系
+数据元和交换格式信息交换日期和时间表
+GB/T7408-2005
+示法
+值域
+管部
+缺省值
+子元数据
+信息来源
+由电子档案管理系统或数字档案馆应用系统自动捕获
+应用层次
+案卷、文件
+相关元素
+应用说明
+管理活动描述
+（M123）描述
+项目
+描述方法
+编号
+M123
+中文名称
+管理活动描述
+英文名称
+management
+Herfon descr
+ption
+定义
+电子档案相关管活动信息描运
+目的
+记录背景信息，维护电子文件的合性、真实性
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+99</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 106 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_106.jpg" alt="第106页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表129
+管理活动描述（M123）描述（续）
+项目
+描述方法
+子元数据
+信息来源
+由电子档案管理系统或数字档案馆应用系统捕获或手工著录
+应用层次
+文件
+相关元素
+主要著录电子文件及其元数据在行为开始前的状况和行为结束后的状况，业务活动过程、方
+应用说明
+法等
+表130管理依据（M124）描述
+项目
+描述方法
+编号
+M124
+中文名称
+管理依据
+英文名称
+management mandate
+定义
+实施具体管理活动的依据、授权或原因
+目的
+记录背景信息，维护电子档案的合法性、真实性
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由电子档案管理系统或数字档案馆应用系统捕获或手工著录
+应用层次
+案卷、文件
+相关元素
+行为依据包括法律、政策、制度上的依据，机构人员所具有的职能或授权，以及实施管理活
+应用说明
+动的其他原因
+实体关系元数据元素的描述
+8.1实体标识符
+100</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 107 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_107.jpg" alt="第107页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+按照表131给出的规则对实体标识符（M125）进行描述。
+表131
+实体标识符（M125）描述
+项目
+描述方法
+编号
+M125
+中文名称
+实体标识符
+英文名称
+entityidentifier
+定义
+实体的唯一标识编码
+目的
+标识实体，利于表示实体内、外部关系，利于电子文件的管理
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+信息来源
+由形成、处理、管理电子文件的系统按照设定的规则生成
+应用层次
+案卷、文件
+相关元素
+在电子文件形成、处理、管理过程中，同一系统内应按同一规则编制标识符，不同系统内应
+应用说明
+通过设置相应规则，避免标识符冲突
+8.2
+关系类型
+按照表132给出的规则对关系类型（M126）进行描述
+表132
+关系类型（M126）描述
+描述方法
+M126
+中文名称
+关系类型
+英文名称
+relation type
+定义
+电子文件之间、电子文件不同实体之间以及电子文件实体内部对象之间关系的种类
+目的
+利于电子文件的控制、管理和利用
+101</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 108 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_108.jpg" alt="第108页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表132
+关系类型（M126）描述（续）
+项目
+描述方法
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+文件一文件、文件一案卷、案卷一文件案卷一案卷、文件一单位、文件一内设机构、文件
+一个人、案卷一单位、案卷子内设机构
+摩卷一个人、
+文档一单位、文档一内设机构、文档
+值域
+文档一业务
+一个人、文件一业务、案卷六
+单位一业务、内设机构一业务、个人一业
+务、文档一文档、文档一文件文件一文档、个人一内设机构、内设机构一单位、个人一单
+位、业务一文件一机构人员业务一案卷一机构人员、业务一文档一机构人员
+缺省值
+政/3
+子元数据
+由形成、处理、管理电子文
+二件的系统捕获：
+或在形成、
+管理电子文件的系统中通过预
+信息来源
+选择者录或手
+定义值域列表
+著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+8.3关系
+按照表133给出的规则对关系M/27进行描述
+表133关系（M127）描述
+项目
+描述方法
+编号
+M127
+中文名称
+关系
+英文名称
+relation
+定义
+电子文件之间、电子文件不同实体之间以及电子文件实体内部对象之间的相互关系
+目的
+利于电子文件的理解、管理、控制和利用
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+102</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 109 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_109.jpg" alt="第109页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+表133关系（M127）描述（续）
+项目
+描述方法
+数据类型
+字符型
+编码修饰体系
+转发/被转发、来文/复文、正文/附件、新版本/旧版本、包含/被包含、前/后、替代/被替代、
+值域
+参考/被参考、参见/被参见、引用/被引用、操控/被操控、完成/被完成、形成/被形成、隶
+属/被隶属、【其他]
+缺省值
+子元数据
+由形成、处理、管理电件的系统捕获：或在形成、处理、管理电子文件的系统中通过预
+信息来源
+定义值域列表选择著录或手工奢录
+应用层次
+案卷、文件
+相关元素
+［其施表示值域中所列关系外的其西关系，由用户结合实际自定义
+应用说明
+值域中的
+行5
+8.4关系描述
+按照表134给出的规则对关系描述（M128）进行描述。
+关系描述
+（M128）
+项目
+描述方法
+编号
+M128
+中文名称
+关系描述
+英文名称
+relation description
+定义
+对关系类型和关系的进一说明
+目的
+对关系类型和关系作进一步解释，利于电子文件的理解、管理、控制和利用
+约束性
+可选
+可重复性
+不可重复
+元数据类型
+简单型
+数据类型
+字符型
+编码修饰体系
+值域
+缺省值
+子元数据
+103</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 110 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_110.jpg" alt="第110页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表134关系描述（M128）描述（续）
+项目
+描述方法
+信息来源
+形成、处理、管理电子文件的系统中手工著录
+应用层次
+案卷、文件
+相关元素
+应用说明
+地方标准信息服务平台
+104</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 111 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_111.jpg" alt="第111页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+附录A
+（资料性）
+电子文件元数据表
+A. 1
+电子文件元数据表（聚合层次：文件），见表A.1。
+表A.1电子文件元数据表（聚合层次：文件）
+编号
+元数据中文名
+元数据英文名
+约束性
+可重复性
+元素类型
+数据类型
+必选
+聚合层次
+不可重复
+简单型
+MI
+aggregation hierarchy
+字符型
+不可重复
+M2
+来源
+必选
+provenance
+容器型
+获取方式
+不可重复
+简单型
+M3
+可选
+acquisition approaches
+字符型
+来源名称
+可选
+不可重复
+简单型
+M4
+provenance name
+字符型
+M5
+必选
+不可重复
+简单型
+源文件标识符
+source identifier
+字符型
+条件选
+不可重复
+简单型
+全宗名称
+M6
+fonds name
+字符型
+条件选
+简单型
+立档单位名称
+不可重复
+M7
+fonds constitutingunit name
+字符型
+生成方式
+不可重复
+简单型
+M8
+必选
+creation way
+字符型
+不可重复
+电子文件号
+必选
+简单型
+M9
+electronic record code
+字符型
+档号
+M10
+必选
+不可重复
+archival code
+容器型
+案卷号
+可选
+简单型
+M11
+file number
+不可重复
+字符型
+类别号
+必选
+简单型
+M12
+不可重复
+category code
+字符型
+M13
+保管期限
+不可重复
+简单型
+必选
+retention period
+字符型
+M14
+内容描述
+必选
+不可重复
+容器型
+content description
+字符型
+M15
+题名
+不可重复
+简单型
+title
+必选
+字符型
+M16
+关键词
+keyword
+必选
+可不重复
+简单型
+字符型
+分类号
+必选
+M17
+不可重复
+简单型
+class code
+字符型
+documentnumber
+可选
+M18
+文件编号
+不可重复
+简单型
+字符型
+图号
+可选
+M19
+drawing number
+不可重复
+简单型
+字符型
+M20
+责任者
+必选
+不可重复
+简单型
+author
+字符型
+date
+必选
+不可重复
+M21
+日期
+简单型
+日期时间型
+文种
+可选
+不可重复
+简单型
+M22
+document type
+字符型
+密级
+必选
+不可重复
+M23
+简单型
+securityclassification
+字符型
+简单型
+可选
+保密期限
+不可重复
+M24
+secrecy period
+字符型
+不可重复
+M25
+形式特征
+必选
+容器型
+formal characteristics
+M26
+必选
+不可重复
+简单型
+文件组合类型
+document aggregation type
+字符型
+105</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 112 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_112.jpg" alt="第112页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+电子文件元数据表（聚合层次：文件）
+表A.1
+（续）
+编号
+元数据中文名
+元数据英文名
+约束性
+元素类型
+可重复性
+数据类型
+M27
+件数
+条件选
+简单型
+不可重复
+total number of items
+数值型
+页数
+必选
+不可重复
+简单型
+M28
+total number of pages
+数值型
+M29
+carrier type
+可选
+载体类型
+不可重复
+简单型
+字符型
+规格
+不可重复
+简单型
+M30
+可选
+specs
+字符型
+语种
+language
+可选
+M31
+不可重复
+简单型
+字符型
+稿本
+可选
+简单型
+M32
+不可重复
+manuscript type
+字符型
+M33
+电子属性
+必选
+不可重复
+容器型
+M34
+格式名称
+必选
+不可重复
+简单型
+tormat
+字符型
+M35
+oriatvgrsion
+可选
+不可重复
+简单型
+格式版本
+字符型
+可选
+不可重复
+M36
+格式描述
+简单型
+formatdescyiption
+字符型
+不可重复
+M37
+校验方式
+简单型
+Clreckout
+可选
+mode
+字符型
+可选口
+M38
+校验值
+不可重复
+简单型
+checksum
+字符型
+必选
+不可重复
+简单型
+M39
+计算机文件名
+computer fil
+name
+字符型
+不可重复
+简单型
+M40
+计算机文件大小
+computer fil
+必选
+size
+字符型
+documentcreatingapplication
+不可重复
+M41
+可选√
+简单型
+文档创建程序
+字符型
+可选。
+可重复
+简单型
+M42
+信息系统描述
+字符型
+条件选
+数字化属性
+不可重复
+M43
+容器型
+M44
+可选
+不可重复
+简单型
+数字化对象形态
+字符型
+扫描分辨率
+条件选
+不可重复
+简单型
+M45
+scennihgresolution
+字符型
+M46
+条件选
+简单型
+扫描色彩模式
+不可重复
+model
+scanning
+colok
+字符型
+image com ession schened
+可选
+简单型
+M47
+图像压缩方案
+不可重复
+字符型
+可选
+不可重复
+background information
+M48
+背景信息
+容器型
+可选
+简单型
+项目名称
+M49
+不可重复
+project name
+字符型
+可选
+不可重复
+简单型
+M50
+项目简称
+project abbreviation
+字符型
+可选
+不可重复
+简单型
+M51
+路线名称
+route name
+字符型
+可选
+简单型
+M52
+建设性质
+不可重复
+building feature
+字符型
+M53
+不可重复
+简单型
+建设规模
+可选
+construction scale
+字符型
+建设依据
+M54
+可选
+简单型
+不可重复
+construction basis
+字符型
+可选
+不可重复
+简单型
+M55
+建设里程
+constructionmileage
+字符型
+M56
+桥隧比例
+bridge and tunnel ratio
+不可重复
+简单型
+可选
+字符型
+106</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 113 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_113.jpg" alt="第113页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T11382023
+电子文件元数据表（聚合层次：文件）
+表A.1
+（续）
+编号
+元数据中文名
+元数据英文名
+约束性
+可重复性
+元素类型
+数据类型
+M57
+简单型
+工程概算
+可选
+不可重复
+project estimate
+字符型
+M58
+批准工期
+可选
+不可重复
+简单型
+approval period
+字符型
+M59
+省份
+可选
+简单型
+不可重复
+province
+字符型
+设区市
+不可重复
+简单型
+M60
+可选
+districts and cities
+字符型
+可选
+M61
+建设地点
+不可重复
+简单型
+construction place
+字符型
+合同段
+简单型
+M62
+可选
+不可重复
+contraet segment
+字符型
+SilejectA
+单项工程
+可选
+简单型
+M63
+不可重复
+字符型
+简单型
+M64
+单位工程
+不可重复
+可选
+unit
+字符型
+M65
+可选
+简单型
+分部工程
+不可重复
+Dartprgject
+字符型
+可选
+M66
+分项工程
+item Project
+简单型
+不可重复
+字符型
+不可重复
+M67
+工程部位
+简单型
+parts
+字符型
+M68
+工程地点
+不可重复
+简单型
+Location
+project
+字符型
+可选
+简单型
+M69
+路线长度
+不可重复
+engthof
+ine
+transi
+字符型
+M70
+条件选
+不可重复
+全球定位信息
+global position informatron
+容器型
+GPS
+M71
+条性选！
+不可重复
+简单型
+全球定位系统版本
+version
+字符型
+条件选
+不可重复
+简单型
+M72
+latitade
+纬度基准
+refeence
+字符型
+纬度
+M73
+不可重复
+简单型
+latitude
+字符型
+M74
+经度基准
+条件选
+不可重复
+简单型
+erence
+字符型
+ongitude
+条件选
+不可重复
+简单型
+M75
+经度
+字符型
+海拔基准
+M76
+不可重复
+简单型
+可选
+atitude
+字符型
+海拔
+简单型
+M77
+可选
+raltitrde
+不可重复
+字符型
+M78
+可选
+不可重复
+简单型
+方向基准
+image direction reference
+字符型
+可选
+镜头方向
+简单型
+M79
+image direction
+不可重复
+字符型
+捕获设备
+条件选
+不可重复
+M80
+capture device
+容器型
+可选
+设备类型
+device type
+简单型
+M81
+不可重复
+字符型
+设备制造商
+可选
+简单型
+M82
+不可重复
+device manufacturer
+字符型
+M83
+device model number
+不可重复
+简单型
+设备型号
+可选
+字符型
+M84
+device sensor
+可选
+不可重复
+简单型
+设备感光器
+字符型
+device information
+不可重复
+简单型
+M85
+设备信息
+可选
+字符型
+电子签名
+可重复
+M86
+可选
+electronic signature
+容器型
+107</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 114 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_114.jpg" alt="第114页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表A.1
+电子文件元数据表（聚合层次：文件）
+（续）
+编号
+约束性
+元数据中文名
+元数据英文名
+可重复性
+元素类型
+数据类型
+M87
+条件选
+简单型
+不可重复
+签名标识符
+signature identifier
+字符型
+M88
+签名规则
+signature rules
+条件选
+不可重复
+简单型
+字符型
+M89
+条件选
+签名时间
+signature time
+不可重复
+简单型
+日期时间型
+签名人
+不可重复
+简单型
+M90
+signer
+可选
+字符型
+条件选
+M91
+签名结果
+signature
+不可重复
+简单型
+字符型
+证书
+certificate
+条件选
+可重复
+简单型
+M92
+字符型
+M93
+证书引证
+可选
+不可重复
+简单型
+certificate reference
+字符型
+条件选
+简单型
+M94
+不可重复
+签名算法标识
+signature algorithm identifier
+字符型
+M95
+必选
+不可重复
+storage location
+存储位置
+容器型
+必选
+不可重复
+M96
+在线存址
+简单型
+online location
+字符型
+可选
+简单型
+M97
+离线存址
+不可重复
+offline location
+字符型
+可选
+M98
+权限管理
+不可重复
+rights management
+容器型
+可选
+简单型
+M99
+知识产权说明
+intellectual property statement
+不可重复
+字符型
+M100
+可重复
+简单型
+授权对象
+可选
+authorized agent
+字符型
+可选
+M101
+授权行为
+可重复
+简单型
+permission assignment
+字符型
+M102
+简单型
+可选
+控制标识
+不可重复
+control identifier
+字符型
+可重复
+简单型
+M103
+附注
+可选
+annotation
+字符型
+M104
+机构人员类型
+必选
+不可重复
+简单型
+agent type
+字符型
+必选
+不可重复
+简单型
+M105
+机构人员标识符
+agent identifier
+字符型
+必选
+不可重复
+简单型
+M106
+机构人员名称
+agent name
+字符型
+机构人员隶属
+简单型
+M107
+可选
+agent belongs to
+不可重复
+字符型
+可选
+个人职位
+不可重复
+简单型
+M108
+position name
+字符型
+必选
+职能业务
+可重复
+M109
+function business
+容器型
+business identifier
+必选
+不可重复
+简单型
+M110
+业务标识符
+字符型
+可选
+业务类别
+不可重复
+简单型
+M111
+business category
+字符型
+M112
+business activity
+简单型
+业务行为
+必选
+不可重复
+字符型
+不可重复
+M113
+业务开始时间
+必选
+简单型
+business beginningdate
+日期时间型
+业务结束时间
+可选
+M114
+不可重复
+简单型
+business ending date
+日期时间型
+M115
+可选
+不可重复
+简单型
+行为描述
+action description
+字符型
+行为依据
+action mandate
+简单型
+M116
+可选
+不可重复
+字符型
+108</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 115 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_115.jpg" alt="第115页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138-—2023
+表A.1
+电子文件元数据表（聚合层次：文件）
+（续）
+编号
+约束性
+元数据中文名
+元数据英文名
+可重复性
+元素类型
+数据类型
+管理活动
+条件选
+可重复
+M117
+management action
+容器型
+action identifier
+不可重复
+条件选
+简单型
+M118
+管理活动标识符
+字符型
+条件选
+简单型
+M119
+管理类别
+不可重复
+management category
+字符型
+管理行为
+条件选
+不可重复
+简单型
+M120
+management activity
+字符型
+条件选
+M121
+活动开始时间
+不可重复
+简单型
+action beginning date
+日期时间型
+活动结束时间
+可选
+不可重复
+M122
+简单型
+action ending date
+日期时间型
+可选
+简单型
+管理活动描述
+不可重复
+M123
+management action description
+字符型
+M124
+可选
+简单型
+管理依据
+不可重复
+management mandate
+字符型
+M125
+可选
+不可重复
+简单型
+实体标识符
+entity identifier
+字符型
+可选
+M126
+关系类型
+relation type
+不可重复
+简单型
+字符型
+关系
+可选
+M127
+不可重复
+简单型
+relation
+字符型
+可选
+不可重复
+简单型
+M128
+关系描述
+relation description
+字符型
+A.2
+电子文件元数据表（聚合层次：案卷），见表A.1。
+表A.2电子文件元数据表（聚合层次：案卷）
+编号
+约束性
+可重复性
+元数据中文名
+元数据英文名
+元素类型
+数据类型
+简单型
+聚合层次
+必选
+不可重复
+M1
+aggregation hierarchy
+字符型
+M2
+不可重复
+来源
+必选
+provenance
+容器型
+可选
+简单型
+获取方式
+acquisition approaches
+不可重复
+M3
+字符型
+不可重复
+简单型
+M4
+来源名称
+可选
+provenance name
+字符型
+不可重复
+M6
+全宗名称
+条件选
+简单型
+fonds name
+字符型
+条件选
+立档单位名称
+不可重复
+简单型
+M7
+fonds constituting unit name
+字符型
+档号
+M10
+必选
+不可重复
+archival code
+容器型
+必选
+简单型
+M11
+file number
+不可重复
+案卷号
+字符型
+必选
+简单型
+M12
+类别号
+不可重复
+category code
+字符型
+不可重复
+M13
+简单型
+必选
+保管期限
+retention period
+字符型
+M14
+内容描述
+必选
+不可重复
+容器型
+contentdescription
+字符型
+不可重复
+简单型
+M15
+题名
+必选
+title
+字符型
+日期
+必选
+M21
+不可重复
+简单型
+date
+日期时间型
+密级
+必选
+不可重复
+简单型
+M23
+securityclassification
+字符型
+109</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 116 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_116.jpg" alt="第116页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表A.2电子文件元数据表（聚合层次：案卷）
+（续）
+编号
+元数据中文名
+元数据英文名
+约束性
+元素类型
+可重复性
+数据类型
+简单型
+M24
+可选
+不可重复
+保密期限
+secrecy period
+字符型
+M25
+必选
+不可重复
+形式特征
+formal characteristics
+容器型
+M27
+件数
+条件选
+简单型
+不可重复
+total number of items
+数值型
+不可重复
+M28
+页数
+total numberof pages
+必选
+简单型
+数值型
+M86
+电子签名
+electronic signature
+可选
+可重复
+容器型
+条件选
+简单型
+M87
+签名标识符
+不可重复
+signature identifier
+字符型
+条件选
+签名规则
+不可重复
+简单型
+M88
+字符型
+条选
+M89
+签名时间
+不可重复
+简单型
+signature
+日期时间型
+signet
+签名人
+可选
+不可重复
+简单型
+M90
+字符型
+条件选
+不可重复
+M91
+签名结果
+简单型
+signatufe
+字符型
+条件选力
+可重复
+证书
+M92
+简单型
+ficat
+字符型
+可选口
+M93
+不可重复
+简单型
+证书引证
+certificate reference
+字符型
+条件选
+不可重复
+简单型
+M94
+签名算法标识
+identifier
+signaturealgorithm
+字符型
+rights management
+不可重复
+M98
+可选
+权限管理
+容器型
+intelledtua property statement
+可选
+不可重复
+66W
+简单型
+知识产权说明
+字符型
+可选
+可重复
+简单型
+授权对象
+M100
+authoriged
+agent
+字符型
+M101
+授权行为
+可重复
+简单型
+可选
+pernission-assignment
+字符型
+可选
+控制标识
+不可重复
+简单型
+M102
+control identifier
+字符型
+简单型
+M103
+附注
+可选
+可重复
+ammotation
+字符型
+必选
+简单型
+M104
+机构人员类型
+不可重复
+字符型
+必选
+机构人员标识符
+agentdentffrer
+简单型
+M105
+不可重复
+字符型
+机构人员名称
+不可重复
+简单型
+M106
+必选
+agent
+name
+字符型
+可选
+简单型
+M107
+机构人员隶属
+不可重复
+agent belongs
+字符型
+个人职位
+可选
+不可重复
+简单型
+M108
+position name
+字符型
+管理活动
+条件选
+可重复
+M117
+容器型
+management action
+条件选
+简单型
+M118
+管理活动标识符
+不可重复
+action identifier
+字符型
+管理类别
+条件选
+不可重复
+简单型
+M119
+management category
+字符型
+M120
+管理行为
+条件选
+简单型
+不可重复
+management activity
+字符型
+M121
+条件选
+活动开始时间
+不可重复
+简单型
+action beginning date
+日期时间型
+M122
+活动结束时间
+可选
+不可重复
+简单型
+action ending date
+日期时间型
+110</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 117 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_117.jpg" alt="第117页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+表A.2电子文件元数据表（聚合层次：案卷）
+（续）
+编号
+约束性
+元数据中文名
+可重复性
+元素类型
+元数据英文名
+数据类型
+简单型
+M123
+管理活动描述
+可选
+不可重复
+managementaction description
+字符型
+简单型
+M124
+管理依据
+可选
+不可重复
+managementmandate
+字符型
+可选
+不可重复
+简单型
+M125
+实体标识符
+entity identifier
+字符型
+relation type
+简单型
+关系类型
+可选
+M126
+不可重复
+字符型
+不可重复
+简单型
+M127
+关系
+可选
+relation
+字符型
+M128
+关系描述
+不可重复
+简单型
+可选
+relationdescription
+字符型
+地方标准
+息服务平台</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 118 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_118.jpg" alt="第118页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+参考文献
+[1]GB2312-1980信息交换用汉字编码字符集DA/T28-2018建设项目档案管理规范
+21
+GB18030-2005信息技术中文编码字符集CJJT187-2012建设电子档案元数据标准
+GB/T18894-2016电子文件归档与电子档案管理规范
+[4]
+GB/T26163.1-2010信息技术元数据注册系统（MDR）第3部分注册系统元模型和基本属性
+[5]
+GB/T26162.1-2010信息与文献文件管理第1部分：通则
+[6]
+GB/T26163.1-2010信息与文献文件管理过程文件元数据第1部分：原则
+[7】DA/T48—2009基于xml的电子文件封装规范
+[8]IS0/TS23081-2:2009信息与文献文件管理过程文件元数据第2部分概念与实施
+[6]
+《建设项目电子文件归档和电子档案管理暂行办法》（档发（2016）11号）
+[10]
+《中国档案分类法》编委会.中国档案分类法[M].北京：中国档案出版社，2000
+[11]国家档案局关于颁发《编制全国档案馆名称代码实施细则》的通知（国档发（1987）4号）
+【12]电子认证服务管理办法（中华人民共和国工业和信息化部令第29号）
+地方标准信息服务平台
+112</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 119 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_119.jpg" alt="第119页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">地方标准信息服务平台</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 120 页 / 共 120 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="DB53T 1138-2023 公路建设项目电子文件与电子档案元数据标准_pages/page_120.jpg" alt="第120页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">DB53/T1138—2023
+地方标准信息服务平台</div></div>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · OCR 双层版 · 共 120 页 · 识别文字 57233 字 · 原文以 PDF 为准</div>
 </div>
 </body>
 </html>

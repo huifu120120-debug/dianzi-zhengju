@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>电子数据存储介质复制工具要求及检测方法</title>
+<title>GAT 754-2008 电子数据存储介质复制工具要求及检测方法</title>
 <style>
-:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--warn:#b8860b;--ocr:#a93226}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
 .wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
@@ -17,58 +17,334 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 .doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
 .doc-actions a:hover{background:#eef4ff}
 .doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
-.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
-.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
-.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
-.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
-.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.content p{margin:0 0 12px;text-indent:2em}
-.content .no-indent{text-indent:0}
-.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
-.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
-.content h3{font-size:15.5px}
-.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
-.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
-.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.ocr-banner{margin:14px 0;padding:12px 18px;border-radius:8px;font-size:13.5px;line-height:1.7;background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.ocr-banner b{font-weight:700}
+.page-block{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:18px 0;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.page-header{background:#f0f3f7;padding:8px 16px;font-size:13px;color:var(--ink2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.page-header .pageno{font-weight:700;color:var(--brand)}
+.page-img{text-align:center;padding:12px;background:#fafbfc}
+.page-img img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page-ocr{padding:16px 20px;border-top:1px dashed var(--line);background:#fffdf8}
+.page-ocr .ocr-label{font-size:12px;color:var(--ocr);font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+.page-ocr .ocr-text{font-size:14px;line-height:1.9;color:#333;white-space:pre-wrap;word-break:break-word}
+.page-ocr .ocr-empty{color:#999;font-style:italic;font-size:13px}
 .footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="doc-head">
-<h1>电子数据存储介质复制工具要求及检测方法</h1>
-<div class="doc-meta"><span><b>文号：</b>GA/T 754—2008</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2008-03-24</span></div>
-<div class="doc-actions"><a href="GAT 754-2008 电子数据存储介质复制工具要求及检测方法.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://img.antpedia.com/standard/files/pdfs_ora/CN-GA/90e/GA_T%20754-2008_346.pdf" target="_blank" rel="noopener">🔗 来源</a></div>
+<h1>GAT 754-2008 电子数据存储介质复制工具要求及检测方法</h1>
+<div class="doc-meta"><span><b>文号：</b>GAT 754-2008</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2008-03-24</span><span><b>备注：</b>仅获取节选（来源：other，https://img.antpedia.com/standard/files/pdfs_ora/CN-GA/90e/GA_T%20754-2008_346.pdf）；仅</span></div>
+<div class="doc-actions"><a href="GAT 754-2008 电子数据存储介质复制工具要求及检测方法.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://www.spc.org.cn/basicsearch?text=GA%2FT%20754" target="_blank" rel="noopener">🔗 官方来源</a></div>
 </header>
-<div class="banner pdf">📄 正文来源：分析测试百科网PDF全文，以下为节选内容，全文请下载原PDF</div>
-<div class="content">
-<h2>前言</h2>
-<p>本标准由公安部公共信息网络安全监察局提出。</p>
-<p>本标准由公安部信息系统安全标准化技术委员会归口。</p>
-<p>本标准起草单位：公安部公共信息网络安全监察局、福建厦门美亚柏科公司。</p>
-<p>本标准主要起草人：许剑卓、张雪峰、侯钧雷、徐贤丰。</p>
-<h2>1 范围</h2>
-<p>本标准规定了电子数据存储介质复制工具的检测方法。</p>
-<p>本标准适用于对用于复制电子数据存储介质存储的数据的软件和硬件设备进行检测。</p>
-<h2>2 规范性引用文件</h2>
-<p>下列文件中的条款通过本标准的引用而成为本标准的条款。凡是注日期的引用文件，其随后所有的修改单（不包括勘误的内容）或修订版均不适用于本标准，然而，鼓励根据本标准达成协议的各方研究是否可使用这些文件的最新版本。凡是不注日期的引用文件，其最新版本适用于本文件。</p>
-<p class="no-indent">GA/T 755—2008 电子数据存储介质写保护设备要求及检测方法</p>
-<h2>3 术语和定义</h2>
-<p>下列术语和定义适用于本标准。</p>
-<h3>3.1 源存储介质 source data storage</h3>
-<p>存储有要复制的数据的电子数据存储介质。</p>
-<h3>3.2 目标对象 destine object</h3>
-<p>从源存储介质复制获得的数据存储对象，包括镜像文件、柱面对齐备份和柱面非对齐备份。</p>
-<h3>3.2.1 镜像文件 imagefile</h3>
-<p>从源存储介质复制生成的一个或一组文件，从该文件或文件组中存储的数据可重新创建源存储介质存储的数据比特流。本标准所称镜像文件中的比特位是指从镜像文件重新创建获得的数据比特流中的比特位。</p>
-<h3>3.2.2 柱面对齐备份 cylinder aligned copy</h3>
-<p>将源存储介质逐比特复制到另一电子数据存储介质中，并对文件系统分区表和启动扇区做出适当调整，使分区的第一个扇区与磁盘柱面边界对齐，并对调整所增加的扇区进行合理填充获得的数据存储对象。</p>
-<h3>3.2.3 柱面非对齐备份 cylinder unaligned copy</h3>
-<p>将源存储介质逐比特复制到另一电子数据存储介质中，并且不调整文件系统分区表和分区启动扇区获得的数据存储对象。</p>
-<h3>3.3 目标存储介质 destine data storage</h3>
-<p>用于存储目标对象的电子数据存储介质称为目标存储介质。</p>
+<div class="ocr-banner">
+<b>⚠️ OCR 识别版</b>：本文档由原 PDF 逐页扫描识别生成，每页上方为原图，下方为 OCR 识别文字。<br>
+OCR 可能存在少量识别误差（尤其是表格、公式、生僻字），<b>请以原图 / 原 PDF 为准</b>。全文检索已收录 OCR 文字。
 </div>
-<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 1 页 / 共 9 页</span><span>原图 1171×1625</span></div>
+<div class="page-img"><img src="GAT 754-2008 电子数据存储介质复制工具要求及检测方法_pages/page_001.jpg" alt="第1页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">ICS35.220.20
+06V
+GA
+中华人民共和国公共安全行业标准
+GA/T7542008
+电子数据存储介质
+复制工具要求及检测方法
+The requirements and test method of electronic data storage duplication tool
+督委员
+都技术
+技术监督情报室
+1606/588
+2008-03-24发布
+2008-03-24实施
+中华人民共和国公安部
+发布
+数码坊价</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 2 页 / 共 9 页</span><span>原图 1177×1633</span></div>
+<div class="page-img"><img src="GAT 754-2008 电子数据存储介质复制工具要求及检测方法_pages/page_002.jpg" alt="第2页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T754—2008
+前言
+本标准由公安部公共信息网络安全监察局提出。
+本标准由公安部信息系统安全标准化技术委员会归口。
+本标准起草单位：公安部公共信息网络安全监察局、福建厦门美亚柏科公司。
+本标准主要起草人：许剑卓张雪峰、侯钩雷、徐贤丰，</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 3 页 / 共 9 页</span><span>原图 1176×1633</span></div>
+<div class="page-img"><img src="GAT 754-2008 电子数据存储介质复制工具要求及检测方法_pages/page_003.jpg" alt="第3页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T754-2008
+电子数据存储介质
+复制工具要求及检测方法
+1范围
+本标准规定了电子数据存储介质复制工具的检测方法，
+本标准适用于对用于复制电子数据任储介质存储的数据的软件和硬件设备进行检测。
+2规范性引用文件
+下列文件中的条款通过本准的引用而成为本标准的条款，凡是注自期的引用文件，其随后所有
+的修改单（不包括勘误
+或修订版均不适用于本标准，然面，鼓励根据本标准达成协议的各方研究
+是否可使用这些文件的，版本，凡是不注日期的引用文件，其最新版适用卡本标准。
+GA/T755-208重子数据存储介质气保护设备要求及检测方法
+3术语和定义
+下列术语和定义适用于本标准
+3.1
+源存储介质
+orce data storage
+存储有要复
+3.2
+目标对象
+destieobject
+3.21
+镜像文件
+inogca
+从源存储介质
+STAND
+成的一个或一组文件，从该文件或文件组中存储的数提可重新创建源存储介
+质存储的数据比特流
+准所称镜像文件中的比特位是指从镜像文件重新创建获得的数据比特流中
+的比特位
+3. 2. 2
+柱面对齐备份cylinder alignedcopy
+将源存储介质逐比特复制到丹一电子数据存储介质中，并对文件系统分区表和启动扇区做出适当
+调整，使分区的第一个扇区与磁盘柱面边界对齐，并对调整所增加的扇区进行合理填充获得的数据存储
+对象。
+3.2.3
+柱面非对齐备份cylinderunaligned copy
+将源存储介质逐比特复制到另一电子数据存储介质中，并且不调整文件系统分区表和分区启动扇
+区获得的数据存储对象。
+3. 3
+日标存储介质destinedatastorage
+用于存储目标对象的电子数据存储介质称为目标存储介质，</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 4 页 / 共 9 页</span><span>原图 1164×1626</span></div>
+<div class="page-img"><img src="GAT 754-2008 电子数据存储介质复制工具要求及检测方法_pages/page_004.jpg" alt="第4页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T754-2008
+3.4
+复制工具duplication tool
+读取源存储介质存储的数据并复制到目标对象的软件或硬件设备。
+3.5
+截短备份truncated copy
+由于目标存储介质的存储空间小于源存储介质的存储空间，复制源存储介质生成的柱面对齐备份
+或柱面非对齐备份未包含源存储介质中存储的所有数据，
+3.6
+逐比特复制bit-stream duplicate
+将数据的每个比特位准确复制到另一目标数据中
+注逐比特复制的对象可以是数据文件、盘分区，整个磁盘等。
+3.7
+隐藏数据扇区hiddendata sector
+源存储介质中位于可用分区之外的扇区。
+3.8
+可见数据扇区visibledata sector
+源存储介质位于可用分区之中的扇区。
+3.9
+损坏扇区bad sector
+是指由于物理损坏等原因，无法读取其存储的数据的扇区，
+3.10
+未解决错误unresolved error
+复制工具向源存储介质或目标存储介质发出指令时存储介质返回失败或错误状态码·如果复制工
+具通过重发指令或改为执行其他指令仍然无法完成其所要实现的目的或仍然返回失败或错误状态码，
+则称发生的错误为未解决错误，
+3.11
+合理填充benign fill
+在数据复制过程中，当源存储介质特定数据存储区域无法读取或目标存储介质存在测余数据存储
+区域时，向目标存储介质对应的数据存储区域填充不会与其他数据混滑的数据
+示例：比如填充常数o或”Thisdatuis notfromthesourcedatstorage&quot;等明显标讯该数据不是来自源存储介质的
+文本。
+4要求
+4.1接口可用性要求
+复制工具应能使用其支持的所有接口复制数据。
+4.2目标对象要求
+复制工具应生成镜像文件、柱面对齐备份或柱面非对齐备份
+4.3完整复制要求
+对于源存储介质所有可见数据扇区和隐藏数据扇区中的任一比特位·复制工具生成的目标对象中
+都可获得与其相对应的比特位。
+4.4准确复制要求
+如果源存储介质中的比特位可读取，复制工具生成的目标对象中对应的比待位与源存储介质中的
+比特位数值一致。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 5 页 / 共 9 页</span><span>原图 1186×1636</span></div>
+<div class="page-img"><img src="GAT 754-2008 电子数据存储介质复制工具要求及检测方法_pages/page_005.jpg" alt="第5页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T754—2008
+4.5
+错误处理要求
+如果从源存储介质读取数据发生未解决错误，复制工具应告知用户发生的错误类型和位置；
+如果向目标对象写人数据发生未解决错误，复制工具应告知用户发生错误，
+如果源存储介质中存在损坏扇区，复制工其生成的目标对象中对应的比特位应被合理填充。
+4.6
+存储空间不匹配处理要求
+4.6.1
+存储空间不足处理要求
+如果目标存储介质存储空间不足，复制工具应告知用户：
+如果目标对象为柱面对齐备份或柱面非对齐备份，复制工具应选择不复制数据或使用目标存
+储介质的所有存储空间生成载短备份：
+如果目标对象为镜像文件，且复制工具支持切换目标存储介质，复制工具应提示用户切换目标
+4.6.2存储空间过剩处理要求
+如果日标对象为柱面对齐备份或柱面非对齐备份，且数据复制后目标存储介质存在剩余存储空间，
+复制工具应保留剩余存储空间的数据不变或对剩余存储空间进行合理填充。
+4.7写保护要求
+如果复制工具可在未使用写保护设备保护源存储介质的情况下复制数据，复制工具应符合
+GA/T755-2008中第4章规定的婴求，
+5检测步骤
+5.1
+检测要求
+对于复制工具支持的所有访间接口，均应分别按照本章规定的方法逐一检测：
+对于复制工具支持的所有目标对象，均应分别按照本章规定的方法逐一检测。
+5.2
+完整复制要求和准确复制要求的检测
+5.2.1
+对于目标对象为柱面非对齐备份的，按照以下步骤检测：
+a)
+谁备两个型号相同、存储空间大小相同、不存在损坏扇区的电子数据存储介质，分别记为
+A和B
+在A上随机写人任意数据后进行分区，并使A上存在隐藏数据扇区
+使用复制工具将A复制到B上：
+计算A和B上存储的所有数据的MD5校验值，比较MDS校验值，如果一致，则判定符合完整
+复制要求和准确复制要求，否划判定不符合完整复制要求和准确复制要求。
+5.2.2
+对于自标对象为柱面对齐备份的，按照以下步骤检测：
+准备两个型号相同、存储空间大小不同，不存在损坏扇区的电子数据存储介质，其中存储空间
+较小的记为A，存储空间较大的记为B，
+在A上随机写入任意数据
+将A分为两个分区，并使两个分区之间和第二个分区之后存在隐藏扇区。记A的第一个分区
+起始扇区号为A·最后一个扇区号为A第二个分区起始扇区号为A·最后一个扇区号为
+A+最后一个物理翻区号为A，并保证在B上第A扇区不位于簇边界上
+使用复制工具将A复制到B上记B的第一个分区起始扇区号为B，最后一个扇区号为B，
+第二个分区起始扇区号为B·最后一个扇区号为B
+计算A的A扇区至A-1扇区和B的B扇区至B十A,-A,-1扇区的数据的MD5校验
+值·比较MD校验值是否一致，如果不一致则判定不符合完整复制要求和准确复制要求。
+计算A的A，扇区至A扇区和B的B扇区至B十A一A扇区的数据的MD5校验值，比较
+MD5校验值是否一致，如果不一致则判定不符合完整复制要求和准确复制要求。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 6 页 / 共 9 页</span><span>原图 1171×1631</span></div>
+<div class="page-img"><img src="GAT 754-2008 电子数据存储介质复制工具要求及检测方法_pages/page_006.jpg" alt="第6页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T7542008
+检查B的B十A一A，扇区至B一1扇区是否被合理填充·如果未被合理填充·则判定不符合
+完整复制要求和准确复制要求。
+如果上述检测未判定不符合完整复制要求和准确复制要求，则判定符合完整性和准确性
+要求。
+5.2.3
+对于目标对象为镜像文件的，按照以下步骤检测：
+准备两个型号相同、存储空间大小相同、不存在损坏扇区的电子数据存储介质，分别记为
+A和B:
+准备一个存储空间大小大于A的电子数据存储介质，记为C
+在A上随机写人任意数据后进行分区-使上存在隐藏扇区：
+使用复制工具将A复制生成镜像文件存储到C上：
+从镜像文件重新创建源字储介质的比佳流并写人到B上！
+计算A和B上存储的所有数据的MD5校验值，如果MD5校验值一致·则判定符合完整复制
+要求和催确复制要求正则判定不符合完整复制要求和准商复制要求。
+5.3
+错误处理要求的检测
+准备两个存在惯坏不扇区的电子数据存储介质，其中存储空间较小的记为A，存储空间较大的记
+为B：
+准备与 A
+b)
+型号相同、存储空间大小相同，不存在损环扇区的电子数据存储个质，记为C，
+使用复制
+上具将A复制到B上，并使复制过程中A的损环扇区被读，B的损坏扇区被写人！
+检查复制工具是否报告A的损环扇区读取错误和昔误位置，如果未报告错误和错误位置，则
+判定不给借误处理要求：
+检查复
+具是否报告B的损坏扇区写人错误·如集未报告错误，贝判定不符合错误处理
+要求：
+对于目象为柱面非对齐备份和程面对齐备份的检查B中与A损不扇区对应的扇区是否
+得到合理填充，如果未得到合理填充则判定不符合错误处理要求：
+g)
+对于目标对为镜像文件的，从镜像文件重新创建源存错介质的比特航并写人到C中，检查C
+中与A#
+区对应的扇区是香得到合理填充，如果未得到合理填壳，则间定不符合错误处
+理要求：
+h)
+如果上述检测人判定不符合错误处理要求的，则判定符合错误处理要求
+5.4存储空间不匹配处理要求的检测
+5.4.1
+存储空间不足处理求的检测
+谁备两个存储空间大小不同，不存在损坏前区的电子数据存储介质，其中存储空间较大的记为
+A，存储空间较小的己贴B
+对于目标对象为镜像支件的·准备行储空间人A的电子数居存储介质，记为C，准备型号和
+存储空间大小与A相同的电子数据存储介质，记为D
+将A分为两个分区·假定第一个分区超始闲区全第二个分区起始扇区的长度为N个扇区，保
+证B的存储空间大小大于N个扇区，
+使用复制工具将A复制到B上
+对于目标对象为柱面非对齐备份和柱面对齐备份的，检查复制工具是否报告目标存储空间
+不足。
+对于自标对象为柱面非对齐备份的，计算B上存储的所有数据的MD5校验值和A从第一个
+物理扇区开始，存储空间大小与B相同的所有扇区的MD5校验值·比较两个MD5校验值是
+否一致
+对于目标对象为柱面对齐备份的，计算A和B第一个分区起始扇区开始的N个扇区的MD5</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 7 页 / 共 9 页</span><span>原图 1187×1633</span></div>
+<div class="page-img"><img src="GAT 754-2008 电子数据存储介质复制工具要求及检测方法_pages/page_007.jpg" alt="第7页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T754—2008
+校验值，比较两个MD5校验值是否一致
+h）对于目标对象为镜像文件的，检查复制工具是否提示用户切换目标存储介质，如果提示用户
+切换目标存储介质，则切换到C，在复制完成过后·从镜像文件重新创建A的比特流并写入到
+D中，计算A和D上存储的所有数据的MD5校验值，比较两个MD5校验值是否一致。
+对于复制过程中未提示用户目标存储空间不足或MD5校验值不一致的，判定不符合存储空间
+不足处理要求，否则判定符合存储空间不足处理要求。
+5.4.2
+存储空间过剩处理要求的检测
+准备两个存储空间大小不同，不存在损坏扇区的电子数据存储介质，存储空间较小的记为A，
+存储空间较大的记为B，假定A的扇区您数NB的扇区总数为M。
+计算B的第N个扇区到最后
+一个扇区所保存的数据的MD5校验值。
+使用复制工具将A复制到B上
+检查B的N+1个刷区至最后
+d)
+一个扇区是否得到合理填充，如果未得到合理填充，计算B的
+N十1个扇区至最后
+S购区所保存的数据的MDS校验值如果MDS校验值与数据复制前
+计算获得的MD5值不一致，则判定不符合存储空间过剩处理要录，否则判定符合存储空
+间过剩处理要
+注：对目标对象为靠像文件的，可不检测存借空间过再处理娶求，
+5.5写保护要求的检训
+的规定进行检测
+5.6检测记录
+检测记录应
+复制工
+商、型号：
+复制工
+在每的接口：
+测试工具支持的目标对象类型
+对每个接口利每种目标对象类型测试获得的型定结轮，</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 8 页 / 共 9 页</span><span>原图 1164×1629</span></div>
+<div class="page-img"><img src="GAT 754-2008 电子数据存储介质复制工具要求及检测方法_pages/page_008.jpg" alt="第8页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T7542008
+参考文献
+RFC1321 The MD5Message-Digest Algorithm</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 9 页 / 共 9 页</span><span>原图 1163×1636</span></div>
+<div class="page-img"><img src="GAT 754-2008 电子数据存储介质复制工具要求及检测方法_pages/page_009.jpg" alt="第9页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">中华人民共和国公共安全
+行业标推
+电子数据存储介质
+复制工具要求及检测方法
+GA/T754-2008
+中国标准出版社出版
+北京复兴门外三里河北街16号
+邮政编码：100045
+网址www.spc.net.cn
+电话：68523545：68517548
+中国标准出版社秦皇岛印刷厂印制
+开本880×12301/16印张0.75字数12千字
+2008年5月第一版 2008年5月第一次印刷
+书号：1550662-18787定价14.00元
+如有印装差错由本社发行中心调换
+版权专有侵权必究
+GA/T 754-2008
+举报电话：（010）68533533</div></div>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · OCR 双层版 · 共 9 页 · 识别文字 5308 字 · 原文以 PDF 为准</div>
 </div>
 </body>
 </html>

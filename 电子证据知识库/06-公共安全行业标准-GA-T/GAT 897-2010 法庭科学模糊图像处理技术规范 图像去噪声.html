@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GAT 897-2010 法庭科学模糊图像处理技术规范 图像去噪声</title>
 <style>
-:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--warn:#b8860b;--ocr:#a93226}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
 .wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
@@ -17,19 +17,17 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 .doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
 .doc-actions a:hover{background:#eef4ff}
 .doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
-.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
-.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
-.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
-.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
-.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.content p{margin:0 0 12px;text-indent:2em}
-.content .no-indent{text-indent:0}
-.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
-.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
-.content h3{font-size:15.5px}
-.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
-.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
-.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.ocr-banner{margin:14px 0;padding:12px 18px;border-radius:8px;font-size:13.5px;line-height:1.7;background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.ocr-banner b{font-weight:700}
+.page-block{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:18px 0;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.page-header{background:#f0f3f7;padding:8px 16px;font-size:13px;color:var(--ink2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.page-header .pageno{font-weight:700;color:var(--brand)}
+.page-img{text-align:center;padding:12px;background:#fafbfc}
+.page-img img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page-ocr{padding:16px 20px;border-top:1px dashed var(--line);background:#fffdf8}
+.page-ocr .ocr-label{font-size:12px;color:var(--ocr);font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+.page-ocr .ocr-text{font-size:14px;line-height:1.9;color:#333;white-space:pre-wrap;word-break:break-word}
+.page-ocr .ocr-empty{color:#999;font-style:italic;font-size:13px}
 .footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
 </style>
 </head>
@@ -40,15 +38,164 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 <div class="doc-meta"><span><b>文号：</b>GAT 897-2010</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2010-09-13</span></div>
 <div class="doc-actions"><a href="GAT 897-2010 法庭科学模糊图像处理技术规范 图像去噪声.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://std.samr.gov.cn/search/std?q=GA/T%20897-2010" target="_blank" rel="noopener">🔗 官方来源</a></div>
 </header>
-<div class="banner pdf">📄 正文来源：本地 PDF 文本层提取（保持原文；排版可能与原件略有差异，以原 PDF 为准）</div>
-<div class="content">
-<p>标准分享网 www.bzfxw.com 免费下载</p>
-<p>www.bzfxw.com</p>
-<p>www.bzfxw.com 标准分享网 www.bzfxw.com 免费下载</p>
-<p>www.bzfxw.com</p>
-<p>www.bzfxw.com 标准分享网 www.bzfxw.com 免费下载</p>
+<div class="ocr-banner">
+<b>⚠️ OCR 识别版</b>：本文档由原 PDF 逐页扫描识别生成，每页上方为原图，下方为 OCR 识别文字。<br>
+OCR 可能存在少量识别误差（尤其是表格、公式、生僻字），<b>请以原图 / 原 PDF 为准</b>。全文检索已收录 OCR 文字。
 </div>
-<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 1 页 / 共 6 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GAT 897-2010 法庭科学模糊图像处理技术规范 图像去噪声_pages/page_001.jpg" alt="第1页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">ICS13.310
+A 92
+GA
+中华人民共和国公共安全行业标准
+GA/T 897—2010
+法庭科学模糊图像处理技术规范
+图像去噪声
+Technical specification for forensic blurred image processing-
+Image denoising
+2010-09-13发布
+2010-10-01实施
+中华人民共和国公安部
+发布</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 2 页 / 共 6 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GAT 897-2010 法庭科学模糊图像处理技术规范 图像去噪声_pages/page_002.jpg" alt="第2页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T8972010
+前言
+本标准按照GB/T1.1一2009给出的规则起草。
+请注意本文件的某些内容可能涉及专利。本文件的发布机构不承担识别这些专利的责任。
+本标准由全国刑事技术标准化技术委员会照相检验分技术委员会（SAC/TC179/SC5)提出并归口。
+本标准起草单位：公安部物证鉴定中心、中国刑事警察学院。
+本标准主要起草人：许小京、李志刚、黎智辉、杨洪臣。
+标准分享网wwbzfxwcom免费下载</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 3 页 / 共 6 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GAT 897-2010 法庭科学模糊图像处理技术规范 图像去噪声_pages/page_003.jpg" alt="第3页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T 897—2010
+法庭科学模糊图像处理技术规范
+图像去噪声
+1范围
+本标准规定了模糊图像处理技术中去除图像噪声的基本要求。
+本标准适用于我国司法机关在办理刑事、民事案件以及处理事故事件等活动中的图像去噪声工作。
+2规范性引用文件
+下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文
+件。凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。
+GA/T592—2006刑事数字影像技术规则
+3术语和定义
+下列术语和定义适用于本文件。
+3.1
+噪声noise
+一幅图像中阻碍有用信息的识别和解释的不相关部分。
+中最常见的是高斯噪声，还存在大量未知类型的噪声。
+3. 1. 1
+高斯噪声gaussiannoise
+概率密度函数服从高斯分布（即正态分布）的噪声。
+3. 1. 2
+脉冲噪声pulsenoise
+由持续时间短和幅度大的不规则脉冲或噪声尖锋组成的非连续的一类噪声。脉冲噪声在图像中经
+常表现为黑点或白点，就像胡椒和盐的微粒，所以又叫椒盐噪声。
+3.2
+图像去噪声imagedenoising
+为了改善含噪声图像的视觉效果，针对特定的图像噪声类型通过不同的方法来降低图像噪声水平
+的过程。
+3. 2. 1
+中值滤波medianfiltering
+是对个滑动窗口内的诸像素灰度值排序，用其中值代替窗口中心像素的原来灰度值的图像平滑
+方法。它是一种非线性滤波算法。
+3.2.2
+均值滤波average filtering
+在图像上对目标像素给一个模板，该模板包括了其周围的临近像素，再用模板中的全体像素的平均</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 4 页 / 共 6 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GAT 897-2010 法庭科学模糊图像处理技术规范 图像去噪声_pages/page_004.jpg" alt="第4页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T897—2010
+值来代替原来像素值。均值滤波是典型的线性滤波算法。
+3.2.3
+低通滤波lowpassfiltering
+在频率域对频率系数中属于低频的部分保留、高频部分削弱或去除的滤波方法。
+3.3
+图像稳定imagestabilization
+将多幅图像中相同的特征点坐标调整到同一个参考点坐标，使运动中的目标稳定在某一固定位置。
+3.4
+图像积分imageintegral
+对多幅图像做相加运算后取算术平均值，以去除随机特征，保留稳定特征。
+注：图像积分常用于去除随机噪声（如高斯噪声），其效果类似于长时间累积曝光。
+4仪器设备
+4.1图像处理系统
+能采集视频图像，对图像进行稳定、积分和滤波等处理，并应提供中值滤波和均值滤波去噪方法，提
+供处理过程和处理参数保存功能。计算机应配备微软WindowsXP专业版以上版本操作系统，性能不
+低于IntelXeon5150的CPU，4GB以上内存。
+4.2放像机
+应能播放VHS或DV格式的录像带。
+4.3视频监视器
+应具有复合视频输人端口。
+4.4存储设备
+4.4.1光盘刻录机
+应使用52XCD-R或DVD士R刻录机。
+4.4.2磁盘阵列
+应使用SAS或SATA磁盘阵列。
+4.4.3磁带机
+应使用LTO磁带机。
+5操作步骤
+5.1
+用图像处理系统采集并保存图像到计算机。
+5. 2
+在图像处理系统中打开图像。
+5.3
+根据图像中噪声类型选择适当的滤波方式。
+5. 4
+对图像进行去噪声的操作，调整降噪参数直至取得最佳视觉效果。
+5.5
+保存处理后的图像及相关的处理过程和参数，留待进一步处理或直接输出。
+标准分享网wwbzfxwcom免费下载</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 5 页 / 共 6 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GAT 897-2010 法庭科学模糊图像处理技术规范 图像去噪声_pages/page_005.jpg" alt="第5页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T897—2010
+6结果分析
+将去噪声处理前后的图像进行比较，若图像整体效果平滑且细节信息损失较小，则达到较好的效果。
+7图像的保存
+图像资料的保存应符合GA/T592一2006的规定。
+8注意事项
+8.1对于活动视频图像，应尽可能多取清晰的图像顿，将图像顿进行图像跟踪稳定后再积分，以去噪
+声。应注意在这些图像顿中，目标的运动和变形尽可能小。
+8.2对于噪声类型为高斯噪声的单幅图像，可以用中值滤波、均值滤波、低通滤波等方法；对于脉冲噪
+声，常用中值滤波法；对于其他未知类型的噪声，则应经过实验后选择最佳方法。
+8.3图像去噪声和显现图像细节是一个矛盾的过程，在去噪声的过程中应注意图像细节的保留。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 6 页 / 共 6 页</span><span>原图 1191×1684</span></div>
+<div class="page-img"><img src="GAT 897-2010 法庭科学模糊图像处理技术规范 图像去噪声_pages/page_006.jpg" alt="第6页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T 897-2010
+中华人民共和国公共安全
+行业标准
+法庭科学模糊图像处理技术规范
+图像去噪声
+GA/T897—2010
+中国标准出版社出版发行
+北京复兴门外三里河北街16号
+邮政编码：100045
+网址www.spc.net.cn
+电话：6852394668517548
+中国标准出版社秦皇岛印刷厂印刷
+各地新华书店经销
+开本880×12301/16印张0.5字数6千字
+2011年3月第一版2011年3月第一次印刷
+书号：155066·2-21425定价14.00元
+如有印装差错由本社发行中心调换
+版权专有侵权必究
+GA/T897-2010
+举报电话：（010)68533533
+打印日期：2011年4月14日F008A00
+标准分享网wwwbzfxwcom免费下载</div></div>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · OCR 双层版 · 共 6 页 · 识别文字 2421 字 · 原文以 PDF 为准</div>
 </div>
 </body>
 </html>

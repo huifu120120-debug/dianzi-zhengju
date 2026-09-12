@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>法庭科学 MS SQL Server数据库日志检验技术规范</title>
+<title>GAT 1664-2019 法庭科学 MS SQL Server数据库日志检验技术规范</title>
 <style>
-:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--ok:#1f8a4c;--warn:#b8860b}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1f2329;--ink2:#4e5969;--line:#e5e6eb;--brand:#1e5eb8;--warn:#b8860b;--ocr:#a93226}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.85}
 .wrap{max-width:960px;margin:0 auto;padding:20px 18px 80px}
@@ -17,68 +17,183 @@ header.doc-head h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.4
 .doc-actions a{display:inline-block;color:#1e5eb8;background:#fff;border:1px solid #c8d6ee;padding:6px 16px;border-radius:18px;font-size:13px;text-decoration:none;font-weight:600}
 .doc-actions a:hover{background:#eef4ff}
 .doc-actions a.src{color:#0a6c3f;background:#f0faf4;border-color:#b8e0c8}
-.banner{margin:14px 0;padding:10px 16px;border-radius:8px;font-size:13px;line-height:1.6}
-.banner.web{background:#eef6ee;border:1px solid #c8e6c8;color:#1a6b3a}
-.banner.pdf{background:#fff8e6;border:1px solid #f0dfa8;color:#8a6d1a}
-.banner.scanned{background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
-.content{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.content p{margin:0 0 12px;text-indent:2em}
-.content .no-indent{text-indent:0}
-.content h2,.content h3{margin:22px 0 10px;color:var(--brand);text-indent:0}
-.content h2{font-size:17px;border-bottom:2px solid var(--brand);padding-bottom:4px}
-.content h3{font-size:15.5px}
-.content table{border-collapse:collapse;margin:12px 0;width:100%;font-size:13.5px}
-.content table td,.content table th{border:1px solid var(--line);padding:6px 10px;text-indent:0}
-.content pre{white-space:pre-wrap;background:#f5f6f8;padding:12px 16px;border-radius:8px;font-size:13px;line-height:1.7;text-indent:0}
+.ocr-banner{margin:14px 0;padding:12px 18px;border-radius:8px;font-size:13.5px;line-height:1.7;background:#fdecea;border:1px solid #f5c6c0;color:#a93226}
+.ocr-banner b{font-weight:700}
+.page-block{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:18px 0;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.page-header{background:#f0f3f7;padding:8px 16px;font-size:13px;color:var(--ink2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.page-header .pageno{font-weight:700;color:var(--brand)}
+.page-img{text-align:center;padding:12px;background:#fafbfc}
+.page-img img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.page-ocr{padding:16px 20px;border-top:1px dashed var(--line);background:#fffdf8}
+.page-ocr .ocr-label{font-size:12px;color:var(--ocr);font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+.page-ocr .ocr-text{font-size:14px;line-height:1.9;color:#333;white-space:pre-wrap;word-break:break-word}
+.page-ocr .ocr-empty{color:#999;font-style:italic;font-size:13px}
 .footer{margin-top:24px;text-align:center;font-size:12px;color:var(--ink2);opacity:.7}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="doc-head">
-<h1>法庭科学 MS SQL Server数据库日志检验技术规范</h1>
-<div class="doc-meta"><span><b>文号：</b>GA/T 1664-2019</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2019-10-14</span></div>
-<div class="doc-actions"><a href="GAT 1664-2019 法庭科学 MS SQL Server数据库日志检验技术规范.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://m.renrendoc.com/free-down/6131010023002102.pdf" target="_blank" rel="noopener">🔗 来源</a></div>
+<h1>GAT 1664-2019 法庭科学 MS SQL Server数据库日志检验技术规范</h1>
+<div class="doc-meta"><span><b>文号：</b>GAT 1664-2019</span><span><b>层级：</b>公共安全行业标准 (GA/T)</span><span><b>日期：</b>2019-10-14</span><span><b>备注：</b>仅获取节选（来源：renrendoc，https://m.renrendoc.com/free-down/6131010023002102.pdf）；仅获取到第1-4章（前言、范围、规范性引用文件、术</span></div>
+<div class="doc-actions"><a href="GAT 1664-2019 法庭科学 MS SQL Server数据库日志检验技术规范.pdf" target="_blank" title="下载/查看原始 PDF">📎 下载原 PDF</a><a class="src" href="https://hbba.sacinfo.org.cn/stdDetail/339692c3ecc0fa737602b5b06cc45f839c11718e5df86101f985255fb24c35e0" target="_blank" rel="noopener">🔗 官方来源</a></div>
 </header>
-<div class="banner scanned">⚠️ 以下为节选内容（第1-4章），全文请下载原PDF。正文来源：人人文库(renrendoc)公开PDF，附URL</div>
-<div class="content">
-<h2>前言</h2>
-<p>本标准按照GB/T 1.1—2009给出的规则起草。</p>
-<p>请注意本文件的某些内容可能涉及专利。本文件的发布机构不承担识别这些专利的责任。</p>
-<p>本标准由全国刑事技术标准化技术委员会电子物证检验分技术委员会(SAC/TC179/SC7)提出。</p>
-<p>本标准由全国刑事技术标准化技术委员会(SAC/TC179)归口。</p>
-<p>本标准起草单位：中国刑事警察学院物证鉴定中心、公安部物证鉴定中心。</p>
-<p>本标准主要起草人：赵广晔、刘奇志、秦玉海、汤艳君、马贺男、高洪涛、徐国天、楚川红。</p>
-
-<h2>1 范围</h2>
-<p>本标准规定了MS SQL Server数据库日志检验方法。</p>
-<p>本标准适用于法庭科学领域中的电子物证检验。</p>
-
-<h2>2 规范性引用文件</h2>
-<p>下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文件。凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。</p>
-<p>GB/T 29360—2012 电子物证数据恢复检验规程</p>
-<p>GB/T 29362—2012 电子物证数据搜索检验规程</p>
-
-<h2>3 术语和定义</h2>
-<p>下列术语和定义适用于本文件。</p>
-<h3>3.1 数据库日志 database log</h3>
-<p>记录对数据库进行的增加、删除、修改、查看等操作以及操作结果消息的文件，包括事务日志、错误日志等。</p>
-<h3>3.2 错误日志 error log</h3>
-<p>记录数据库启动、运行或停止过程中产生的各类信息的文件。</p>
-<h3>3.3 事务日志 transaction log</h3>
-<p>记录所有事务以及每个事务对数据库所做修改的事件信息的文件。</p>
-<h3>3.4 数据库管理系统 database management system</h3>
-<p>一种操纵和管理数据库的大型软件，用于建立、使用和维护数据库。</p>
-
-<h2>4 仪器设备</h2>
-<h3>4.1 硬件</h3>
-<p>存储介质、保全备份设备、电子物证检验工作站。</p>
-<h3>4.2 软件</h3>
-<p>4.2.1 操作系统：Windows等。</p>
-<p>4.2.2 数据库管理系统：MS SQL Server等。</p>
-<p>4.2.3 数据库日志分析工具、数据恢复软件。</p>
+<div class="ocr-banner">
+<b>⚠️ OCR 识别版</b>：本文档由原 PDF 逐页扫描识别生成，每页上方为原图，下方为 OCR 识别文字。<br>
+OCR 可能存在少量识别误差（尤其是表格、公式、生僻字），<b>请以原图 / 原 PDF 为准</b>。全文检索已收录 OCR 文字。
 </div>
-<div class="footer">电子证据标准规范体系知识库 · 全文 HTML 版 · 原文以 PDF 为准</div>
+
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 1 页 / 共 8 页</span><span>原图 1183×1680</span></div>
+<div class="page-img"><img src="GAT 1664-2019 法庭科学 MS SQL Server数据库日志检验技术规范_pages/page_001.jpg" alt="第1页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">ICS 13.310
+GA
+A 92
+中华人民共和国公共安全行业标准
+GA/T1664--2019
+法庭科学
+MSSQLServer数据库日志
+检验技术规范
+Forensic sciences---Technical specifications for examination of MS SQL
+Server database logs
+2019-10-14发布
+2019-12-01实施
+中华人民共和国公安部
+发布</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 2 页 / 共 8 页</span><span>原图 1183×1680</span></div>
+<div class="page-img"><img src="GAT 1664-2019 法庭科学 MS SQL Server数据库日志检验技术规范_pages/page_002.jpg" alt="第2页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text ocr-empty">（本页未识别到文字，可能为纯图片/空白页）</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 3 页 / 共 8 页</span><span>原图 1192×1680</span></div>
+<div class="page-img"><img src="GAT 1664-2019 法庭科学 MS SQL Server数据库日志检验技术规范_pages/page_003.jpg" alt="第3页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1664—2019
+前言
+本标准按照GB/T1.1一2009给出的规则起草。
+请注意本文件的某些内容可能涉及专利。本文件的发布机构不承担识别这些专利的责任。
+本标准由全国刑事技术标准化技术委员会电子物证检验分技术委员会（SAC/TC179/SC7)提出。
+本标准由全国刑事技术标准化技术委员会（SAC/TC179）归口。
+本标准起草单位：中国刑事警察学院物证鉴定中心、公安部物证鉴定中心。
+本标准主要起草人：赵广晔、刘奇志、秦玉海、汤艳君、马贺男、高洪涛、徐国关、楚川红。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 4 页 / 共 8 页</span><span>原图 1200×1680</span></div>
+<div class="page-img"><img src="GAT 1664-2019 法庭科学 MS SQL Server数据库日志检验技术规范_pages/page_004.jpg" alt="第4页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text ocr-empty">（本页未识别到文字，可能为纯图片/空白页）</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 5 页 / 共 8 页</span><span>原图 1192×1680</span></div>
+<div class="page-img"><img src="GAT 1664-2019 法庭科学 MS SQL Server数据库日志检验技术规范_pages/page_005.jpg" alt="第5页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1664---2019
+法庭科学
+MSSQLServer数据库日志
+检验技术规范
+1 范围
+本标准规定了MSSQLServer数据库日志检验方法。
+本标准适用于法庭科学领域中的电子物证检验。
+2规范性引用文件
+下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文
+件。凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本文件。
+GB/T29360—2012电子物证数据恢复检验规程
+GB/T29362一2012电子物证数据搜索检验规程
+3术语和定义
+下列术语和定义适用于本文件。
+3.1
+数据库日志databaselog
+记录对数据库进行的增加、删除、修改、查看等操作以及操作结果消息的文件，包括事务日志、错误
+日志等。
+3.2
+错误日志errorIog
+记录数据库启动、运行或停止过程中产生的各类信息的文件。
+3.3
+事务日志transaction log
+记录所有事务以及每个事务对数据库所做修改的事件信息的文件。
+3.4
+数据库管理系统databasemanagementsystem
+一种操纵和管理数据库的大型软件，用于建立、使用和维护数据库。
+4仪器设备
+4.1硬件
+存储介质、保全备份设备、电子物证检验工作站。
+4.2软件
+4.2.1操作系统：Windows等。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 6 页 / 共 8 页</span><span>原图 1200×1680</span></div>
+<div class="page-img"><img src="GAT 1664-2019 法庭科学 MS SQL Server数据库日志检验技术规范_pages/page_006.jpg" alt="第6页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1664--2019
+4.2.2软件工具：数据库管理系统软件、数据库日志分析软件。
+5操作步骤
+5.1检材编号
+对送检的检材进行唯一性编号。
+5.2检材拍照
+对送检的检材加上唯一性编号进行拍照。
+5.3检材保全备份
+对具备保全条件的检材进行保全备份。
+5.4检验
+5.4.1病毒查杀
+启动杀毒软件对电子物证检验工作站系统进行杀毒。
+5.4.2数据库日志提取
+提取数据库日志时应提取包括事务日志和错误日志在内的全部数据库日志，提取过程应按照以下
+步骤进行：
+a）将检材（若已保全，使用保全的存储设备）通过只读方式接到电子物证检验工作站；
+b）在数据库系统规定的默认路径下提取数据库日志文件；或仿真运行检材中的操作系统，使用
+数据库管理系统提取数据库日志；
+c)
+对于已被删除的日志文件，依据GB/T293602012、GB/T29362—2012进行数据恢复、搜索
+检验。
+5.4.3数据库日志检验
+使用数据库日志分析软件对提取出的数据库日志进行查看、分析，得出检验结果。
+5.4.4结果保存
+将检出数据存储在专用存储介质中并计算哈希值。
+6检验结果的表述
+检验结果表述符合以下规定：
+检验结果分为检出、未检出、不具备检验条件三种；
+b)
+检验结果应根据检验要求对检验对象、检验范围、检验所得进行客观、概括、有针对性的描述；
+结果表述应包含检材编号、检出情况、检出数据文件或保存检出数据介质哈希值、保存检出数
+据介质编号等必要信息。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 7 页 / 共 8 页</span><span>原图 1183×1680</span></div>
+<div class="page-img"><img src="GAT 1664-2019 法庭科学 MS SQL Server数据库日志检验技术规范_pages/page_007.jpg" alt="第7页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T1664---2019
+附则
+7.1
+在检验过程中应做检验记录。
+7.2
+在检验过程中，不应改变检材中的数据。
+7.3
+应对送检的检材做好防水、防磁、防静电和防震保护。</div></div>
+</div>
+<div class="page-block">
+<div class="page-header"><span class="pageno">第 8 页 / 共 8 页</span><span>原图 1183×1680</span></div>
+<div class="page-img"><img src="GAT 1664-2019 法庭科学 MS SQL Server数据库日志检验技术规范_pages/page_008.jpg" alt="第8页原图" loading="lazy"></div>
+<div class="page-ocr"><div class="ocr-label">🔍 OCR 识别文字（可能存在识别误差，以原图为准）</div><div class="ocr-text">GA/T 1664—2019
+中华人民共和国公共安全
+行业标准
+法庭科学MSSQLServer数据库日志
+检验技术规范
+GA/T1664—2019
+中国标准出版社出版发行
+北京市朝阳区和平里西街甲2号（100029)
+北京市西城区三里河北街16号（100045）
+网址www.spc.net.cn
+总编室：（010)68533533发行中心：（010)51780238
+读者服务部：（010)68523946
+中国标准出版社秦皇岛印刷厂印刷
+各地新华书店经销
+开本880×12301/16印张0.5字数8千字
+2020年5月第一版2020年5月第一次印刷
+号：1550662-35222定价14.00元
+如有印装差错由本社发行中心调换
+版权专有侵权必究
+GA/T1664-2019
+举报电话：（010）68510107
+打印H期：2020年6月9HF002AA</div></div>
+</div>
+<div class="footer">电子证据标准规范体系知识库 · OCR 双层版 · 共 8 页 · 识别文字 2099 字 · 原文以 PDF 为准</div>
 </div>
 </body>
 </html>
