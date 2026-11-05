@@ -88,7 +88,7 @@ footer code{background:#f0f3f8;padding:1px 6px;border-radius:5px}
 .pv-action a.ghost{background:#fff;color:#1e5eb8;border:1px solid #1e5eb8}
 .pv-back{cursor:pointer;border:1px solid #1e5eb8;background:#fff;color:#1e5eb8;border-radius:8px;padding:6px 16px;font-size:13px}
 .pv-back:hover{background:#eef4ff}
-.pv-note{font-size:12px;color:#8a93a5;margin-top:6px}
+.pv-note{font-size:12px;color:#8a93a5;margin-top:6px}.smart-tip{background:#eef6ff;border:1px solid #b9d9ff;color:#1a5fb4;padding:8px 14px;border-radius:6px;margin:0 0 12px;font-size:13px}
 </style></head>
 <body><div class='wrap'>
 <header class='hero'>
@@ -729,6 +729,31 @@ function ftStatus() {
     ? "<span class='ft-ok'>✓ 全文索引已加载（" + (typeof FT_DATA==='object' ? Object.keys(FT_DATA).length : '') + " 篇）</span>"
     : "<span class='ft-idle'>当前为「仅标准名」快速检索 · 切换为「全部 / 仅内容」时自动加载全文索引（仅首次较慢）</span>";
 }
+
+const CONCEPTS=[
+{k:'手机/移动终端',t:['手机','移动终端','智能手机','移动端','平板','手机数据','通信终端','手持']},
+{k:'木马/恶意代码',t:['木马','恶意代码','病毒','恶意程序','恶意软件','后门','恶意app','恶意应用','间谍软件']},
+{k:'分析/检验/鉴定',t:['分析','检验','鉴定','提取','检查','检测','鉴别','识别','固定','采集']},
+{k:'数据恢复',t:['恢复','修复','删除数据','反删除','数据恢复']},
+{k:'内存/易失数据',t:['内存','运行内存','ram','易失','缓存']},
+{k:'网络/流量/日志',t:['网络','流量','通信','日志','上网','浏览','ip','路由','数据包']},
+{k:'聊天/社交/通讯录',t:['聊天','微信','qq','社交','即时通信','通讯录','短信','通话','联系人']},
+{k:'数据库/文件系统',t:['数据库','sqlite','sql','文件系统','目录','文件检验']},
+{k:'云/网盘',t:['云','云端','网盘','云存储','云计算']},
+{k:'加密/密码',t:['加密','解密','密码','口令','破解','解锁']},
+{k:'视频/图像/声像',t:['视频','图像','图片','录音','音频','声纹','人像','人脸','监控录像','dvr']},
+{k:'取证勘验程序',t:['取证','勘验','现场','侦查','扣押','远程勘验']},
+{k:'鉴定管理/资质',t:['鉴定机构','资质','认可','评审','资质认定','实验室','文书','通则']},
+{k:'虚拟货币/区块链',t:['区块链','比特币','虚拟货币','数字货币','钱包','代币']},
+{k:'车联/物联网/无人机',t:['物联网','车','智能网联','车载','无人机','gps','定位']},
+{k:'真实性/完整性/保全',t:['真实性','完整性','一致性','校验','哈希','签名','保全']}
+];
+function expandQuery(q){
+  const low=q.toLowerCase();
+  const groups=[];
+  CONCEPTS.forEach(c=>{ if(c.t.some(term=>low.includes(term))) groups.push({label:c.k,synonyms:c.t}); });
+  return groups;
+}
 function render() {
   const q = state.q.trim();
   const words = splitWords(q);
@@ -746,6 +771,20 @@ function render() {
   if(words.length && state.sc === 'content') filtered = DATA.filter(it => ftHits.has(it));
   else if(words.length && state.sc === 'name') filtered = DATA.filter(it => match(it, words));
   else filtered = DATA.filter(it => match(it, words) || ftHits.has(it));
+  let smartNotice='';
+  if(words.length && filtered.length === 0){
+    const groups = expandQuery(q);
+    if(groups.length >= 1){
+      const need = Math.min(groups.length, 2);
+      const scored = DATA.filter(it => match(it, [])).map(it => {
+        const hay = (it.c+' '+it.n+' '+it.nt+' '+it.dm).toLowerCase();
+        let sc = 0;
+        groups.forEach(g => { if(g.synonyms.some(s => hay.includes(s))) sc++; });
+        return {it, sc};
+      }).filter(x => x.sc >= need).sort((a,b) => b.sc - a.sc).slice(0, 40);
+      if(scored.length){ filtered = scored.map(x => x.it); smartNotice = '未按字面命中，已按自然语义为你匹配到 ' + scored.length + ' 项（主题：' + groups.map(g=>g.label).join('、') + '）'; }
+    }
+  }
   const root = document.getElementById('result');
   const groups = {};
   filtered.forEach(it => { (groups[it.lv] = groups[it.lv]||[]).push(it); });
